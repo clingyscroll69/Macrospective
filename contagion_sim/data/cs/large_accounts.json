@@ -1,0 +1,2548 @@
+{
+"agents": [
+{
+"id": "la0",
+"archetype": "Asian family office",
+"instance": "cautious",
+"region": "Asia_Pacific",
+"deposit_share": 0.03,
+"reason": "cautious: WhatsApp/WeChat networks, +6h timezone, fast private-bank transfers; UHNW balances far above any insurance",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la1",
+"archetype": "Asian family office",
+"instance": "typical",
+"region": "Asia_Pacific",
+"deposit_share": 0.04,
+"reason": "typical: WhatsApp/WeChat networks, +6h timezone, fast private-bank transfers; UHNW balances far above any insurance",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la2",
+"archetype": "Asian family office",
+"instance": "sticky",
+"region": "Asia_Pacific",
+"deposit_share": 0.03,
+"reason": "sticky: WhatsApp/WeChat networks, +6h timezone, fast private-bank transfers; UHNW balances far above any insurance",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+}
+}
+},
+{
+"id": "la3",
+"archetype": "Middle East UHNW/sovereign-linked",
+"instance": "cautious",
+"region": "Middle_East",
+"deposit_share": 0.015,
+"reason": "cautious: relationship-driven, WhatsApp-dense, sensitive to bank-safety signals but reluctant to break ties",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la4",
+"archetype": "Middle East UHNW/sovereign-linked",
+"instance": "typical",
+"region": "Middle_East",
+"deposit_share": 0.02,
+"reason": "typical: relationship-driven, WhatsApp-dense, sensitive to bank-safety signals but reluctant to break ties",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la5",
+"archetype": "Middle East UHNW/sovereign-linked",
+"instance": "sticky",
+"region": "Middle_East",
+"deposit_share": 0.015,
+"reason": "sticky: relationship-driven, WhatsApp-dense, sensitive to bank-safety signals but reluctant to break ties",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+}
+}
+},
+{
+"id": "la6",
+"archetype": "European asset manager cash",
+"instance": "cautious",
+"region": "Europe_UK",
+"deposit_share": 0.027,
+"reason": "cautious: fiduciary counterparty-risk limits, finance-Twitter exposure, can move cash same day",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la7",
+"archetype": "European asset manager cash",
+"instance": "typical",
+"region": "Europe_UK",
+"deposit_share": 0.036,
+"reason": "typical: fiduciary counterparty-risk limits, finance-Twitter exposure, can move cash same day",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la8",
+"archetype": "European asset manager cash",
+"instance": "sticky",
+"region": "Europe_UK",
+"deposit_share": 0.027,
+"reason": "sticky: fiduciary counterparty-risk limits, finance-Twitter exposure, can move cash same day",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la9",
+"archetype": "US hedge fund / prime brokerage cash",
+"instance": "cautious",
+"region": "Americas",
+"deposit_share": 0.021,
+"reason": "cautious: fastest decision cycle, X-heavy, no relationship stickiness, redemption/margin liquidity needs",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.05
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"low|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"med|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"med|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la10",
+"archetype": "US hedge fund / prime brokerage cash",
+"instance": "typical",
+"region": "Americas",
+"deposit_share": 0.028,
+"reason": "typical: fastest decision cycle, X-heavy, no relationship stickiness, redemption/margin liquidity needs",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"low|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"med|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la11",
+"archetype": "US hedge fund / prime brokerage cash",
+"instance": "sticky",
+"region": "Americas",
+"deposit_share": 0.021,
+"reason": "sticky: fastest decision cycle, X-heavy, no relationship stickiness, redemption/margin liquidity needs",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la12",
+"archetype": "Swiss corporate treasury",
+"instance": "cautious",
+"region": "Switzerland",
+"deposit_share": 0.027,
+"reason": "cautious: operational/payroll accounts, very high home trust, switching banks is slow; but uninsured size",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la13",
+"archetype": "Swiss corporate treasury",
+"instance": "typical",
+"region": "Switzerland",
+"deposit_share": 0.036,
+"reason": "typical: operational/payroll accounts, very high home trust, switching banks is slow; but uninsured size",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+}
+}
+},
+{
+"id": "la14",
+"archetype": "Swiss corporate treasury",
+"instance": "sticky",
+"region": "Switzerland",
+"deposit_share": 0.027,
+"reason": "sticky: operational/payroll accounts, very high home trust, switching banks is slow; but uninsured size",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.05
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.15
+},
+"med|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+}
+}
+},
+{
+"id": "la15",
+"archetype": "Swiss pension/insurer",
+"instance": "cautious",
+"region": "Switzerland",
+"deposit_share": 0.021,
+"reason": "cautious: committee-driven mandates, slow to act, but counterparty limits bind in a true run",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.05
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.05
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.05
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.15
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.15
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la16",
+"archetype": "Swiss pension/insurer",
+"instance": "typical",
+"region": "Switzerland",
+"deposit_share": 0.028,
+"reason": "typical: committee-driven mandates, slow to act, but counterparty limits bind in a true run",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.05
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.05
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.15
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.15
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.35
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+}
+}
+},
+{
+"id": "la17",
+"archetype": "Swiss pension/insurer",
+"instance": "sticky",
+"region": "Switzerland",
+"deposit_share": 0.021,
+"reason": "sticky: committee-driven mandates, slow to act, but counterparty limits bind in a true run",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.05
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.05
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.15
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.25
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.35
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+}
+}
+},
+{
+"id": "la18",
+"archetype": "Latin American UHNW",
+"instance": "cautious",
+"region": "Americas",
+"deposit_share": 0.012,
+"reason": "cautious: USD diversifier, X/WhatsApp-driven, flight-prone, offshore balances uninsured",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"low|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"med|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la19",
+"archetype": "Latin American UHNW",
+"instance": "typical",
+"region": "Americas",
+"deposit_share": 0.016,
+"reason": "typical: USD diversifier, X/WhatsApp-driven, flight-prone, offshore balances uninsured",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|alarmed": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la20",
+"archetype": "Latin American UHNW",
+"instance": "sticky",
+"region": "Americas",
+"deposit_share": 0.012,
+"reason": "sticky: USD diversifier, X/WhatsApp-driven, flight-prone, offshore balances uninsured",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.45
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.45
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la21",
+"archetype": "Global corporate treasury",
+"instance": "cautious",
+"region": "Europe_UK",
+"deposit_share": 0.03,
+"reason": "cautious: policy-driven counterparty diversification, London-booked, moderate speed",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.35
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.35
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.55
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.35
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.55
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.6
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.8
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.7
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.9
+},
+"high|rising|stressed|calm": {
+"action": "pull",
+"fraction": 1
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la22",
+"archetype": "Global corporate treasury",
+"instance": "typical",
+"region": "Europe_UK",
+"deposit_share": 0.04,
+"reason": "typical: policy-driven counterparty diversification, London-booked, moderate speed",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.4
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.45
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.65
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.35
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.55
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.55
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.75
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.55
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.75
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.85
+},
+"high|rising|stressed|alarmed": {
+"action": "pull",
+"fraction": 1
+}
+}
+},
+{
+"id": "la23",
+"archetype": "Global corporate treasury",
+"instance": "sticky",
+"region": "Europe_UK",
+"deposit_share": 0.03,
+"reason": "sticky: policy-driven counterparty diversification, London-booked, moderate speed",
+"playbook": {
+"low|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|safe|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|flat|stressed|alarmed": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"low|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.05
+},
+"low|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.05
+},
+"low|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.2
+},
+"med|flat|safe|calm": {
+"action": "stay",
+"fraction": 0
+},
+"med|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.15
+},
+"med|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.1
+},
+"med|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.25
+},
+"med|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.3
+},
+"med|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.5
+},
+"high|flat|safe|calm": {
+"action": "reduce",
+"fraction": 0.2
+},
+"high|flat|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.35
+},
+"high|flat|stressed|calm": {
+"action": "reduce",
+"fraction": 0.4
+},
+"high|flat|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.6
+},
+"high|rising|safe|calm": {
+"action": "reduce",
+"fraction": 0.35
+},
+"high|rising|safe|alarmed": {
+"action": "reduce",
+"fraction": 0.55
+},
+"high|rising|stressed|calm": {
+"action": "reduce",
+"fraction": 0.65
+},
+"high|rising|stressed|alarmed": {
+"action": "reduce",
+"fraction": 0.85
+}
+}
+}
+]
+}

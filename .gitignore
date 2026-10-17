@@ -8,3 +8,4 @@ venv/
 .llm_cache/
 .DS_Store
 batch_*.json
+network.npz

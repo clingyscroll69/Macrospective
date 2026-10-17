@@ -1,0 +1,63 @@
+{
+ "as_of_cutoff": "Public before 2022-10-01 only. Post-Oct-1 info deliberately excluded.",
+ "primary_source": "Credit Suisse Financial Report 2Q22, SEC Form 6-K exhibit 99.1: https://www.sec.gov/Archives/edgar/data/1053092/000137036822000068/cs-20220630_991.htm (published 2022-07-27)",
+ "balance_sheet_2Q22_CHF_m": {"total_assets":727365,"customer_deposits":389484,"customer_deposits_1Q22":398624,"customer_deposits_4Q21":392819,"core_customer_deposits_CHF_bn":387,"deposits_at_fair_value":3307,"due_to_banks":23616,"repo_and_sec_lending_liabilities":21568,"long_term_debt":158010,"net_loans":285573,"shareholders_equity":45842,"loans_covered_by_core_deposits_excess":"29%","CET1_capital_CHF_m":37049,"total_capital_ratio_pct":20.6},
+ "liquidity_2Q22": {
+  "LCR_group_pct_2Q22_3m_daily_avg":191, "LCR_1Q22":196, "LCR_4Q21":203,
+  "HQLA_weighted_CHF_m_2Q22":234931, "net_cash_outflows_CHF_m":123312,
+  "HQLA_as_share_of_customer_deposits":0.603,
+  "liquidity_pool_CHF_m": {"total":232325,"cash_at_central_banks":140855,"securities":91470,"by_ccy":{"CHF":75631,"USD":89213,"EUR":45722,"other":21759}},
+  "NSFR_pct":132, "NSFR_ASF_CHF_m":428764, "NSFR_RSF_CHF_m":325767, "NSFR_1Q22":128,
+  "regulatory_minimum": "LCR and NSFR >=100%",
+  "LCR_outflow_buckets_unweighted_CHF_m": {"retail_and_small_business_deposits":158341,"unsecured_wholesale":251286,"secured_wholesale":69902,"additional_requirements":165896},
+  "LCR_outflow_buckets_weighted_CHF_m": {"retail_small_business":19346,"unsecured_wholesale":94915,"secured_wholesale":16284,"additional":36740},
+  "implied_LCR_retail_runoff_rate_pct": 12.2,
+  "implied_LCR_unsecured_wholesale_runoff_pct": 37.8,
+  "note": "LCR is Basel 30-day stress assumption; weighted retail+wholesale deposit runoff ~CHF 114bn over 30 days = ~29% of customer deposits is what the regulator assumes survivable."
+ },
+ "deposit_insurance": {
+  "esisuisse_limit_CHF_per_depositor_per_bank": 100000,
+  "source": "esisuisse / Swiss Banking Act (search result: beobachter.ch; CS legal notes credit-suisse.com/legalnotes). Excludes Pillar 3a/vested benefits? (3a/vested covered separately CHF 100k extra). Covers deposits booked in Switzerland only.",
+  "CS_share_of_esisuisse_guarantee_CHF_bn": 0.5, "CS_share_source":"2Q22 report, deposit insurance guarantee note",
+  "est_share_of_deposit_value_above_limit_uninsured": {"best":0.85,"low":0.75,"high":0.92},
+  "est_insured_share": {"best":0.15,"low":0.08,"high":0.25},
+  "reasoning": "No CS disclosure of insured/uninsured split in 2Q22 (US-style disclosure absent). Proxies: (1) wealth-management-heavy: group AUM CHF 1,454bn vs deposits CHF 389bn; WM+IB+corporate wholesale deposits are largely above 100k. (2) LCR unweighted: retail+small-business deposits only CHF 158bn (41% of deposits); the remaining ~59% (>CHF 250bn) is corporate/institutional/financial/HNW operational deposits, essentially uninsured. (3) Within the 158bn retail/SME bucket, much is HNW (private banking) balances over 100k; assume at most ~35-50% of that value is under the limit => ~CHF 55-80bn insured at most, plus esisuisse only covers Swiss-booked deposits (non-Swiss clients uncovered). => insured ~8-25% of value; best 15%. Also 'insured' for sim: 100k covered per depositor, but behaviorally even insured depositors may be less runny."
+ },
+ "geography_and_segments": {
+  "AUM_by_region_CHF_bn_2Q22_booking_centre_basis (Wealth Mgmt + Swiss Bank + AM, group 1,453.9 after netting cross-region -179.1)": {"Switzerland":951.9,"EMEA":274.5,"Asia_Pacific":260.3,"Americas":146.3,"assets_managed_across_regions":-179.1,"total":1453.9},
+  "AUM_share_gross_before_netting": {"Switzerland":0.58,"EMEA":0.17,"APAC":0.16,"Americas":0.09},
+  "AUM_by_currency_Wealth_Mgmt_division_CHF_bn":{"total":661.5,"USD":323.2,"EUR":120.8,"CHF":69.3,"other":148.2},
+  "AUM_Swiss_Bank_CHF_bn":{"total":544.5,"CHF":457.7},
+  "deposits_by_region_disclosed": "Not disclosed in 2Q22 report; use AUM regional split as proxy: ~55-60% Switzerland (CHF), ~15-20% EMEA ex-CH, ~15% APAC, ~8-10% Americas. Middle East not separately disclosed (inside EMEA); est 2-5% of AUM.",
+  "deposit_mix_proxy_from_LCR": {"retail_and_small_business_share_unweighted":0.407,"wholesale_unsecured_share_unweighted":0.646},
+  "retail_vs_wealth_vs_corporate": "Not disclosed as deposits. Proxy: Swiss Bank (retail + corporate/institutional) AUM CHF 544.5bn; Wealth Management AUM CHF 661.5bn; Asset Mgmt ~CHF 250bn. CHF 4Q21 Swiss Bank customer deposits roughly CHF 150-170bn (estimate, unverified)."
+ },
+ "additional_liquidity_within_1_week_est": {
+  "SNB": "Standing SNB facilities: intraday and Lombard-type repo with eligible collateral (SNB-eligible securities), plus SNB 'ECB-style' liquidity-shortage financing facility (LSFF, introduced as part of too-big-to-fail framework 2022 — law passed by Parliament, effective Jan 2023? treat as unavailable pre-Oct 2022) . Best estimate of usable emergency borrowing: CHF 50-100bn in Swiss collateral already in pool; sim default 15% of deposits (range 8-25%).",
+  "other_sources": "Unencumbered non-HQLA securities & loan books pledgeable with Fed discount window / ECB (US and UK subs); reverse repo book (liquidity pool partially from reverse repo); est. CHF 30-60bn monetisable in a week at haircuts.",
+  "total_additional_share_of_deposits": {"best":0.18,"low":0.08,"high":0.30},
+  "caveat": "These are estimates, not disclosed. Liquidity is trapped by legal entity (CS Schweiz AG vs CS AG vs US IHC); Group HQLA overstates what is available to any one entity. HQLA of ~60% of deposits is the core, disclosed backstop."
+ },
+ "situation_2022_09_30_public_context": {
+  "ceo": "Ulrich Koerner (CEO since Aug 2022 after Thomas Gottstein left); chairman Axel Lehmann",
+  "memo_date": "Friday 2022-09-30 (sent after market close)",
+  "memo_content": "Told employees not to confuse day-to-day share price with the bank's strong capital base and liquidity position; acknowledged 'critical moment' ahead of the strategic review; client talking points said widening CDS spreads should not be mistaken for capital or liquidity issues; promised updates to staff before the Oct 27 strategy update. Sources: cash.ch, Business Standard/Bloomberg, Fortune, Irish Times (all dated Oct 1-3 describing the memo).",
+  "planned_strategy_update": "2022-10-27 with 3Q22 earnings: restructuring with big changes to Investment Bank (expected capital raise, spin/shrink of IB, CS First Boston).",
+  "CDS_5y_bps": {"approx_Fri_close_Sep30":250, "derivation":"FT-cited 355 bps Monday Oct 3 'adding 105bp from Friday close' (post-Oct-1 datapoint used only to back out the Friday close)", "start_of_2022":55, "caution":"Fortune/Bloomberg quoted ~293 later. Range 230-260 for Sep 30 close; only 'approx. 250' is back-calculated, verify."},
+  "implied_default_probability_5y": "~23% per Fortune estimate (Oct 3) ; not a pre-Oct-1 figure",
+  "share_price": "Near record lows around CHF 4 (Sep 30 close approx CHF 3.98-4.0, down ~55% YTD from ~CHF 8.7 at end of 2021; market cap roughly CHF 10-11bn). Approximate from memory/press, not verified from a source fetched.",
+  "ratings_context": "DBRS downgraded CS AG LT issuer rating to BBB? (that was Oct 2022 -- excluded/not verified pre-Oct-1)",
+  "social_media_rumour_as_of_Oct1": "Irish Times (Oct 3) says the bank was responding to 'rumours on social media about the bank's financial resilience' and a CDS spike during the previous week. In the week of Sep 26-30 Twitter/finance-Twitter posts compared CS to Lehman (CDS spike, 'Lehman moment' framing; Bloomberg reported CS Singapore/Asia and some clients asked about exposure); unverified details: I did not find a specific tweet pre-Oct-1. Weekend of Oct 1-2: Swiss press (e.g. Blick headline 'Anleger fürchten jetzt Konkurs', riskier than Greek banks) amplified; treat Blick as ~Oct 1-3.",
+  "other_pre_Oct1_context": "Q2 2022 net loss CHF 1.59bn; AUM CHF 1,453.9bn (-10.9% YoY); Q2 net new assets -CHF 9.1bn total (WM -1.4, Swiss Bank -1.6, AM -6.1); CET1 ratio ~13.5% (CET1 capital CHF 37.0bn); 2021 Archegos and Greensill losses; earlier Sept 2022 CS statements of 'strong' capital; Koerner Sept 27 press mentions plan to take decisions earlier."
+ },
+ "sources_list": [
+  "https://www.sec.gov/Archives/edgar/data/1053092/000137036822000068/cs-20220630_991.htm",
+  "https://www.cash.ch/news/top-news/credit-suisse-chef-in-memo-haben-starke-kapitalbasis-und-liquiditat-536419",
+  "https://www.irishtimes.com/business/2022/10/03/credit-suisse-cds-hit-record-high-as-shares-tumble/",
+  "https://fortune.com/2022/10/03/credit-suisse-ceo-ulrich-koerner-botched-attempt-convince-employees-bank-is-financially-stable-sends-shares-record-lows",
+  "https://www.euronews.com/next/2022/10/03/credit-suisse-gp-shares",
+  "https://www.beobachter.ch/banken/wo-ist-mein-geld-sicher",
+  "https://www.blick.ch/wirtschaft/anleger-fuerchten-jetzt-cs-konkurs-credit-suisse-sogar-riskanter-als-griechische-krisenbank-id18397176.html"
+ ],
+ "confidence_notes": "Items 1,2 and AUM regions: high (primary source). Insured share, additional liquidity, deposit geography: estimates. Share price/CDS Sep 30: approximate; SNB LSFF note is uncertain."
+}

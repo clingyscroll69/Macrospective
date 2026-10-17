@@ -1,0 +1,23 @@
+{
+ "company_type": "bank",
+ "company": "Silicon Valley Bank (SVB)",
+ "start": "2023-03-08 17:00 PT (after SVB announces $1.8B AFS bond loss and $2.25B capital raise)",
+ "base_rumour": "SVB just sold its bond portfolio at a $1.8B loss and needs to raise $2.25B in emergency capital. VCs are telling their portfolio companies to pull all their money out of SVB now before it fails. Over 90% of deposits are uninsured.",
+ "regions": {
+  "SF_Bay_Area": "Core SVB market; dense VC/founder group chats; heavy X use; very high share of uninsured startup deposits; high trust in VC network signals, low patience.",
+  "New_York": "Finance-savvy; many fintech/VC; X and Bloomberg terminals; moderate SVB exposure.",
+  "Boston": "Biotech/life-science startups heavily banked at SVB; Slack/WhatsApp groups; moderate X.",
+  "Austin_Seattle_LA": "Secondary tech hubs; moderate SVB exposure; X and LinkedIn.",
+  "London_UK": "SVB UK subsidiary; UK startups; WhatsApp-heavy; time zone +8h from PT.",
+  "Israel": "Many Israeli startups banked with SVB; very dense WhatsApp founder groups; time zone +10h.",
+  "India": "Indian SaaS startups with SVB accounts; WhatsApp-heavy; time zone +12.5h.",
+  "Rest_of_US": "Low SVB exposure, general public; consumes cable news/recommendation feeds."
+ },
+ "responses": {
+  "R0_silence": "No further statement beyond the original capital-raise press release.",
+  "R1_actual": "ACTUAL: Becker call with clients/VCs ~13:00 PT Mar 9 (\"stay calm\", \"ample liquidity\"); RM emails \"business as usual\" ~18:00 PT Mar 9.",
+  "R2_early_vc_coalition": "At 21:00 PT Mar 8, a coalition of top VC firms publicly states they will keep their portfolio funds at SVB and backstop the raise.",
+  "R3_full_backstop": "At 19:00 PT Mar 8, SVB announces fully committed capital from a strategic investor plus a Fed discount-window facility, with balance-sheet numbers.",
+  "R4_regulator_guarantee": "At 20:00 PT Mar 8, regulators announce all deposits are guaranteed (as eventually done Mar 12)."
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "large_share": {
+  "best": 0.67, "low": 0.55, "high": 0.80,
+  "definition": "Share of ~$173bn total deposits in accounts >~$5-10m whose holders decide like institutions (corporate treasury, funds/GPs, PE fund banking, large relationships).",
+  "derivation": "Q4-2022 investor materials client-niche split of $173bn: early-stage tech 30%, tech (growth/late/public) 21%, international 18%, US Global Fund Banking 13%, early-stage life science 9%, private bank 6%, life science 3%. Applied judgmental large-account share of balances per niche (my assumptions, not disclosed): fund banking 90% (capital-call/ distribution lines, PE and VC funds) =11.7; tech 90% =18.9; life science 90% =2.7; international 65% (UK/Israel/India/China funds and corporates) =11.7; early-stage tech 55% (many accounts $1-50m post-raise, but long tail of small startups) =16.5; early-stage LS 50% =4.5; private bank 20% (mostly high-net-worth individuals, wine) =1.2. Sum ~67% of total. Cross-checks: 10-K uninsured deposits (US offices) $151.5bn ~88% of total, FDIC call report ~89-94% uninsured, so accounts above $250k are ~90% of deposits; large (>$5-10m) is a strict subset; 10-K says deposits concentrated in tech, life science/healthcare, PE/VC clients; Fed review (reproducing Q4-22 slide) says VC-backed companies >50% of deposits. Low case 55% if early-stage balances are more fragmented; high case 80% if most early-stage cash sits in post-Series-A treasuries >$10m.",
+  "sources": [
+   "SVB Financial Group FY2022 10-K https://www.sec.gov/Archives/edgar/data/719739/000071973923000021/sivb-20221231.htm (uninsured US deposits $151.5bn vs $166.0bn; foreign deposits $13.9bn; deposit sources tech/life science/PE-VC/private bank)",
+   "SVBFG Q4 2022 financial highlights client-niche pie (percentages as reproduced at https://federalreserve.gov/publications/2023-April-SVB-Evolution-of-Silicon-Valley-Bank.htm; the underlying figures are the Q4-22 investor slide, dated Dec 31 2022)",
+   "Call report/FFIEC Dec 2022 uninsured share ~88-94% depending on denominator (S&P MI 93.8%, FDIC ~89%)"
+  ],
+  "caveat": "Per-niche large-account fractions are analyst assumptions; SVB did not disclose balance distribution by account size in pre-Mar-2023 filings beyond the insured/uninsured split."
+ },
+ "regional_split": {
+  "basis": "Share of the large-account pool (~67% of deposits); judgmental, from SVB offices/niche geography (10-K: domestic ~92% of deposits, foreign $13.9bn ~8% booked; international niche 18% includes US-booked deposits of foreign-linked clients). No disclosed regional deposit table.",
+  "SF_Bay_Area": 0.28, "New_York": 0.12, "Boston": 0.10, "other_US_hubs_(LA,SD,Seattle,Austin,Denver,DC,Chicago,etc)": 0.17,
+  "London_UK_Europe": 0.08, "Israel": 0.04, "India": 0.03, "China_HK_Asia_other": 0.04, "rest_of_US": 0.14,
+  "note": "Sums to 1.00; US total ~81%, international ~19%. Wide uncertainty (+/-5pts each)."
+ },
+ "archetypes": [
+  {"name": "Early/mid-stage VC-backed tech treasuries (post-raise cash, >$5m)", "share_of_total_deposits": 0.17, "region_mix": "Bay Area 40%, NY 12%, Boston 8%, other US 25%, intl 15%", "notes": "Part of 30% early-stage tech niche; cash from rounds, burn down over 18-24m, strongly herd/VC-network driven, highly correlated via shared investors and Slack/Twitter chains."},
+  {"name": "Growth/late-stage and public tech corporate treasuries", "share_of_total_deposits": 0.19, "region_mix": "Bay Area 35%, NY 10%, Boston 8%, other US 27%, intl 20%", "notes": "21% tech niche plus part of intl; professional CFO/treasurer decisions, often multi-bank with sweep to off-balance-sheet funds; large concentrations (several accounts in the $1bn range)."},
+  {"name": "VC and growth fund accounts (GP/management co. and fund-level), Global Fund Banking", "share_of_total_deposits": 0.10, "region_mix": "Bay Area 25%, NY 20%, Boston 8%, other US 17%, intl 30%", "notes": "Part of 13% US Global Fund Banking; capital call/distribution cash, subscription-line relationships tie deposits to credit; institutional decision-makers; influential to portfolio companies."},
+  {"name": "PE fund banking and PE-owned portfolio cos", "share_of_total_deposits": 0.05, "region_mix": "NY 35%, Boston 15%, other US 30%, intl 20%", "notes": "Remainder of Global Fund Banking; rest of the 13% fund niche; large but fewer, sophisticated."},
+  {"name": "International funds and corporates (UK, Israel, India, China)", "share_of_total_deposits": 0.12, "region_mix": "UK/Europe 40%, Israel 18%, India 12%, China/HK/Asia 17%, other 13%", "notes": "~65% of 18% intl niche; mix of VC-backed startups and funds, with UK branch and SVB Capital linkages; vulnerable to cross-border info networks."},
+  {"name": "Life-science / healthcare corporates (biotech treasuries)", "share_of_total_deposits": 0.07, "region_mix": "Boston 30%, Bay Area 28%, San Diego/other US 32%, intl 10%", "notes": "~6.5% of 12% life-science niches (early + established); funded by large crossover/IPO rounds, long runway, treasury-managed, big balances but less fast-moving."},
+  {"name": "Private bank / wine / HNW and other relationships (large)", "share_of_total_deposits": 0.01, "region_mix": "Bay Area 60%, other US 40%", "notes": "Mostly individuals/founders; only a small part of 6% private-bank niche behaves as large institutional accounts."}
+ ],
+ "archetype_total_check": "0.17+0.19+0.10+0.05+0.12+0.07+0.01 = 0.71, slightly above 0.67 best large_share because of rounding/overlap; treat archetype shares as upper-leaning (scale by ~0.94 to reconcile)."
+}

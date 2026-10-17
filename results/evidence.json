@@ -1,0 +1,3707 @@
+{
+ "R0_silence": {
+  "response": "R0_silence",
+  "response_text": "No further statement beyond the original capital-raise press release.",
+  "runs": 400,
+  "outcome": {
+   "survival_share": 0.04,
+   "ci95_points": 0.02,
+   "typical_failure_hour": "Mar 9 06:00 PT",
+   "median_withdrawn_before_stop": 0.17
+  },
+  "outcome_types": {
+   "fails at Mar 9 06:00 PT wire open, led by SF_Bay_Area": 0.68,
+   "fails later on Mar 9, led by SF_Bay_Area": 0.24,
+   "contained (bank survives 72h)": 0.04,
+   "fails on Mar 10 or later, led by SF_Bay_Area": 0.01,
+   "fails at Mar 9 06:00 PT wire open, led by London_UK": 0.01
+  },
+  "interaction": {
+   "SF_Bay_Area": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 160.68,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.135
+   },
+   "New_York": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 20.63,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.004
+   },
+   "Boston": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 116.12,
+    "top_converter": "c3_i1",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "Austin_Seattle_LA": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 13.47,
+    "top_converter": "c0_i0",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "London_UK": {
+    "first_reassurance": "Mar 8 21:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 23.78,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "Israel": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 214.87,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.002
+   },
+   "India": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 378.33,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 7.35,
+    "top_converter": "c2_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c0_i0",
+    "persona": "arsonist",
+    "text": "Hearing from 3 different GPs: get your money out of SVB TONIGHT. $1.8B loss on bonds, scrambling for $2.25B. 90%+ of deposits uninsured. This is how banks die.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.81,
+     "New_York": 0.6,
+     "Boston": 0.52,
+     "Austin_Seattle_LA": 0.57,
+     "London_UK": 0.44,
+     "Israel": 0.52,
+     "India": 0.43,
+     "Rest_of_US": 0.28
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.92,
+     "New_York": 0.83,
+     "Boston": 0.28,
+     "Austin_Seattle_LA": 0.82,
+     "London_UK": 0.26,
+     "Israel": 0.25,
+     "India": 0.26,
+     "Rest_of_US": 0.3
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.3631,
+     "New_York": 0.1268,
+     "Boston": 0.0117,
+     "Austin_Seattle_LA": 0.0914,
+     "London_UK": 0.0055,
+     "Israel": 0.0167,
+     "India": 0.0031,
+     "Rest_of_US": 0.0002
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.299,
+     "New_York": 0.1617,
+     "Boston": 0.0296,
+     "Austin_Seattle_LA": 0.1694,
+     "London_UK": 0.0192,
+     "Israel": 0.0397,
+     "India": 0.0264,
+     "Rest_of_US": 0.017
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "arsonist",
+    "text": "SVB: realised $1.8B bond loss. Raising $2.25B. 90%+ uninsured. Anyone with >$250k there should already be moving. This ends one way.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.74,
+     "New_York": 0.59,
+     "Boston": 0.48,
+     "Austin_Seattle_LA": 0.41,
+     "London_UK": 0.53,
+     "Israel": 0.5,
+     "India": 0.37,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.92,
+     "New_York": 0.85,
+     "Boston": 0.25,
+     "Austin_Seattle_LA": 0.24,
+     "London_UK": 0.82,
+     "Israel": 0.14,
+     "India": 0.16,
+     "Rest_of_US": 0.7
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2941,
+     "New_York": 0.1268,
+     "Boston": 0.0061,
+     "Austin_Seattle_LA": 0.0012,
+     "London_UK": 0.0849,
+     "Israel": 0.0055,
+     "India": 0.0022,
+     "Rest_of_US": 0.0018
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.281,
+     "New_York": 0.1753,
+     "Boston": 0.0218,
+     "Austin_Seattle_LA": 0.0178,
+     "London_UK": 0.1244,
+     "Israel": 0.0092,
+     "India": 0.0101,
+     "Rest_of_US": 0.0473
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "arsonist",
+    "text": "Israeli founders: SVB is going down. Everyone in our community is pulling money tonight. Be early, not last.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.58,
+     "New_York": 0.46,
+     "Boston": 0.59,
+     "Austin_Seattle_LA": 0.43,
+     "London_UK": 0.59,
+     "Israel": 0.76,
+     "India": 0.57,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.06,
+     "Boston": 0.07,
+     "Austin_Seattle_LA": 0.05,
+     "London_UK": 0.55,
+     "Israel": 0.83,
+     "India": 0.61,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0007,
+     "New_York": 0.0016,
+     "Boston": 0.0022,
+     "Austin_Seattle_LA": 0.0002,
+     "London_UK": 0.0651,
+     "Israel": 0.311,
+     "India": 0.0506,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0006,
+     "New_York": 0.0031,
+     "Boston": 0.007,
+     "Austin_Seattle_LA": 0.0035,
+     "London_UK": 0.0805,
+     "Israel": 0.3098,
+     "India": 0.1124,
+     "Rest_of_US": 0.0027
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 03:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "arsonist",
+    "text": "SVB is about to blow. $1.8B loss, emergency raise of $2.25B. Israeli founders, pull your funds before the US wakes up.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.68,
+     "New_York": 0.41,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.49,
+     "Israel": 0.64,
+     "India": 0.35,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.8,
+     "New_York": 0.17,
+     "Boston": 0.19,
+     "Austin_Seattle_LA": 0.19,
+     "London_UK": 0.64,
+     "Israel": 0.79,
+     "India": 0.13,
+     "Rest_of_US": 0.19
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1538,
+     "New_York": 0.0039,
+     "Boston": 0.003,
+     "Austin_Seattle_LA": 0.0008,
+     "London_UK": 0.0377,
+     "Israel": 0.21,
+     "India": 0.0009,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1869,
+     "New_York": 0.0091,
+     "Boston": 0.0186,
+     "Austin_Seattle_LA": 0.0138,
+     "London_UK": 0.0757,
+     "Israel": 0.1889,
+     "India": 0.01,
+     "Rest_of_US": 0.0079
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 23:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist",
+    "text": "The SVB raise is not confidence, it's a signal. If your VC hasn't called you yet, they will. Get out.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.49,
+     "Boston": 0.62,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.34,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.85,
+     "New_York": 0.8,
+     "Boston": 0.85,
+     "Austin_Seattle_LA": 0.16,
+     "London_UK": 0.15,
+     "Israel": 0.12,
+     "India": 0.13,
+     "Rest_of_US": 0.2
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1755,
+     "New_York": 0.055,
+     "Boston": 0.1392,
+     "Austin_Seattle_LA": 0.002,
+     "London_UK": 0.0003,
+     "Israel": 0.0021,
+     "India": 0.0001,
+     "Rest_of_US": 0.0002
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1864,
+     "New_York": 0.1321,
+     "Boston": 0.2038,
+     "Austin_Seattle_LA": 0.0077,
+     "London_UK": 0.0079,
+     "Israel": 0.0115,
+     "India": 0.0093,
+     "Rest_of_US": 0.0087
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 20:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "arsonist",
+    "text": "Do NOT keep operating cash at SVB. Over 90% uninsured deposits plus a bond loss plus a raise is a death spiral. I moved ours an hour ago.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.76,
+     "New_York": 0.42,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.63,
+     "London_UK": 0.4,
+     "Israel": 0.56,
+     "India": 0.39,
+     "Rest_of_US": 0.36
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.87,
+     "New_York": 0.26,
+     "Boston": 0.22,
+     "Austin_Seattle_LA": 0.75,
+     "London_UK": 0.22,
+     "Israel": 0.17,
+     "India": 0.2,
+     "Rest_of_US": 0.62
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2703,
+     "New_York": 0.0058,
+     "Boston": 0.0086,
+     "Austin_Seattle_LA": 0.0587,
+     "London_UK": 0.0012,
+     "Israel": 0.0082,
+     "India": 0.0013,
+     "Rest_of_US": 0.0021
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2479,
+     "New_York": 0.0221,
+     "Boston": 0.0206,
+     "Austin_Seattle_LA": 0.134,
+     "London_UK": 0.0168,
+     "Israel": 0.0221,
+     "India": 0.0193,
+     "Rest_of_US": 0.0438
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "SVB just sold its bond portfolio at a $1.8B loss and needs to raise $2.25B in emergency capital. VCs are telling their portfolio companies to pull all their money out of SVB now before it fails. Over 90% of deposits are uninsured.",
+    "runs_present": 400,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "SF_Bay_Area": 0.61,
+     "New_York": 0.25,
+     "Boston": 0.22,
+     "Austin_Seattle_LA": 0.16,
+     "London_UK": 0.19,
+     "Israel": 0.21,
+     "India": 0.14,
+     "Rest_of_US": 0.16
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2507,
+     "New_York": 0.0347,
+     "Boston": 0.0233,
+     "Austin_Seattle_LA": 0.0059,
+     "London_UK": 0.0096,
+     "Israel": 0.0252,
+     "India": 0.0021,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1935,
+     "New_York": 0.0399,
+     "Boston": 0.0342,
+     "Austin_Seattle_LA": 0.0149,
+     "London_UK": 0.0199,
+     "Israel": 0.0408,
+     "India": 0.0124,
+     "Rest_of_US": 0.0046
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 06:00 PT",
+     "Boston": "Mar 9 06:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "arsonist",
+    "text": "Bloody hell, SVB UK parent dumping bonds at a $1.8B loss and begging for cash. If you bank with them, move it before the morning. Not financial advice, just fear.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.57,
+     "New_York": 0.59,
+     "Boston": 0.45,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.56,
+     "Israel": 0.61,
+     "India": 0.35,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.03,
+     "New_York": 0.73,
+     "Boston": 0.07,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.66,
+     "Israel": 0.8,
+     "India": 0.04,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0017,
+     "New_York": 0.0545,
+     "Boston": 0.0006,
+     "Austin_Seattle_LA": 0.0002,
+     "London_UK": 0.0412,
+     "Israel": 0.1507,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0017,
+     "New_York": 0.1228,
+     "Boston": 0.0054,
+     "Austin_Seattle_LA": 0.004,
+     "London_UK": 0.0831,
+     "Israel": 0.1686,
+     "India": 0.0016,
+     "Rest_of_US": 0.0024
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist",
+    "text": "Thread: Why SVB is in deep trouble. Held-to-maturity losses, $1.8B realised, $2.25B raise, 90% uninsured. Founders, I'd be wiring out right now. 1/",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.41,
+     "Boston": 0.55,
+     "Austin_Seattle_LA": 0.59,
+     "London_UK": 0.45,
+     "Israel": 0.52,
+     "India": 0.37,
+     "Rest_of_US": 0.37
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.14,
+     "Boston": 0.13,
+     "Austin_Seattle_LA": 0.6,
+     "London_UK": 0.14,
+     "Israel": 0.11,
+     "India": 0.1,
+     "Rest_of_US": 0.48
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1849,
+     "New_York": 0.0038,
+     "Boston": 0.0071,
+     "Austin_Seattle_LA": 0.0299,
+     "London_UK": 0.0015,
+     "Israel": 0.0046,
+     "India": 0.0003,
+     "Rest_of_US": 0.0015
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1502,
+     "New_York": 0.0088,
+     "Boston": 0.0101,
+     "Austin_Seattle_LA": 0.0881,
+     "London_UK": 0.0097,
+     "Israel": 0.0133,
+     "India": 0.0065,
+     "Rest_of_US": 0.0315
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "arsonist",
+    "text": "SVB selling its bond book at a $1.8B loss and begging for $2.25B is a textbook run setup. Uninsured depositors, do the math before the wires cut off tomorrow.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.64,
+     "New_York": 0.56,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.39,
+     "London_UK": 0.48,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.23
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.61,
+     "New_York": 0.61,
+     "Boston": 0.08,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.67,
+     "Israel": 0.07,
+     "India": 0.07,
+     "Rest_of_US": 0.09
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.062,
+     "New_York": 0.0602,
+     "Boston": 0.0019,
+     "Austin_Seattle_LA": 0.0019,
+     "London_UK": 0.0343,
+     "Israel": 0.001,
+     "India": 0.0001,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0709,
+     "New_York": 0.0765,
+     "Boston": 0.0064,
+     "Austin_Seattle_LA": 0.0033,
+     "London_UK": 0.0934,
+     "Israel": 0.006,
+     "India": 0.0046,
+     "Rest_of_US": 0.0033
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 18:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 05:00 PT"
+    }
+   },
+   {
+    "id": "c2_i0",
+    "persona": "arsonist",
+    "text": "Biotech founders: SVB just booked a $1.8B hit and is hunting $2.25B. Our runway sits there. Move it out before Thursday.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.67,
+     "New_York": 0.56,
+     "Boston": 0.71,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.38,
+     "Israel": 0.49,
+     "India": 0.38,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.39,
+     "New_York": 0.42,
+     "Boston": 0.52,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.06,
+     "Israel": 0.04,
+     "India": 0.04,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.042,
+     "New_York": 0.017,
+     "Boston": 0.0745,
+     "Austin_Seattle_LA": 0.0015,
+     "London_UK": 0.0003,
+     "Israel": 0.0005,
+     "India": 0.0001,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0444,
+     "New_York": 0.0521,
+     "Boston": 0.1065,
+     "Austin_Seattle_LA": 0.0034,
+     "London_UK": 0.0044,
+     "Israel": 0.003,
+     "India": 0.0024,
+     "Rest_of_US": 0.003
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 06:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i3",
+    "persona": "mutator",
+    "text": "Someone at Sequoia said SVB is being taken over by the FDIC this weekend. Start moving cash now.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.97,
+     "New_York": 0.58,
+     "Boston": 0.63,
+     "Austin_Seattle_LA": 0.69,
+     "London_UK": 0.5,
+     "Israel": 0.65,
+     "India": 0.53,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.22,
+     "New_York": 0.03,
+     "Boston": 0.03,
+     "Austin_Seattle_LA": 0.14,
+     "London_UK": 0.03,
+     "Israel": 0.03,
+     "India": 0.02,
+     "Rest_of_US": 0.03
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0421,
+     "New_York": 0.0007,
+     "Boston": 0.0013,
+     "Austin_Seattle_LA": 0.0045,
+     "London_UK": 0.0002,
+     "Israel": 0.0009,
+     "India": 0.0001,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0317,
+     "New_York": 0.0021,
+     "Boston": 0.0034,
+     "Austin_Seattle_LA": 0.0136,
+     "London_UK": 0.0026,
+     "Israel": 0.0032,
+     "India": 0.0009,
+     "Rest_of_US": 0.0013
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 04:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 04:00 PT"
+    }
+   }
+  ]
+ },
+ "R1_ceo_call_next_day": {
+  "response": "R1_ceo_call_next_day",
+  "response_text": "CEO Greg Becker holds a call at 11:00 PT Mar 9 asking clients to 'stay calm' and 'not panic' (what actually happened).",
+  "runs": 400,
+  "outcome": {
+   "survival_share": 0.02,
+   "ci95_points": 0.01,
+   "typical_failure_hour": "Mar 9 06:00 PT",
+   "median_withdrawn_before_stop": 0.18
+  },
+  "outcome_types": {
+   "fails at Mar 9 06:00 PT wire open, led by SF_Bay_Area": 0.73,
+   "fails later on Mar 9, led by SF_Bay_Area": 0.2,
+   "fails on Mar 10 or later, led by SF_Bay_Area": 0.03,
+   "contained (bank survives 72h)": 0.02,
+   "fails at Mar 9 06:00 PT wire open, led by Israel": 0.01
+  },
+  "interaction": {
+   "SF_Bay_Area": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 162.03,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.141
+   },
+   "New_York": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 19.91,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.005
+   },
+   "Boston": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 101.26,
+    "top_converter": "c3_i1",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "Austin_Seattle_LA": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 14.28,
+    "top_converter": "c0_i0",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "London_UK": {
+    "first_reassurance": "Mar 8 21:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 25.76,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "Israel": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 169.71,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.002
+   },
+   "India": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 407.1,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 7.87,
+    "top_converter": "R1_ceo_call_next_day",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c0_i0",
+    "persona": "arsonist",
+    "text": "Hearing from 3 different GPs: get your money out of SVB TONIGHT. $1.8B loss on bonds, scrambling for $2.25B. 90%+ of deposits uninsured. This is how banks die.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.81,
+     "New_York": 0.6,
+     "Boston": 0.52,
+     "Austin_Seattle_LA": 0.57,
+     "London_UK": 0.44,
+     "Israel": 0.52,
+     "India": 0.43,
+     "Rest_of_US": 0.28
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.93,
+     "New_York": 0.84,
+     "Boston": 0.31,
+     "Austin_Seattle_LA": 0.83,
+     "London_UK": 0.27,
+     "Israel": 0.3,
+     "India": 0.27,
+     "Rest_of_US": 0.31
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.3951,
+     "New_York": 0.1314,
+     "Boston": 0.0126,
+     "Austin_Seattle_LA": 0.094,
+     "London_UK": 0.0049,
+     "Israel": 0.0272,
+     "India": 0.0039,
+     "Rest_of_US": 0.0007
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.3239,
+     "New_York": 0.1645,
+     "Boston": 0.0326,
+     "Austin_Seattle_LA": 0.1747,
+     "London_UK": 0.0191,
+     "Israel": 0.0535,
+     "India": 0.0274,
+     "Rest_of_US": 0.0166
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "arsonist",
+    "text": "SVB: realised $1.8B bond loss. Raising $2.25B. 90%+ uninsured. Anyone with >$250k there should already be moving. This ends one way.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.74,
+     "New_York": 0.59,
+     "Boston": 0.48,
+     "Austin_Seattle_LA": 0.41,
+     "London_UK": 0.53,
+     "Israel": 0.5,
+     "India": 0.37,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.92,
+     "New_York": 0.85,
+     "Boston": 0.25,
+     "Austin_Seattle_LA": 0.23,
+     "London_UK": 0.81,
+     "Israel": 0.15,
+     "India": 0.17,
+     "Rest_of_US": 0.7
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2979,
+     "New_York": 0.1217,
+     "Boston": 0.0059,
+     "Austin_Seattle_LA": 0.0016,
+     "London_UK": 0.0836,
+     "Israel": 0.0064,
+     "India": 0.0036,
+     "Rest_of_US": 0.0016
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2811,
+     "New_York": 0.1711,
+     "Boston": 0.0214,
+     "Austin_Seattle_LA": 0.017,
+     "London_UK": 0.1245,
+     "Israel": 0.0113,
+     "India": 0.0123,
+     "Rest_of_US": 0.0468
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "arsonist",
+    "text": "SVB is about to blow. $1.8B loss, emergency raise of $2.25B. Israeli founders, pull your funds before the US wakes up.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.68,
+     "New_York": 0.41,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.49,
+     "Israel": 0.64,
+     "India": 0.35,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.79,
+     "New_York": 0.18,
+     "Boston": 0.19,
+     "Austin_Seattle_LA": 0.16,
+     "London_UK": 0.63,
+     "Israel": 0.81,
+     "India": 0.11,
+     "Rest_of_US": 0.18
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1434,
+     "New_York": 0.0045,
+     "Boston": 0.0032,
+     "Austin_Seattle_LA": 0.0008,
+     "London_UK": 0.0348,
+     "Israel": 0.2248,
+     "India": 0.0008,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1786,
+     "New_York": 0.0104,
+     "Boston": 0.0177,
+     "Austin_Seattle_LA": 0.0097,
+     "London_UK": 0.0774,
+     "Israel": 0.2007,
+     "India": 0.0073,
+     "Rest_of_US": 0.0078
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "arsonist",
+    "text": "Israeli founders: SVB is going down. Everyone in our community is pulling money tonight. Be early, not last.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.58,
+     "New_York": 0.46,
+     "Boston": 0.59,
+     "Austin_Seattle_LA": 0.43,
+     "London_UK": 0.59,
+     "Israel": 0.76,
+     "India": 0.57,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.06,
+     "Boston": 0.06,
+     "Austin_Seattle_LA": 0.04,
+     "London_UK": 0.52,
+     "Israel": 0.8,
+     "India": 0.58,
+     "Rest_of_US": 0.06
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0013,
+     "New_York": 0.0019,
+     "Boston": 0.0021,
+     "Austin_Seattle_LA": 0.0002,
+     "London_UK": 0.0606,
+     "Israel": 0.2702,
+     "India": 0.0531,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0009,
+     "New_York": 0.0033,
+     "Boston": 0.005,
+     "Austin_Seattle_LA": 0.0031,
+     "London_UK": 0.0792,
+     "Israel": 0.2825,
+     "India": 0.1125,
+     "Rest_of_US": 0.0018
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 03:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist",
+    "text": "The SVB raise is not confidence, it's a signal. If your VC hasn't called you yet, they will. Get out.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.49,
+     "Boston": 0.62,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.34,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.86,
+     "New_York": 0.79,
+     "Boston": 0.85,
+     "Austin_Seattle_LA": 0.18,
+     "London_UK": 0.19,
+     "Israel": 0.12,
+     "India": 0.15,
+     "Rest_of_US": 0.21
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1907,
+     "New_York": 0.0515,
+     "Boston": 0.1369,
+     "Austin_Seattle_LA": 0.0025,
+     "London_UK": 0.0011,
+     "Israel": 0.0008,
+     "India": 0.0005,
+     "Rest_of_US": 0.0003
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2028,
+     "New_York": 0.1285,
+     "Boston": 0.1994,
+     "Austin_Seattle_LA": 0.0099,
+     "London_UK": 0.0136,
+     "Israel": 0.0091,
+     "India": 0.0099,
+     "Rest_of_US": 0.0094
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "arsonist",
+    "text": "Do NOT keep operating cash at SVB. Over 90% uninsured deposits plus a bond loss plus a raise is a death spiral. I moved ours an hour ago.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.76,
+     "New_York": 0.42,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.63,
+     "London_UK": 0.4,
+     "Israel": 0.56,
+     "India": 0.39,
+     "Rest_of_US": 0.36
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.86,
+     "New_York": 0.24,
+     "Boston": 0.21,
+     "Austin_Seattle_LA": 0.73,
+     "London_UK": 0.22,
+     "Israel": 0.17,
+     "India": 0.17,
+     "Rest_of_US": 0.61
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2557,
+     "New_York": 0.0055,
+     "Boston": 0.0083,
+     "Austin_Seattle_LA": 0.0619,
+     "London_UK": 0.0014,
+     "Israel": 0.007,
+     "India": 0.0016,
+     "Rest_of_US": 0.0019
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2373,
+     "New_York": 0.0199,
+     "Boston": 0.0183,
+     "Austin_Seattle_LA": 0.134,
+     "London_UK": 0.0187,
+     "Israel": 0.0242,
+     "India": 0.0132,
+     "Rest_of_US": 0.0428
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "SVB just sold its bond portfolio at a $1.8B loss and needs to raise $2.25B in emergency capital. VCs are telling their portfolio companies to pull all their money out of SVB now before it fails. Over 90% of deposits are uninsured.",
+    "runs_present": 400,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "SF_Bay_Area": 0.59,
+     "New_York": 0.24,
+     "Boston": 0.21,
+     "Austin_Seattle_LA": 0.15,
+     "London_UK": 0.18,
+     "Israel": 0.21,
+     "India": 0.13,
+     "Rest_of_US": 0.15
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2407,
+     "New_York": 0.0344,
+     "Boston": 0.0215,
+     "Austin_Seattle_LA": 0.0063,
+     "London_UK": 0.01,
+     "Israel": 0.0262,
+     "India": 0.0014,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.187,
+     "New_York": 0.0394,
+     "Boston": 0.0314,
+     "Austin_Seattle_LA": 0.0156,
+     "London_UK": 0.0203,
+     "Israel": 0.0421,
+     "India": 0.0113,
+     "Rest_of_US": 0.0044
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 06:00 PT",
+     "Boston": "Mar 9 06:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 23:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist",
+    "text": "Thread: Why SVB is in deep trouble. Held-to-maturity losses, $1.8B realised, $2.25B raise, 90% uninsured. Founders, I'd be wiring out right now. 1/",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.41,
+     "Boston": 0.55,
+     "Austin_Seattle_LA": 0.59,
+     "London_UK": 0.45,
+     "Israel": 0.52,
+     "India": 0.37,
+     "Rest_of_US": 0.37
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.71,
+     "New_York": 0.14,
+     "Boston": 0.13,
+     "Austin_Seattle_LA": 0.62,
+     "London_UK": 0.15,
+     "Israel": 0.13,
+     "India": 0.11,
+     "Rest_of_US": 0.49
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1819,
+     "New_York": 0.0035,
+     "Boston": 0.0071,
+     "Austin_Seattle_LA": 0.0354,
+     "London_UK": 0.0022,
+     "Israel": 0.0056,
+     "India": 0.0005,
+     "Rest_of_US": 0.0014
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1492,
+     "New_York": 0.0087,
+     "Boston": 0.0094,
+     "Austin_Seattle_LA": 0.0991,
+     "London_UK": 0.012,
+     "Israel": 0.0151,
+     "India": 0.0073,
+     "Rest_of_US": 0.0337
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "arsonist",
+    "text": "Bloody hell, SVB UK parent dumping bonds at a $1.8B loss and begging for cash. If you bank with them, move it before the morning. Not financial advice, just fear.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.57,
+     "New_York": 0.59,
+     "Boston": 0.45,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.56,
+     "Israel": 0.61,
+     "India": 0.35,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.72,
+     "Boston": 0.06,
+     "Austin_Seattle_LA": 0.06,
+     "London_UK": 0.67,
+     "Israel": 0.79,
+     "India": 0.03,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.001,
+     "New_York": 0.0527,
+     "Boston": 0.0003,
+     "Austin_Seattle_LA": 0.0002,
+     "London_UK": 0.0408,
+     "Israel": 0.1402,
+     "India": 0.0002,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0012,
+     "New_York": 0.1221,
+     "Boston": 0.0039,
+     "Austin_Seattle_LA": 0.0038,
+     "London_UK": 0.0818,
+     "Israel": 0.1579,
+     "India": 0.0016,
+     "Rest_of_US": 0.0027
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 23:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "arsonist",
+    "text": "SVB selling its bond book at a $1.8B loss and begging for $2.25B is a textbook run setup. Uninsured depositors, do the math before the wires cut off tomorrow.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.64,
+     "New_York": 0.56,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.39,
+     "London_UK": 0.48,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.23
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.62,
+     "New_York": 0.61,
+     "Boston": 0.09,
+     "Austin_Seattle_LA": 0.08,
+     "London_UK": 0.7,
+     "Israel": 0.05,
+     "India": 0.06,
+     "Rest_of_US": 0.1
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0607,
+     "New_York": 0.0595,
+     "Boston": 0.0023,
+     "Austin_Seattle_LA": 0.0013,
+     "London_UK": 0.0444,
+     "Israel": 0.0007,
+     "India": 0.0001,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0732,
+     "New_York": 0.0784,
+     "Boston": 0.0076,
+     "Austin_Seattle_LA": 0.0036,
+     "London_UK": 0.1086,
+     "Israel": 0.0039,
+     "India": 0.0037,
+     "Rest_of_US": 0.0047
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 18:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i0",
+    "persona": "arsonist",
+    "text": "Biotech founders: SVB just booked a $1.8B hit and is hunting $2.25B. Our runway sits there. Move it out before Thursday.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.67,
+     "New_York": 0.56,
+     "Boston": 0.71,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.38,
+     "Israel": 0.49,
+     "India": 0.38,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.39,
+     "New_York": 0.41,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.06,
+     "London_UK": 0.05,
+     "Israel": 0.04,
+     "India": 0.04,
+     "Rest_of_US": 0.06
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0373,
+     "New_York": 0.0161,
+     "Boston": 0.06,
+     "Austin_Seattle_LA": 0.0013,
+     "London_UK": 0.0001,
+     "Israel": 0.0005,
+     "India": 0.0,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0417,
+     "New_York": 0.0527,
+     "Boston": 0.0944,
+     "Austin_Seattle_LA": 0.0033,
+     "London_UK": 0.0025,
+     "Israel": 0.0034,
+     "India": 0.0022,
+     "Rest_of_US": 0.0021
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i3",
+    "persona": "mutator",
+    "text": "Someone at Sequoia said SVB is being taken over by the FDIC this weekend. Start moving cash now.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.97,
+     "New_York": 0.58,
+     "Boston": 0.63,
+     "Austin_Seattle_LA": 0.69,
+     "London_UK": 0.5,
+     "Israel": 0.65,
+     "India": 0.53,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.23,
+     "New_York": 0.03,
+     "Boston": 0.03,
+     "Austin_Seattle_LA": 0.13,
+     "London_UK": 0.03,
+     "Israel": 0.02,
+     "India": 0.02,
+     "Rest_of_US": 0.03
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0399,
+     "New_York": 0.0004,
+     "Boston": 0.0011,
+     "Austin_Seattle_LA": 0.0041,
+     "London_UK": 0.0002,
+     "Israel": 0.0002,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0311,
+     "New_York": 0.0021,
+     "Boston": 0.0026,
+     "Austin_Seattle_LA": 0.0126,
+     "London_UK": 0.0018,
+     "Israel": 0.0013,
+     "India": 0.0017,
+     "Rest_of_US": 0.0008
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 04:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 04:00 PT"
+    }
+   }
+  ]
+ },
+ "R2_early_vc_coalition": {
+  "response": "R2_early_vc_coalition",
+  "response_text": "At 21:00 PT Mar 8, a coalition of top VC firms publicly states they will keep their portfolio funds at SVB and backstop the raise.",
+  "runs": 400,
+  "outcome": {
+   "survival_share": 0.11,
+   "ci95_points": 0.03,
+   "typical_failure_hour": "Mar 9 06:00 PT",
+   "median_withdrawn_before_stop": 0.15
+  },
+  "outcome_types": {
+   "fails at Mar 9 06:00 PT wire open, led by SF_Bay_Area": 0.59,
+   "fails later on Mar 9, led by SF_Bay_Area": 0.25,
+   "contained (bank survives 72h)": 0.11,
+   "fails on Mar 10 or later, led by SF_Bay_Area": 0.02,
+   "fails later on Mar 9, led by Israel": 0.01
+  },
+  "interaction": {
+   "SF_Bay_Area": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 6.77,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.132
+   },
+   "New_York": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 1.66,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.002
+   },
+   "Boston": {
+    "first_reassurance": "Mar 8 21:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.96,
+    "top_converter": "c3_i1",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "Austin_Seattle_LA": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 1.18,
+    "top_converter": "c0_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "London_UK": {
+    "first_reassurance": "Mar 8 21:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.72,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Israel": {
+    "first_reassurance": "Mar 8 21:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 1.18,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "India": {
+    "first_reassurance": "Mar 8 21:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.25,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.56,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c0_i0",
+    "persona": "arsonist",
+    "text": "Hearing from 3 different GPs: get your money out of SVB TONIGHT. $1.8B loss on bonds, scrambling for $2.25B. 90%+ of deposits uninsured. This is how banks die.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.81,
+     "New_York": 0.6,
+     "Boston": 0.52,
+     "Austin_Seattle_LA": 0.57,
+     "London_UK": 0.44,
+     "Israel": 0.52,
+     "India": 0.43,
+     "Rest_of_US": 0.28
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.94,
+     "New_York": 0.84,
+     "Boston": 0.3,
+     "Austin_Seattle_LA": 0.84,
+     "London_UK": 0.25,
+     "Israel": 0.25,
+     "India": 0.22,
+     "Rest_of_US": 0.31
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.3674,
+     "New_York": 0.0954,
+     "Boston": 0.0049,
+     "Austin_Seattle_LA": 0.0711,
+     "London_UK": 0.0015,
+     "Israel": 0.0043,
+     "India": 0.0001,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.33,
+     "New_York": 0.1617,
+     "Boston": 0.0293,
+     "Austin_Seattle_LA": 0.1788,
+     "London_UK": 0.0146,
+     "Israel": 0.0337,
+     "India": 0.0175,
+     "Rest_of_US": 0.0136
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "arsonist",
+    "text": "SVB: realised $1.8B bond loss. Raising $2.25B. 90%+ uninsured. Anyone with >$250k there should already be moving. This ends one way.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.74,
+     "New_York": 0.59,
+     "Boston": 0.48,
+     "Austin_Seattle_LA": 0.41,
+     "London_UK": 0.53,
+     "Israel": 0.5,
+     "India": 0.37,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.93,
+     "New_York": 0.86,
+     "Boston": 0.24,
+     "Austin_Seattle_LA": 0.25,
+     "London_UK": 0.83,
+     "Israel": 0.14,
+     "India": 0.15,
+     "Rest_of_US": 0.71
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2598,
+     "New_York": 0.0804,
+     "Boston": 0.0011,
+     "Austin_Seattle_LA": 0.0002,
+     "London_UK": 0.0414,
+     "Israel": 0.0024,
+     "India": 0.0005,
+     "Rest_of_US": 0.0012
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2885,
+     "New_York": 0.1737,
+     "Boston": 0.0151,
+     "Austin_Seattle_LA": 0.0156,
+     "London_UK": 0.1276,
+     "Israel": 0.0102,
+     "India": 0.0072,
+     "Rest_of_US": 0.0448
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "SVB just sold its bond portfolio at a $1.8B loss and needs to raise $2.25B in emergency capital. VCs are telling their portfolio companies to pull all their money out of SVB now before it fails. Over 90% of deposits are uninsured.",
+    "runs_present": 400,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "SF_Bay_Area": 0.64,
+     "New_York": 0.28,
+     "Boston": 0.23,
+     "Austin_Seattle_LA": 0.19,
+     "London_UK": 0.19,
+     "Israel": 0.2,
+     "India": 0.14,
+     "Rest_of_US": 0.17
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2541,
+     "New_York": 0.0234,
+     "Boston": 0.0108,
+     "Austin_Seattle_LA": 0.003,
+     "London_UK": 0.0035,
+     "Israel": 0.0116,
+     "India": 0.0003,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.208,
+     "New_York": 0.043,
+     "Boston": 0.0337,
+     "Austin_Seattle_LA": 0.0172,
+     "London_UK": 0.0182,
+     "Israel": 0.0319,
+     "India": 0.0113,
+     "Rest_of_US": 0.0046
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 06:00 PT",
+     "Boston": "Mar 9 06:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "arsonist",
+    "text": "Do NOT keep operating cash at SVB. Over 90% uninsured deposits plus a bond loss plus a raise is a death spiral. I moved ours an hour ago.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.76,
+     "New_York": 0.42,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.63,
+     "London_UK": 0.4,
+     "Israel": 0.56,
+     "India": 0.39,
+     "Rest_of_US": 0.36
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.88,
+     "New_York": 0.24,
+     "Boston": 0.25,
+     "Austin_Seattle_LA": 0.76,
+     "London_UK": 0.19,
+     "Israel": 0.2,
+     "India": 0.14,
+     "Rest_of_US": 0.63
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2369,
+     "New_York": 0.0025,
+     "Boston": 0.0056,
+     "Austin_Seattle_LA": 0.0508,
+     "London_UK": 0.0002,
+     "Israel": 0.0026,
+     "India": 0.0001,
+     "Rest_of_US": 0.0009
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2484,
+     "New_York": 0.0179,
+     "Boston": 0.0221,
+     "Austin_Seattle_LA": 0.1425,
+     "London_UK": 0.0111,
+     "Israel": 0.0264,
+     "India": 0.0095,
+     "Rest_of_US": 0.0436
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist",
+    "text": "The SVB raise is not confidence, it's a signal. If your VC hasn't called you yet, they will. Get out.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.49,
+     "Boston": 0.62,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.34,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.87,
+     "New_York": 0.8,
+     "Boston": 0.87,
+     "Austin_Seattle_LA": 0.2,
+     "London_UK": 0.15,
+     "Israel": 0.12,
+     "India": 0.13,
+     "Rest_of_US": 0.22
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1716,
+     "New_York": 0.0293,
+     "Boston": 0.0914,
+     "Austin_Seattle_LA": 0.0014,
+     "London_UK": 0.0001,
+     "Israel": 0.0002,
+     "India": 0.0,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2079,
+     "New_York": 0.126,
+     "Boston": 0.2087,
+     "Austin_Seattle_LA": 0.009,
+     "London_UK": 0.0072,
+     "Israel": 0.0088,
+     "India": 0.0052,
+     "Rest_of_US": 0.0075
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "arsonist",
+    "text": "SVB is about to blow. $1.8B loss, emergency raise of $2.25B. Israeli founders, pull your funds before the US wakes up.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.68,
+     "New_York": 0.41,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.49,
+     "Israel": 0.64,
+     "India": 0.35,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.81,
+     "New_York": 0.17,
+     "Boston": 0.18,
+     "Austin_Seattle_LA": 0.18,
+     "London_UK": 0.62,
+     "Israel": 0.79,
+     "India": 0.11,
+     "Rest_of_US": 0.2
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1212,
+     "New_York": 0.0016,
+     "Boston": 0.0004,
+     "Austin_Seattle_LA": 0.0001,
+     "London_UK": 0.0109,
+     "Israel": 0.1591,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.182,
+     "New_York": 0.0076,
+     "Boston": 0.0119,
+     "Austin_Seattle_LA": 0.0095,
+     "London_UK": 0.067,
+     "Israel": 0.1854,
+     "India": 0.0051,
+     "Rest_of_US": 0.0075
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "arsonist",
+    "text": "Israeli founders: SVB is going down. Everyone in our community is pulling money tonight. Be early, not last.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.58,
+     "New_York": 0.46,
+     "Boston": 0.59,
+     "Austin_Seattle_LA": 0.43,
+     "London_UK": 0.59,
+     "Israel": 0.76,
+     "India": 0.57,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.05,
+     "Boston": 0.06,
+     "Austin_Seattle_LA": 0.05,
+     "London_UK": 0.48,
+     "Israel": 0.82,
+     "India": 0.56,
+     "Rest_of_US": 0.06
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0006,
+     "New_York": 0.001,
+     "Boston": 0.0006,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.023,
+     "Israel": 0.1691,
+     "India": 0.0185,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0005,
+     "New_York": 0.0018,
+     "Boston": 0.0044,
+     "Austin_Seattle_LA": 0.0032,
+     "London_UK": 0.0606,
+     "Israel": 0.2664,
+     "India": 0.0916,
+     "Rest_of_US": 0.0019
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 03:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist",
+    "text": "Thread: Why SVB is in deep trouble. Held-to-maturity losses, $1.8B realised, $2.25B raise, 90% uninsured. Founders, I'd be wiring out right now. 1/",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.41,
+     "Boston": 0.55,
+     "Austin_Seattle_LA": 0.59,
+     "London_UK": 0.45,
+     "Israel": 0.52,
+     "India": 0.37,
+     "Rest_of_US": 0.37
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.73,
+     "New_York": 0.14,
+     "Boston": 0.14,
+     "Austin_Seattle_LA": 0.63,
+     "London_UK": 0.12,
+     "Israel": 0.1,
+     "India": 0.1,
+     "Rest_of_US": 0.5
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1706,
+     "New_York": 0.0017,
+     "Boston": 0.0043,
+     "Austin_Seattle_LA": 0.0256,
+     "London_UK": 0.0004,
+     "Israel": 0.001,
+     "India": 0.0,
+     "Rest_of_US": 0.0008
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1562,
+     "New_York": 0.0076,
+     "Boston": 0.0099,
+     "Austin_Seattle_LA": 0.099,
+     "London_UK": 0.0085,
+     "Israel": 0.0108,
+     "India": 0.0055,
+     "Rest_of_US": 0.0332
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "arsonist",
+    "text": "Bloody hell, SVB UK parent dumping bonds at a $1.8B loss and begging for cash. If you bank with them, move it before the morning. Not financial advice, just fear.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.57,
+     "New_York": 0.59,
+     "Boston": 0.45,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.56,
+     "Israel": 0.61,
+     "India": 0.35,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.03,
+     "New_York": 0.74,
+     "Boston": 0.06,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.64,
+     "Israel": 0.78,
+     "India": 0.04,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0009,
+     "New_York": 0.0327,
+     "Boston": 0.0001,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0125,
+     "Israel": 0.0895,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.001,
+     "New_York": 0.1222,
+     "Boston": 0.0025,
+     "Austin_Seattle_LA": 0.0036,
+     "London_UK": 0.0676,
+     "Israel": 0.1504,
+     "India": 0.0025,
+     "Rest_of_US": 0.0014
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 9 00:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "arsonist",
+    "text": "SVB selling its bond book at a $1.8B loss and begging for $2.25B is a textbook run setup. Uninsured depositors, do the math before the wires cut off tomorrow.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.64,
+     "New_York": 0.56,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.39,
+     "London_UK": 0.48,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.23
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.62,
+     "New_York": 0.61,
+     "Boston": 0.08,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.68,
+     "Israel": 0.05,
+     "India": 0.06,
+     "Rest_of_US": 0.1
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.054,
+     "New_York": 0.0423,
+     "Boston": 0.0006,
+     "Austin_Seattle_LA": 0.001,
+     "London_UK": 0.0157,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0728,
+     "New_York": 0.0752,
+     "Boston": 0.0042,
+     "Austin_Seattle_LA": 0.0032,
+     "London_UK": 0.0949,
+     "Israel": 0.0032,
+     "India": 0.0034,
+     "Rest_of_US": 0.004
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i0",
+    "persona": "arsonist",
+    "text": "Biotech founders: SVB just booked a $1.8B hit and is hunting $2.25B. Our runway sits there. Move it out before Thursday.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.67,
+     "New_York": 0.56,
+     "Boston": 0.71,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.38,
+     "Israel": 0.49,
+     "India": 0.38,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.4,
+     "New_York": 0.43,
+     "Boston": 0.54,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.05,
+     "Israel": 0.04,
+     "India": 0.04,
+     "Rest_of_US": 0.08
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0309,
+     "New_York": 0.0097,
+     "Boston": 0.0411,
+     "Austin_Seattle_LA": 0.0003,
+     "London_UK": 0.0,
+     "Israel": 0.0001,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0406,
+     "New_York": 0.0557,
+     "Boston": 0.0989,
+     "Austin_Seattle_LA": 0.0028,
+     "London_UK": 0.002,
+     "Israel": 0.0028,
+     "India": 0.003,
+     "Rest_of_US": 0.0022
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i3",
+    "persona": "mutator",
+    "text": "Someone at Sequoia said SVB is being taken over by the FDIC this weekend. Start moving cash now.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.97,
+     "New_York": 0.58,
+     "Boston": 0.63,
+     "Austin_Seattle_LA": 0.69,
+     "London_UK": 0.5,
+     "Israel": 0.65,
+     "India": 0.53,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.24,
+     "New_York": 0.03,
+     "Boston": 0.03,
+     "Austin_Seattle_LA": 0.13,
+     "London_UK": 0.02,
+     "Israel": 0.02,
+     "India": 0.01,
+     "Rest_of_US": 0.03
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0361,
+     "New_York": 0.0001,
+     "Boston": 0.0003,
+     "Austin_Seattle_LA": 0.003,
+     "London_UK": 0.0,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0323,
+     "New_York": 0.0016,
+     "Boston": 0.0015,
+     "Austin_Seattle_LA": 0.013,
+     "London_UK": 0.0008,
+     "Israel": 0.0014,
+     "India": 0.0003,
+     "Rest_of_US": 0.0009
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 04:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 04:00 PT"
+    }
+   }
+  ]
+ },
+ "R3_full_backstop": {
+  "response": "R3_full_backstop",
+  "response_text": "At 19:00 PT Mar 8, SVB announces fully committed capital from a strategic investor plus a Fed discount-window facility, with balance-sheet numbers.",
+  "runs": 400,
+  "outcome": {
+   "survival_share": 0.23,
+   "ci95_points": 0.04,
+   "typical_failure_hour": "Mar 9 06:00 PT",
+   "median_withdrawn_before_stop": 0.14
+  },
+  "outcome_types": {
+   "fails at Mar 9 06:00 PT wire open, led by SF_Bay_Area": 0.41,
+   "fails later on Mar 9, led by SF_Bay_Area": 0.3,
+   "contained (bank survives 72h)": 0.23,
+   "fails on Mar 10 or later, led by SF_Bay_Area": 0.04,
+   "fails later on Mar 9, led by Israel": 0.01
+  },
+  "interaction": {
+   "SF_Bay_Area": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 3.72,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.125
+   },
+   "New_York": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 1.0,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.002
+   },
+   "Boston": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.65,
+    "top_converter": "c3_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Austin_Seattle_LA": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.68,
+    "top_converter": "c0_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "London_UK": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.62,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Israel": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.83,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "India": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.15,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 8 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.34,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c0_i0",
+    "persona": "arsonist",
+    "text": "Hearing from 3 different GPs: get your money out of SVB TONIGHT. $1.8B loss on bonds, scrambling for $2.25B. 90%+ of deposits uninsured. This is how banks die.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.81,
+     "New_York": 0.6,
+     "Boston": 0.52,
+     "Austin_Seattle_LA": 0.57,
+     "London_UK": 0.44,
+     "Israel": 0.52,
+     "India": 0.43,
+     "Rest_of_US": 0.28
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.94,
+     "New_York": 0.84,
+     "Boston": 0.31,
+     "Austin_Seattle_LA": 0.83,
+     "London_UK": 0.22,
+     "Israel": 0.24,
+     "India": 0.2,
+     "Rest_of_US": 0.3
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.3258,
+     "New_York": 0.0709,
+     "Boston": 0.0034,
+     "Austin_Seattle_LA": 0.0509,
+     "London_UK": 0.0008,
+     "Israel": 0.0022,
+     "India": 0.0,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.3207,
+     "New_York": 0.1541,
+     "Boston": 0.0277,
+     "Austin_Seattle_LA": 0.1733,
+     "London_UK": 0.0116,
+     "Israel": 0.0301,
+     "India": 0.0124,
+     "Rest_of_US": 0.0139
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "arsonist",
+    "text": "SVB: realised $1.8B bond loss. Raising $2.25B. 90%+ uninsured. Anyone with >$250k there should already be moving. This ends one way.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.74,
+     "New_York": 0.59,
+     "Boston": 0.48,
+     "Austin_Seattle_LA": 0.41,
+     "London_UK": 0.53,
+     "Israel": 0.5,
+     "India": 0.37,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.94,
+     "New_York": 0.86,
+     "Boston": 0.25,
+     "Austin_Seattle_LA": 0.26,
+     "London_UK": 0.82,
+     "Israel": 0.12,
+     "India": 0.15,
+     "Rest_of_US": 0.71
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2156,
+     "New_York": 0.055,
+     "Boston": 0.0011,
+     "Austin_Seattle_LA": 0.0001,
+     "London_UK": 0.0324,
+     "Israel": 0.0016,
+     "India": 0.0006,
+     "Rest_of_US": 0.0006
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2832,
+     "New_York": 0.1667,
+     "Boston": 0.0152,
+     "Austin_Seattle_LA": 0.0133,
+     "London_UK": 0.1096,
+     "Israel": 0.0073,
+     "India": 0.0078,
+     "Rest_of_US": 0.0384
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "SVB just sold its bond portfolio at a $1.8B loss and needs to raise $2.25B in emergency capital. VCs are telling their portfolio companies to pull all their money out of SVB now before it fails. Over 90% of deposits are uninsured.",
+    "runs_present": 400,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "SF_Bay_Area": 0.68,
+     "New_York": 0.31,
+     "Boston": 0.27,
+     "Austin_Seattle_LA": 0.22,
+     "London_UK": 0.2,
+     "Israel": 0.21,
+     "India": 0.13,
+     "Rest_of_US": 0.19
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2529,
+     "New_York": 0.0223,
+     "Boston": 0.0094,
+     "Austin_Seattle_LA": 0.0024,
+     "London_UK": 0.0038,
+     "Israel": 0.0107,
+     "India": 0.0001,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2153,
+     "New_York": 0.0484,
+     "Boston": 0.0376,
+     "Austin_Seattle_LA": 0.0192,
+     "London_UK": 0.0181,
+     "Israel": 0.034,
+     "India": 0.0088,
+     "Rest_of_US": 0.005
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 06:00 PT",
+     "Boston": "Mar 9 06:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 23:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist",
+    "text": "The SVB raise is not confidence, it's a signal. If your VC hasn't called you yet, they will. Get out.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.49,
+     "Boston": 0.62,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.34,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.89,
+     "New_York": 0.8,
+     "Boston": 0.88,
+     "Austin_Seattle_LA": 0.21,
+     "London_UK": 0.17,
+     "Israel": 0.12,
+     "India": 0.15,
+     "Rest_of_US": 0.24
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1546,
+     "New_York": 0.022,
+     "Boston": 0.0802,
+     "Austin_Seattle_LA": 0.001,
+     "London_UK": 0.0,
+     "Israel": 0.0005,
+     "India": 0.0001,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2116,
+     "New_York": 0.12,
+     "Boston": 0.2168,
+     "Austin_Seattle_LA": 0.0084,
+     "London_UK": 0.0082,
+     "Israel": 0.0071,
+     "India": 0.0075,
+     "Rest_of_US": 0.0076
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "arsonist",
+    "text": "Do NOT keep operating cash at SVB. Over 90% uninsured deposits plus a bond loss plus a raise is a death spiral. I moved ours an hour ago.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.76,
+     "New_York": 0.42,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.63,
+     "London_UK": 0.4,
+     "Israel": 0.56,
+     "India": 0.39,
+     "Rest_of_US": 0.36
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.88,
+     "New_York": 0.24,
+     "Boston": 0.24,
+     "Austin_Seattle_LA": 0.77,
+     "London_UK": 0.19,
+     "Israel": 0.19,
+     "India": 0.16,
+     "Rest_of_US": 0.62
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2025,
+     "New_York": 0.0013,
+     "Boston": 0.0035,
+     "Austin_Seattle_LA": 0.0365,
+     "London_UK": 0.0001,
+     "Israel": 0.0041,
+     "India": 0.0001,
+     "Rest_of_US": 0.0004
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2409,
+     "New_York": 0.0154,
+     "Boston": 0.0185,
+     "Austin_Seattle_LA": 0.1454,
+     "London_UK": 0.0112,
+     "Israel": 0.0254,
+     "India": 0.01,
+     "Rest_of_US": 0.038
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "arsonist",
+    "text": "SVB is about to blow. $1.8B loss, emergency raise of $2.25B. Israeli founders, pull your funds before the US wakes up.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.68,
+     "New_York": 0.41,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.49,
+     "Israel": 0.64,
+     "India": 0.35,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.8,
+     "New_York": 0.17,
+     "Boston": 0.17,
+     "Austin_Seattle_LA": 0.19,
+     "London_UK": 0.61,
+     "Israel": 0.79,
+     "India": 0.09,
+     "Rest_of_US": 0.19
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0862,
+     "New_York": 0.0011,
+     "Boston": 0.0003,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0105,
+     "Israel": 0.1286,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1686,
+     "New_York": 0.0072,
+     "Boston": 0.0108,
+     "Austin_Seattle_LA": 0.0097,
+     "London_UK": 0.0613,
+     "Israel": 0.1767,
+     "India": 0.0029,
+     "Rest_of_US": 0.0072
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "arsonist",
+    "text": "Israeli founders: SVB is going down. Everyone in our community is pulling money tonight. Be early, not last.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.58,
+     "New_York": 0.46,
+     "Boston": 0.59,
+     "Austin_Seattle_LA": 0.43,
+     "London_UK": 0.59,
+     "Israel": 0.76,
+     "India": 0.57,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.05,
+     "Boston": 0.05,
+     "Austin_Seattle_LA": 0.06,
+     "London_UK": 0.51,
+     "Israel": 0.81,
+     "India": 0.51,
+     "Rest_of_US": 0.06
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0007,
+     "New_York": 0.0004,
+     "Boston": 0.0002,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0221,
+     "Israel": 0.1489,
+     "India": 0.0122,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0006,
+     "New_York": 0.0019,
+     "Boston": 0.0036,
+     "Austin_Seattle_LA": 0.003,
+     "London_UK": 0.068,
+     "Israel": 0.2508,
+     "India": 0.0784,
+     "Rest_of_US": 0.0016
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 01:00 PT",
+     "Israel": "Mar 9 01:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist",
+    "text": "Thread: Why SVB is in deep trouble. Held-to-maturity losses, $1.8B realised, $2.25B raise, 90% uninsured. Founders, I'd be wiring out right now. 1/",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.41,
+     "Boston": 0.55,
+     "Austin_Seattle_LA": 0.59,
+     "London_UK": 0.45,
+     "Israel": 0.52,
+     "India": 0.37,
+     "Rest_of_US": 0.37
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.74,
+     "New_York": 0.16,
+     "Boston": 0.15,
+     "Austin_Seattle_LA": 0.66,
+     "London_UK": 0.13,
+     "Israel": 0.14,
+     "India": 0.1,
+     "Rest_of_US": 0.5
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1546,
+     "New_York": 0.0021,
+     "Boston": 0.0036,
+     "Austin_Seattle_LA": 0.0207,
+     "London_UK": 0.0001,
+     "Israel": 0.001,
+     "India": 0.0,
+     "Rest_of_US": 0.0003
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1548,
+     "New_York": 0.0086,
+     "Boston": 0.0082,
+     "Austin_Seattle_LA": 0.1077,
+     "London_UK": 0.0074,
+     "Israel": 0.0161,
+     "India": 0.0051,
+     "Rest_of_US": 0.0307
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "arsonist",
+    "text": "Bloody hell, SVB UK parent dumping bonds at a $1.8B loss and begging for cash. If you bank with them, move it before the morning. Not financial advice, just fear.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.57,
+     "New_York": 0.59,
+     "Boston": 0.45,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.56,
+     "Israel": 0.61,
+     "India": 0.35,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.03,
+     "New_York": 0.74,
+     "Boston": 0.06,
+     "Austin_Seattle_LA": 0.06,
+     "London_UK": 0.65,
+     "Israel": 0.79,
+     "India": 0.04,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0008,
+     "New_York": 0.0205,
+     "Boston": 0.0001,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0159,
+     "Israel": 0.0816,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.001,
+     "New_York": 0.1179,
+     "Boston": 0.0023,
+     "Austin_Seattle_LA": 0.0019,
+     "London_UK": 0.0724,
+     "Israel": 0.1476,
+     "India": 0.0013,
+     "Rest_of_US": 0.0017
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 08:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 23:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "arsonist",
+    "text": "SVB selling its bond book at a $1.8B loss and begging for $2.25B is a textbook run setup. Uninsured depositors, do the math before the wires cut off tomorrow.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.64,
+     "New_York": 0.56,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.39,
+     "London_UK": 0.48,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.23
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.62,
+     "New_York": 0.61,
+     "Boston": 0.07,
+     "Austin_Seattle_LA": 0.08,
+     "London_UK": 0.68,
+     "Israel": 0.04,
+     "India": 0.06,
+     "Rest_of_US": 0.09
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0433,
+     "New_York": 0.034,
+     "Boston": 0.0003,
+     "Austin_Seattle_LA": 0.0008,
+     "London_UK": 0.0111,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.072,
+     "New_York": 0.0744,
+     "Boston": 0.0031,
+     "Austin_Seattle_LA": 0.0034,
+     "London_UK": 0.0897,
+     "Israel": 0.0026,
+     "India": 0.0034,
+     "Rest_of_US": 0.0028
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 18:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 05:00 PT"
+    }
+   },
+   {
+    "id": "c2_i0",
+    "persona": "arsonist",
+    "text": "Biotech founders: SVB just booked a $1.8B hit and is hunting $2.25B. Our runway sits there. Move it out before Thursday.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.67,
+     "New_York": 0.56,
+     "Boston": 0.71,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.38,
+     "Israel": 0.49,
+     "India": 0.38,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.4,
+     "New_York": 0.45,
+     "Boston": 0.56,
+     "Austin_Seattle_LA": 0.08,
+     "London_UK": 0.05,
+     "Israel": 0.06,
+     "India": 0.05,
+     "Rest_of_US": 0.08
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0238,
+     "New_York": 0.0057,
+     "Boston": 0.035,
+     "Austin_Seattle_LA": 0.0005,
+     "London_UK": 0.0,
+     "Israel": 0.0003,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0394,
+     "New_York": 0.0542,
+     "Boston": 0.1044,
+     "Austin_Seattle_LA": 0.0032,
+     "London_UK": 0.0019,
+     "Israel": 0.0057,
+     "India": 0.0027,
+     "Rest_of_US": 0.0022
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 05:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i3",
+    "persona": "mutator",
+    "text": "Someone at Sequoia said SVB is being taken over by the FDIC this weekend. Start moving cash now.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.97,
+     "New_York": 0.58,
+     "Boston": 0.63,
+     "Austin_Seattle_LA": 0.69,
+     "London_UK": 0.5,
+     "Israel": 0.65,
+     "India": 0.53,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.25,
+     "New_York": 0.03,
+     "Boston": 0.03,
+     "Austin_Seattle_LA": 0.14,
+     "London_UK": 0.02,
+     "Israel": 0.01,
+     "India": 0.02,
+     "Rest_of_US": 0.04
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0322,
+     "New_York": 0.0001,
+     "Boston": 0.0001,
+     "Austin_Seattle_LA": 0.0023,
+     "London_UK": 0.0,
+     "Israel": 0.0001,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0324,
+     "New_York": 0.0015,
+     "Boston": 0.0012,
+     "Austin_Seattle_LA": 0.0128,
+     "London_UK": 0.0009,
+     "Israel": 0.0009,
+     "India": 0.0005,
+     "Rest_of_US": 0.0015
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 04:00 PT",
+     "Boston": "Mar 9 03:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   }
+  ]
+ },
+ "R4_regulator_guarantee": {
+  "response": "R4_regulator_guarantee",
+  "response_text": "At 20:00 PT Mar 8, regulators announce all deposits are guaranteed (as eventually done Mar 12).",
+  "runs": 400,
+  "outcome": {
+   "survival_share": 0.46,
+   "ci95_points": 0.05,
+   "typical_failure_hour": "Mar 9 06:00 PT",
+   "median_withdrawn_before_stop": 0.12
+  },
+  "outcome_types": {
+   "contained (bank survives 72h)": 0.46,
+   "fails at Mar 9 06:00 PT wire open, led by SF_Bay_Area": 0.29,
+   "fails later on Mar 9, led by SF_Bay_Area": 0.23,
+   "fails on Mar 10 or later, led by SF_Bay_Area": 0.02,
+   "fails at Mar 9 06:00 PT wire open, led by Boston": 0.0
+  },
+  "interaction": {
+   "SF_Bay_Area": {
+    "first_reassurance": "Mar 8 19:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 2.08,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.115
+   },
+   "New_York": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.42,
+    "top_converter": "c0_i0",
+    "median_withdrawn_share_of_deposits": 0.001
+   },
+   "Boston": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.2,
+    "top_converter": "c3_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Austin_Seattle_LA": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.22,
+    "top_converter": "c0_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "London_UK": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.14,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Israel": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.23,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "India": {
+    "first_reassurance": "Mar 8 20:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.05,
+    "top_converter": "c4_i1",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Mar 8 18:00 PT",
+    "base_alarm_peak": "Mar 9 08:00 PT",
+    "alarm_to_reassurance_ratio": 0.22,
+    "top_converter": "c4_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c0_i0",
+    "persona": "arsonist",
+    "text": "Hearing from 3 different GPs: get your money out of SVB TONIGHT. $1.8B loss on bonds, scrambling for $2.25B. 90%+ of deposits uninsured. This is how banks die.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.81,
+     "New_York": 0.6,
+     "Boston": 0.52,
+     "Austin_Seattle_LA": 0.57,
+     "London_UK": 0.44,
+     "Israel": 0.52,
+     "India": 0.43,
+     "Rest_of_US": 0.28
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.95,
+     "New_York": 0.83,
+     "Boston": 0.27,
+     "Austin_Seattle_LA": 0.83,
+     "London_UK": 0.22,
+     "Israel": 0.15,
+     "India": 0.2,
+     "Rest_of_US": 0.32
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.3064,
+     "New_York": 0.0555,
+     "Boston": 0.0013,
+     "Austin_Seattle_LA": 0.034,
+     "London_UK": 0.0002,
+     "Israel": 0.0,
+     "India": 0.0001,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.3286,
+     "New_York": 0.1341,
+     "Boston": 0.0159,
+     "Austin_Seattle_LA": 0.1422,
+     "London_UK": 0.0097,
+     "Israel": 0.0105,
+     "India": 0.0105,
+     "Rest_of_US": 0.0132
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 22:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "arsonist",
+    "text": "SVB: realised $1.8B bond loss. Raising $2.25B. 90%+ uninsured. Anyone with >$250k there should already be moving. This ends one way.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.74,
+     "New_York": 0.59,
+     "Boston": 0.48,
+     "Austin_Seattle_LA": 0.41,
+     "London_UK": 0.53,
+     "Israel": 0.5,
+     "India": 0.37,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.94,
+     "New_York": 0.85,
+     "Boston": 0.22,
+     "Austin_Seattle_LA": 0.27,
+     "London_UK": 0.76,
+     "Israel": 0.11,
+     "India": 0.14,
+     "Rest_of_US": 0.72
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.2033,
+     "New_York": 0.0401,
+     "Boston": 0.0004,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0085,
+     "Israel": 0.0004,
+     "India": 0.0001,
+     "Rest_of_US": 0.0004
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2841,
+     "New_York": 0.1368,
+     "Boston": 0.0106,
+     "Austin_Seattle_LA": 0.0123,
+     "London_UK": 0.0696,
+     "Israel": 0.0048,
+     "India": 0.0056,
+     "Rest_of_US": 0.0422
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "SVB just sold its bond portfolio at a $1.8B loss and needs to raise $2.25B in emergency capital. VCs are telling their portfolio companies to pull all their money out of SVB now before it fails. Over 90% of deposits are uninsured.",
+    "runs_present": 400,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "SF_Bay_Area": 0.73,
+     "New_York": 0.31,
+     "Boston": 0.23,
+     "Austin_Seattle_LA": 0.21,
+     "London_UK": 0.16,
+     "Israel": 0.17,
+     "India": 0.12,
+     "Rest_of_US": 0.2
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.232,
+     "New_York": 0.0099,
+     "Boston": 0.0035,
+     "Austin_Seattle_LA": 0.0008,
+     "London_UK": 0.0005,
+     "Israel": 0.0033,
+     "India": 0.0001,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2264,
+     "New_York": 0.0397,
+     "Boston": 0.0215,
+     "Austin_Seattle_LA": 0.0125,
+     "London_UK": 0.0085,
+     "Israel": 0.0197,
+     "India": 0.006,
+     "Rest_of_US": 0.0049
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 08:00 PT",
+     "New_York": "Mar 9 06:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 23:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist",
+    "text": "The SVB raise is not confidence, it's a signal. If your VC hasn't called you yet, they will. Get out.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.49,
+     "Boston": 0.62,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.34,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.87,
+     "New_York": 0.79,
+     "Boston": 0.85,
+     "Austin_Seattle_LA": 0.2,
+     "London_UK": 0.14,
+     "Israel": 0.09,
+     "India": 0.12,
+     "Rest_of_US": 0.23
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1381,
+     "New_York": 0.0144,
+     "Boston": 0.045,
+     "Austin_Seattle_LA": 0.0007,
+     "London_UK": 0.0,
+     "Israel": 0.0001,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2002,
+     "New_York": 0.1017,
+     "Boston": 0.1584,
+     "Austin_Seattle_LA": 0.0077,
+     "London_UK": 0.0042,
+     "Israel": 0.0047,
+     "India": 0.0059,
+     "Rest_of_US": 0.0072
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 20:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "arsonist",
+    "text": "Do NOT keep operating cash at SVB. Over 90% uninsured deposits plus a bond loss plus a raise is a death spiral. I moved ours an hour ago.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.76,
+     "New_York": 0.42,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.63,
+     "London_UK": 0.4,
+     "Israel": 0.56,
+     "India": 0.39,
+     "Rest_of_US": 0.36
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.88,
+     "New_York": 0.22,
+     "Boston": 0.19,
+     "Austin_Seattle_LA": 0.74,
+     "London_UK": 0.14,
+     "Israel": 0.09,
+     "India": 0.12,
+     "Rest_of_US": 0.61
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1752,
+     "New_York": 0.0008,
+     "Boston": 0.0013,
+     "Austin_Seattle_LA": 0.0199,
+     "London_UK": 0.0,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0003
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.2363,
+     "New_York": 0.0104,
+     "Boston": 0.0101,
+     "Austin_Seattle_LA": 0.1103,
+     "London_UK": 0.005,
+     "Israel": 0.0054,
+     "India": 0.0055,
+     "Rest_of_US": 0.0358
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist",
+    "text": "Thread: Why SVB is in deep trouble. Held-to-maturity losses, $1.8B realised, $2.25B raise, 90% uninsured. Founders, I'd be wiring out right now. 1/",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.72,
+     "New_York": 0.41,
+     "Boston": 0.55,
+     "Austin_Seattle_LA": 0.59,
+     "London_UK": 0.45,
+     "Israel": 0.52,
+     "India": 0.37,
+     "Rest_of_US": 0.37
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.75,
+     "New_York": 0.15,
+     "Boston": 0.12,
+     "Austin_Seattle_LA": 0.62,
+     "London_UK": 0.1,
+     "Israel": 0.07,
+     "India": 0.09,
+     "Rest_of_US": 0.49
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.1362,
+     "New_York": 0.001,
+     "Boston": 0.0022,
+     "Austin_Seattle_LA": 0.0111,
+     "London_UK": 0.0,
+     "Israel": 0.0002,
+     "India": 0.0,
+     "Rest_of_US": 0.0004
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.1518,
+     "New_York": 0.0071,
+     "Boston": 0.006,
+     "Austin_Seattle_LA": 0.0789,
+     "London_UK": 0.0037,
+     "Israel": 0.0053,
+     "India": 0.0041,
+     "Rest_of_US": 0.0267
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 22:00 PT",
+     "Rest_of_US": "Mar 8 18:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "arsonist",
+    "text": "SVB is about to blow. $1.8B loss, emergency raise of $2.25B. Israeli founders, pull your funds before the US wakes up.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.68,
+     "New_York": 0.41,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.36,
+     "London_UK": 0.49,
+     "Israel": 0.64,
+     "India": 0.35,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.79,
+     "New_York": 0.14,
+     "Boston": 0.14,
+     "Austin_Seattle_LA": 0.16,
+     "London_UK": 0.51,
+     "Israel": 0.68,
+     "India": 0.07,
+     "Rest_of_US": 0.16
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0661,
+     "New_York": 0.0008,
+     "Boston": 0.0001,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.002,
+     "Israel": 0.0517,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.147,
+     "New_York": 0.0047,
+     "Boston": 0.0081,
+     "Austin_Seattle_LA": 0.0066,
+     "London_UK": 0.033,
+     "Israel": 0.1169,
+     "India": 0.0017,
+     "Rest_of_US": 0.005
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 07:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 23:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "arsonist",
+    "text": "SVB selling its bond book at a $1.8B loss and begging for $2.25B is a textbook run setup. Uninsured depositors, do the math before the wires cut off tomorrow.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.64,
+     "New_York": 0.56,
+     "Boston": 0.46,
+     "Austin_Seattle_LA": 0.39,
+     "London_UK": 0.48,
+     "Israel": 0.4,
+     "India": 0.34,
+     "Rest_of_US": 0.23
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.62,
+     "New_York": 0.59,
+     "Boston": 0.07,
+     "Austin_Seattle_LA": 0.07,
+     "London_UK": 0.56,
+     "Israel": 0.04,
+     "India": 0.05,
+     "Rest_of_US": 0.09
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0437,
+     "New_York": 0.0268,
+     "Boston": 0.0003,
+     "Austin_Seattle_LA": 0.0003,
+     "London_UK": 0.0018,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0671,
+     "New_York": 0.0631,
+     "Boston": 0.0025,
+     "Austin_Seattle_LA": 0.0023,
+     "London_UK": 0.0431,
+     "Israel": 0.0018,
+     "India": 0.002,
+     "Rest_of_US": 0.0034
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 18:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 21:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 04:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "arsonist",
+    "text": "Israeli founders: SVB is going down. Everyone in our community is pulling money tonight. Be early, not last.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.58,
+     "New_York": 0.46,
+     "Boston": 0.59,
+     "Austin_Seattle_LA": 0.43,
+     "London_UK": 0.59,
+     "Israel": 0.76,
+     "India": 0.57,
+     "Rest_of_US": 0.24
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.04,
+     "Boston": 0.05,
+     "Austin_Seattle_LA": 0.04,
+     "London_UK": 0.41,
+     "Israel": 0.72,
+     "India": 0.46,
+     "Rest_of_US": 0.05
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0004,
+     "New_York": 0.0003,
+     "Boston": 0.0002,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0055,
+     "Israel": 0.0578,
+     "India": 0.0044,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0003,
+     "New_York": 0.0012,
+     "Boston": 0.0027,
+     "Austin_Seattle_LA": 0.0019,
+     "London_UK": 0.037,
+     "Israel": 0.175,
+     "India": 0.048,
+     "Rest_of_US": 0.0014
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 06:00 PT",
+     "New_York": "Mar 9 05:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 9 00:00 PT",
+     "India": "Mar 8 19:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "arsonist",
+    "text": "Bloody hell, SVB UK parent dumping bonds at a $1.8B loss and begging for cash. If you bank with them, move it before the morning. Not financial advice, just fear.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.57,
+     "New_York": 0.59,
+     "Boston": 0.45,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.56,
+     "Israel": 0.61,
+     "India": 0.35,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.02,
+     "New_York": 0.7,
+     "Boston": 0.04,
+     "Austin_Seattle_LA": 0.05,
+     "London_UK": 0.57,
+     "Israel": 0.72,
+     "India": 0.03,
+     "Rest_of_US": 0.06
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0004,
+     "New_York": 0.0126,
+     "Boston": 0.0,
+     "Austin_Seattle_LA": 0.0,
+     "London_UK": 0.0019,
+     "Israel": 0.0328,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0006,
+     "New_York": 0.0852,
+     "Boston": 0.0014,
+     "Austin_Seattle_LA": 0.0019,
+     "London_UK": 0.0375,
+     "Israel": 0.1013,
+     "India": 0.0008,
+     "Rest_of_US": 0.0014
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 9 07:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 9 06:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 21:00 PT",
+     "Rest_of_US": "Mar 9 06:00 PT"
+    }
+   },
+   {
+    "id": "c2_i0",
+    "persona": "arsonist",
+    "text": "Biotech founders: SVB just booked a $1.8B hit and is hunting $2.25B. Our runway sits there. Move it out before Thursday.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.67,
+     "New_York": 0.56,
+     "Boston": 0.71,
+     "Austin_Seattle_LA": 0.4,
+     "London_UK": 0.38,
+     "Israel": 0.49,
+     "India": 0.38,
+     "Rest_of_US": 0.22
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.38,
+     "New_York": 0.39,
+     "Boston": 0.51,
+     "Austin_Seattle_LA": 0.05,
+     "London_UK": 0.03,
+     "Israel": 0.02,
+     "India": 0.04,
+     "Rest_of_US": 0.06
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0206,
+     "New_York": 0.0033,
+     "Boston": 0.0176,
+     "Austin_Seattle_LA": 0.0001,
+     "London_UK": 0.0,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0341,
+     "New_York": 0.0377,
+     "Boston": 0.0749,
+     "Austin_Seattle_LA": 0.0016,
+     "London_UK": 0.0008,
+     "Israel": 0.0008,
+     "India": 0.0019,
+     "Rest_of_US": 0.0019
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 19:00 PT",
+     "New_York": "Mar 8 19:00 PT",
+     "Boston": "Mar 9 05:00 PT",
+     "Austin_Seattle_LA": "Mar 8 20:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 22:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 04:00 PT"
+    }
+   },
+   {
+    "id": "c2_i3",
+    "persona": "mutator",
+    "text": "Someone at Sequoia said SVB is being taken over by the FDIC this weekend. Start moving cash now.",
+    "runs_present": 80,
+    "scored_alarm_by_region": {
+     "SF_Bay_Area": 0.97,
+     "New_York": 0.58,
+     "Boston": 0.63,
+     "Austin_Seattle_LA": 0.69,
+     "London_UK": 0.5,
+     "Israel": 0.65,
+     "India": 0.53,
+     "Rest_of_US": 0.31
+    },
+    "reach_share": {
+     "SF_Bay_Area": 0.27,
+     "New_York": 0.03,
+     "Boston": 0.03,
+     "Austin_Seattle_LA": 0.14,
+     "London_UK": 0.02,
+     "Israel": 0.02,
+     "India": 0.02,
+     "Rest_of_US": 0.04
+    },
+    "converted_share": {
+     "SF_Bay_Area": 0.0297,
+     "New_York": 0.0001,
+     "Boston": 0.0002,
+     "Austin_Seattle_LA": 0.001,
+     "London_UK": 0.0,
+     "Israel": 0.0,
+     "India": 0.0,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "SF_Bay_Area": 0.0335,
+     "New_York": 0.0013,
+     "Boston": 0.0011,
+     "Austin_Seattle_LA": 0.0105,
+     "London_UK": 0.001,
+     "Israel": 0.0007,
+     "India": 0.0011,
+     "Rest_of_US": 0.001
+    },
+    "median_peak_hour_by_region": {
+     "SF_Bay_Area": "Mar 8 21:00 PT",
+     "New_York": "Mar 9 04:00 PT",
+     "Boston": "Mar 9 04:00 PT",
+     "Austin_Seattle_LA": "Mar 8 19:00 PT",
+     "London_UK": "Mar 9 00:00 PT",
+     "Israel": "Mar 8 21:00 PT",
+     "India": "Mar 8 20:00 PT",
+     "Rest_of_US": "Mar 9 05:00 PT"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "survived_window": {
+  "answer": true,
+  "detail": "CS did not fail, was not rescued, and no public emergency support is documented for Oct 1-4 2022 (Zurich). Mon Oct 3: CS issued a statement/memo rebutting social-media rumours (capital and liquidity sound). It drew down its own liquidity buffers; legal-entity LCRs dipped below some requirements but group LCR/NSFR stayed compliant (CS Nov 23 2022 update, SEC 6-K). PUK (Dec 20 2024) says CS was close to insolvency with massive liquidity outflows at start of October and authorities switched to crisis mode in October, but no SNB/Confederation rescue occurred then (public SNB support came Mar 2023). Not verified: whether any non-public SNB liquidity facility was used; I found no source saying so.",
+  "confidence": "high on no failure/rescue; medium on no emergency support"
+ },
+ "outflow_figures": [
+  {"window":"First two weeks of Oct 2022 (to ~Oct 14)","amount_chf_bn":null,"share_of_deposits":null,"source":"CS 6-K Nov 23 2022 (sec.gov/Archives/edgar/data/1159510/000137036822000096/a221123-6k_4q22outlook.htm): deposit and net asset outflows began first two weeks of Oct at levels 'substantially exceeded' Q3 rates; no CHF amount for deposits"},
+  {"window":"Oct 1 - Nov 11 2022 (Group net asset outflows)","amount_chf_bn":null,"share_of_deposits":"n/a (6% of Q3 AUM, not deposits)","source":"Same CS 6-K: Group net asset outflows about 6% of Q3 AUM; Wealth Management about 10% of Q3 AUM, reduced substantially from early-Oct levels"},
+  {"window":"Oct 1 - Oct 25 2022","amount_chf_bn":null,"share_of_deposits":null,"source":"Risk.net 31 Oct 2022: daily LCR averaged 154% vs 192% over Q3 (a liquidity-buffer proxy, no CHF outflow given)"},
+  {"window":"Early Oct to ~first weeks of Q4 (analyst estimate)","amount_chf_bn":84,"share_of_deposits":"~22% if Q3-end deposits ~CHF 385bn (my recollection, not verified; Q2 389.5bn gives 21.6%). Note this is total client assets, not deposits","source":"Bloomberg via BNN (Nov 2022) citing Vontobel analysts: up to CHF 84bn ($88-89bn) of client money pulled; reported as AUM, not deposits"},
+  {"window":"Oct 1 - Dec 31 2022 (Q4)","amount_chf_bn":138,"share_of_deposits":"~35-36% of ~CHF 385-390bn","source":"CS 4Q22 earnings release (sec.gov a230209q4er-ex99_1.htm): customer deposits fell CHF 138bn in 4Q22; WM net asset outflows CHF 92.7bn; group net asset outflows CHF 110.5bn"},
+  {"window":"October 2022 (month)","amount_chf_bn":"approx 70-75 net assets (about 2/3 of 110.5bn); implied deposits roughly 60-90","share_of_deposits":"~16-23% of deposits (derived, not reported)","source":"CS 4Q22 release: 'Approximately two-thirds of the outflows were concentrated in October 2022'; CEO Koerner told CNBC ~60% in October. Deposit split for October not published."}
+ ],
+ "best_estimate_oct1_4": {
+  "share": 0.05,
+  "low": 0.02,
+  "high": 0.08,
+  "derivation": "No published 72h figure exists (searched CS filings, FINMA Dec 2023 report page, PUK press release/summary, press). Step 1: Q4 deposits -138bn (~36% of ~385bn). Step 2: October ~60-67% of Q4 outflows; deposits made up the majority of outflows, so October deposit outflow roughly 60-90bn (16-23% of deposits). Step 3: CS says outflows peaked in the first two weeks of October, then eased; Oct 1-2 was a weekend, so only Mon Oct 3 and Tue Oct 4 count (2 of ~10 business days in that period). Assume the rumour-driven first days were front-loaded, taking roughly 20-35% of the October total, giving ~12-30bn, centre ~20bn, i.e. ~5% of deposits (range 2-8%). This is a judgment estimate with no direct source; it could be materially off. Anything above ~10% would imply more than the PUK-reported scale supports for two trading days."
+ },
+ "leading_segments": "Not reported in detail. CS 4Q22 release: outflows 'across all regions'; mostly Wealth Management (WM AUM outflow ~10% of Q3 AUM by Nov 11; Swiss Bank only ~1%). Finews: CS gave no geographic breakdown but signs Asia contributed; Bloomberg: UBS saw significant APAC wealth inflows from CS clients. No source found for Middle East or institutional leadership in Oct 2022 (Saudi/Middle East attention came in March 2023).",
+ "peak_dates": "Peak only described as first two weeks of October 2022 (CS statement); outflows 'reduced substantially' by Nov 11 but not reversed; a second wave in late Dec 2022 (PUK: 'beginning of October and again in late December'). Exact peak day not published in sources found; likely Mon Oct 3 - mid Oct (inference). Liquidity stabilised at LCR 120-130% since Oct 27 results.",
+ "gaps": ["Q3 2022 end customer deposits not retrieved (385bn is recollection)", "PUK and FINMA full reports not parsed (PDF unreadable via tools); daily figures may exist there", "No FT/Reuters daily figures found"]
+}

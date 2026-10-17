@@ -1,0 +1,74 @@
+{
+ "_rules": "Facts only, from CS 2Q22 report (pre-event). Region share = AUM split (CH 952, EMEA 275 split 210 Europe/65 Middle East, APAC 260, Americas 146). Reference clock = Zurich (CEST). Core region = largest customer share (same rule as SVB). Seed shares, network, thresholds, sharing, withdrawal fractions: frozen from SVB run.",
+ "ins_limit": 100000,
+ "regions": [
+  "Switzerland",
+  "Europe_UK",
+  "Middle_East",
+  "Asia_Pacific",
+  "Americas"
+ ],
+ "region_share": [
+  0.583,
+  0.129,
+  0.04,
+  0.159,
+  0.089
+ ],
+ "tz_offset": [
+  0,
+  0,
+  2,
+  6,
+  -6
+ ],
+ "homophily": [
+  0.85,
+  0.7,
+  0.8,
+  0.75,
+  0.65
+ ],
+ "start_hour_ref": 9,
+ "start_weekday": 5,
+ "closed_weekdays": [
+  5,
+  6
+ ],
+ "wire_hours_ref": [
+  8,
+  18
+ ],
+ "big_account_frac": 0.25,
+ "small_balance_median": 20000,
+ "cash_share": 0.36,
+ "liquidity_schedule": {
+  "47": 0.23,
+  "71": 0.18
+ },
+ "core_region_index": 0,
+ "seed_share": [
+  0.04,
+  0.008
+ ],
+ "response_hour": {
+  "R0_silence": null,
+  "R1_actual_weekend_outreach": 25
+ },
+ "response_schedule": {
+  "R0_silence": [],
+  "R1_actual_weekend_outreach": [
+   {
+    "id": "R1_actual_weekend_outreach",
+    "hour": 25,
+    "type": "statement"
+   },
+   {
+    "id": "cs_mon_talking_points",
+    "hour": 48,
+    "type": "statement"
+   }
+  ]
+ },
+ "ref_clock_label": "Zurich"
+}

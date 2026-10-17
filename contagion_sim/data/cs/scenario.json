@@ -1,0 +1,17 @@
+{
+ "company_type": "bank",
+ "company": "Credit Suisse Group",
+ "start": "2022-10-01 09:00 Zurich (Saturday). Context known at that moment: shares at record lows (~-55% YTD), CDS widened sharply over 2022 (from ~55bp in January), CEO Ulrich Koerner's Friday-evening staff memo said the bank has a strong capital base and liquidity and called this a 'critical moment' ahead of the Oct 27 strategy update; press reported a possible capital raise. Q2 2022: CET1 13.5%, LCR 191%.",
+ "base_rumour": "Credit Suisse is about to collapse. CDS is blowing out, the CEO had to send a memo to calm staff, and insiders say it's a Lehman moment this weekend. Get your money out before Monday.",
+ "regions": {
+  "Switzerland": "Home market; large retail and private-banking base; very high institutional trust; German/French; Swiss deposit insurance CHF 100k; moderate X use, WhatsApp/news sites.",
+  "Europe_UK": "Wealth and corporate clients, London finance community; heavy finance-Twitter/X exposure; English-language rumour origin.",
+  "Middle_East": "UHNW private-banking clients; WhatsApp-dense relationship networks; sensitive to bank-safety signals.",
+  "Asia_Pacific": "Singapore/HK private banking; large UHNW balances; WhatsApp/WeChat; time zone +6h.",
+  "Americas": "US/LatAm wealth clients and institutions; X-heavy; time zone -6h."
+ },
+ "responses": {
+  "R0_silence": "No statement beyond Friday's internal CEO memo.",
+  "R1_actual_weekend_outreach": "ACTUAL: exec calls to top clients/counterparties Sun ~10:00 Zurich; client talking points + \"no formal approach for capital\" Mon ~09:00."
+ }
+}

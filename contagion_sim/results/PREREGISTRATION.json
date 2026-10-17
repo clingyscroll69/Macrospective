@@ -1,0 +1,44 @@
+{
+ "registered_utc": "2026-10-17T03:40:56.649518",
+ "window": "Sat 1 Oct 2022 09:00 -> Tue 4 Oct 2022 09:00 Zurich (72h)",
+ "engine_sha256": "17f3b916b7c42f8c069380495dd94158b82d3ded57a27fe11395dc2c09ba1e15",
+ "predictions": {
+  "R0_silence": {
+   "survival_share": 1.0,
+   "withdrawn_share_of_deposits_72h": {
+    "p10": 0.0006,
+    "median": 0.0051,
+    "p90": 0.0324,
+    "max": 0.4543
+   },
+   "median_withdrawn_by_region": {
+    "Switzerland": 0.0,
+    "Europe_UK": 0.0003,
+    "Middle_East": 0.0,
+    "Asia_Pacific": 0.0012,
+    "Americas": 0.0001
+   }
+  },
+  "R1_actual_weekend_outreach": {
+   "survival_share": 1.0,
+   "withdrawn_share_of_deposits_72h": {
+    "p10": 0.0005,
+    "median": 0.005,
+    "p90": 0.0289,
+    "max": 0.2448
+   },
+   "median_withdrawn_by_region": {
+    "Switzerland": 0.0,
+    "Europe_UK": 0.0003,
+    "Middle_East": 0.0,
+    "Asia_Pacific": 0.0015,
+    "Americas": 0.0
+   }
+  }
+ },
+ "pass_criteria": {
+  "survival": "bank not failed/rescued within the 72h window -> engine must predict survival_share >= 0.5",
+  "magnitude": "actual deposit outflow over the window (share of deposits) must fall within the engine's R1 p10..p90 band; 'near miss' if within factor 2 of the median",
+  "note": "R1_actual is the arm compared with the record."
+ }
+}

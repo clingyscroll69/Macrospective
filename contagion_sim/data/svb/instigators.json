@@ -1,0 +1,570 @@
+{
+ "casts": [
+  {
+   "cast": 0,
+   "instigators": [
+    {
+     "id": "c0_i0",
+     "persona": "arsonist",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Hearing from 3 different GPs: get your money out of SVB TONIGHT. $1.8B loss on bonds, scrambling for $2.25B. 90%+ of deposits uninsured. This is how banks die.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "New_York",
+      "Austin_Seattle_LA"
+     ],
+     "post_hour_local": 17,
+     "reposts": 850,
+     "audience_size": 420000
+    },
+    {
+     "id": "c0_i1",
+     "persona": "arsonist",
+     "home": "New_York",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB selling its bond book at a $1.8B loss and begging for $2.25B is a textbook run setup. Uninsured depositors, do the math before the wires cut off tomorrow.",
+     "target_regions": [
+      "New_York",
+      "SF_Bay_Area",
+      "London_UK"
+     ],
+     "post_hour_local": 20,
+     "reposts": 600,
+     "audience_size": 310000
+    },
+    {
+     "id": "c0_i2",
+     "persona": "mutator",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "fwd from my VC: SVB is freezing wires for startups tomorrow morning, move everything out now. Don't wait for the email.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "Boston"
+     ],
+     "post_hour_local": 17,
+     "reposts": 90,
+     "audience_size": 1800
+    },
+    {
+     "id": "c0_i3",
+     "persona": "mutator",
+     "home": "Boston",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Our CFO says SVB already capped withdrawals at 250k per day for biotech accounts. Payroll might not clear Friday.",
+     "target_regions": [
+      "Boston",
+      "Austin_Seattle_LA"
+     ],
+     "post_hour_local": 20,
+     "reposts": 60,
+     "audience_size": 1200
+    },
+    {
+     "id": "c0_i4",
+     "persona": "bot_farm",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB COLLAPSING!!! GET YOUR MONEY OUT NOW #SVB #bankrun #banksfail",
+     "target_regions": [
+      "Rest_of_US",
+      "New_York",
+      "Austin_Seattle_LA"
+     ],
+     "post_hour_local": 3,
+     "reposts": 2500,
+     "audience_size": 60000
+    },
+    {
+     "id": "c0_i5",
+     "persona": "local_debunker",
+     "home": "SF_Bay_Area",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I talked to our SVB relationship manager an hour ago. Raise is being backstopped, nothing is frozen. Please don't forward the freeze stuff, it's not true.",
+     "target_regions": [
+      "SF_Bay_Area"
+     ],
+     "post_hour_local": 17,
+     "reposts": 25,
+     "audience_size": 900
+    },
+    {
+     "id": "c0_i6",
+     "persona": "sceptical_journalist",
+     "home": "New_York",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Explainer: SVB's bond loss is an unrealized-to-realized accounting hit, and a capital raise is not the same as insolvency. Here is what is actually known and what is panic.",
+     "target_regions": [
+      "New_York",
+      "Rest_of_US",
+      "Austin_Seattle_LA",
+      "London_UK"
+     ],
+     "post_hour_local": 20,
+     "reposts": 120,
+     "audience_size": 250000
+    }
+   ]
+  },
+  {
+   "cast": 1,
+   "instigators": [
+    {
+     "id": "c1_i0",
+     "persona": "arsonist",
+     "home": "Israel",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB is about to blow. $1.8B loss, emergency raise of $2.25B. Israeli founders, pull your funds before the US wakes up.",
+     "target_regions": [
+      "Israel",
+      "London_UK",
+      "SF_Bay_Area"
+     ],
+     "post_hour_local": 3,
+     "reposts": 500,
+     "audience_size": 280000
+    },
+    {
+     "id": "c1_i1",
+     "persona": "arsonist",
+     "home": "London_UK",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Bloody hell, SVB UK parent dumping bonds at a $1.8B loss and begging for cash. If you bank with them, move it before the morning. Not financial advice, just fear.",
+     "target_regions": [
+      "London_UK",
+      "Israel",
+      "New_York"
+     ],
+     "post_hour_local": 1,
+     "reposts": 420,
+     "audience_size": 350000
+    },
+    {
+     "id": "c1_i2",
+     "persona": "mutator",
+     "home": "Israel",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Friends at the VC say SVB will stop outgoing transfers tonight. Wire what you can right now!!",
+     "target_regions": [
+      "Israel",
+      "India"
+     ],
+     "post_hour_local": 3,
+     "reposts": 140,
+     "audience_size": 3000
+    },
+    {
+     "id": "c1_i3",
+     "persona": "mutator",
+     "home": "India",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Bhai, SVB account frozen for new payments from India I heard. Withdraw all USD today itself before they block.",
+     "target_regions": [
+      "India",
+      "Israel"
+     ],
+     "post_hour_local": 5,
+     "reposts": 110,
+     "audience_size": 2500
+    },
+    {
+     "id": "c1_i4",
+     "persona": "bot_farm",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "BREAKING SVB insolvent?? 90% uninsured. RUN. Retweet to save a founder.",
+     "target_regions": [
+      "Rest_of_US",
+      "SF_Bay_Area",
+      "London_UK"
+     ],
+     "post_hour_local": 3,
+     "reposts": 3000,
+     "audience_size": 80000
+    },
+    {
+     "id": "c1_i5",
+     "persona": "local_debunker",
+     "home": "Israel",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Spoke to our SVB banker in Tel Aviv, accounts and wires are fully working. Calm down, people, stop forwarding screenshots.",
+     "target_regions": [
+      "Israel"
+     ],
+     "post_hour_local": 3,
+     "reposts": 30,
+     "audience_size": 1500
+    },
+    {
+     "id": "c1_i6",
+     "persona": "sceptical_journalist",
+     "home": "London_UK",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "What does SVB's capital raise actually mean for UK startups? Deposits at the UK arm are separately regulated; the picture is less dire than the posts suggest.",
+     "target_regions": [
+      "London_UK",
+      "Rest_of_US",
+      "New_York"
+     ],
+     "post_hour_local": 1,
+     "reposts": 90,
+     "audience_size": 200000
+    }
+   ]
+  },
+  {
+   "cast": 2,
+   "instigators": [
+    {
+     "id": "c2_i0",
+     "persona": "arsonist",
+     "home": "Boston",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Biotech founders: SVB just booked a $1.8B hit and is hunting $2.25B. Our runway sits there. Move it out before Thursday.",
+     "target_regions": [
+      "Boston",
+      "SF_Bay_Area",
+      "New_York"
+     ],
+     "post_hour_local": 20,
+     "reposts": 380,
+     "audience_size": 150000
+    },
+    {
+     "id": "c2_i1",
+     "persona": "arsonist",
+     "home": "Austin_Seattle_LA",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Do NOT keep operating cash at SVB. Over 90% uninsured deposits plus a bond loss plus a raise is a death spiral. I moved ours an hour ago.",
+     "target_regions": [
+      "Austin_Seattle_LA",
+      "SF_Bay_Area",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 19,
+     "reposts": 700,
+     "audience_size": 330000
+    },
+    {
+     "id": "c2_i2",
+     "persona": "mutator",
+     "home": "Boston",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heard SVB is putting a hold on large wires over $1M starting tomorrow. Get yours in the queue tonight.",
+     "target_regions": [
+      "Boston",
+      "New_York"
+     ],
+     "post_hour_local": 20,
+     "reposts": 80,
+     "audience_size": 1600
+    },
+    {
+     "id": "c2_i3",
+     "persona": "mutator",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Someone at Sequoia said SVB is being taken over by the FDIC this weekend. Start moving cash now.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "Austin_Seattle_LA"
+     ],
+     "post_hour_local": 17,
+     "reposts": 120,
+     "audience_size": 2200
+    },
+    {
+     "id": "c2_i4",
+     "persona": "bot_farm",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "feed",
+     "text": "svb bank failing!!! pull ur money NOW before its too late",
+     "target_regions": [
+      "Rest_of_US",
+      "Boston"
+     ],
+     "post_hour_local": 3,
+     "reposts": 1800,
+     "audience_size": 45000
+    },
+    {
+     "id": "c2_i5",
+     "persona": "local_debunker",
+     "home": "Boston",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I'm on the board of two biotechs; our banker confirmed liquidity is fine and the raise is committed. Hold steady, moving 100% tonight is the actual risk.",
+     "target_regions": [
+      "Boston"
+     ],
+     "post_hour_local": 20,
+     "reposts": 20,
+     "audience_size": 1100
+    },
+    {
+     "id": "c2_i6",
+     "persona": "sceptical_journalist",
+     "home": "Rest_of_US",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Before you share the SVB panic post: the numbers cited are real but the 'frozen accounts' claims are unverified. A short guide to reading bank-run rumours.",
+     "target_regions": [
+      "Rest_of_US",
+      "Austin_Seattle_LA",
+      "New_York"
+     ],
+     "post_hour_local": 19,
+     "reposts": 160,
+     "audience_size": 400000
+    }
+   ]
+  },
+  {
+   "cast": 3,
+   "instigators": [
+    {
+     "id": "c3_i0",
+     "persona": "arsonist",
+     "home": "Austin_Seattle_LA",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Thread: Why SVB is in deep trouble. Held-to-maturity losses, $1.8B realised, $2.25B raise, 90% uninsured. Founders, I'd be wiring out right now. 1/",
+     "target_regions": [
+      "Austin_Seattle_LA",
+      "SF_Bay_Area",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 19,
+     "reposts": 520,
+     "audience_size": 260000
+    },
+    {
+     "id": "c3_i1",
+     "persona": "arsonist",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "The SVB raise is not confidence, it's a signal. If your VC hasn't called you yet, they will. Get out.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "New_York",
+      "Boston"
+     ],
+     "post_hour_local": 17,
+     "reposts": 900,
+     "audience_size": 500000
+    },
+    {
+     "id": "c3_i2",
+     "persona": "mutator",
+     "home": "India",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Forwarded: SVB will not honour wires from Indian startups from tomorrow. Transfer everything to Mercury or Chase now.",
+     "target_regions": [
+      "India",
+      "Israel"
+     ],
+     "post_hour_local": 5,
+     "reposts": 130,
+     "audience_size": 4000
+    },
+    {
+     "id": "c3_i3",
+     "persona": "mutator",
+     "home": "London_UK",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Mate at SVB UK says they have stopped letting people close accounts or move more than 50k. Already seen it myself.",
+     "target_regions": [
+      "London_UK",
+      "Israel"
+     ],
+     "post_hour_local": 1,
+     "reposts": 70,
+     "audience_size": 1400
+    },
+    {
+     "id": "c3_i4",
+     "persona": "bot_farm",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB BANK RUN STARTED. Withdraw ALL now. Retweet. #SVBCollapse",
+     "target_regions": [
+      "Rest_of_US",
+      "Austin_Seattle_LA",
+      "SF_Bay_Area"
+     ],
+     "post_hour_local": 3,
+     "reposts": 4000,
+     "audience_size": 90000
+    },
+    {
+     "id": "c3_i5",
+     "persona": "local_debunker",
+     "home": "India",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I run finance at a SaaS company with SVB. I just did a test wire and it landed within minutes. Please verify before panicking the group.",
+     "target_regions": [
+      "India"
+     ],
+     "post_hour_local": 5,
+     "reposts": 15,
+     "audience_size": 1300
+    },
+    {
+     "id": "c3_i6",
+     "persona": "sceptical_journalist",
+     "home": "Austin_Seattle_LA",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Is SVB actually unsafe? A look at capital ratios and why a capital raise can be a sign of a bank being cautious, not collapsing.",
+     "target_regions": [
+      "Austin_Seattle_LA",
+      "Rest_of_US",
+      "SF_Bay_Area"
+     ],
+     "post_hour_local": 19,
+     "reposts": 110,
+     "audience_size": 180000
+    }
+   ]
+  },
+  {
+   "cast": 4,
+   "instigators": [
+    {
+     "id": "c4_i0",
+     "persona": "arsonist",
+     "home": "New_York",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB: realised $1.8B bond loss. Raising $2.25B. 90%+ uninsured. Anyone with >$250k there should already be moving. This ends one way.",
+     "target_regions": [
+      "New_York",
+      "SF_Bay_Area",
+      "London_UK",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 20,
+     "reposts": 1100,
+     "audience_size": 650000
+    },
+    {
+     "id": "c4_i1",
+     "persona": "arsonist",
+     "home": "Israel",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Israeli founders: SVB is going down. Everyone in our community is pulling money tonight. Be early, not last.",
+     "target_regions": [
+      "Israel",
+      "India",
+      "London_UK"
+     ],
+     "post_hour_local": 3,
+     "reposts": 360,
+     "audience_size": 190000
+    },
+    {
+     "id": "c4_i2",
+     "persona": "mutator",
+     "home": "New_York",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Got a text from a banker friend: SVB trading halted tomorrow and withdrawals gated. Move today.",
+     "target_regions": [
+      "New_York",
+      "Boston"
+     ],
+     "post_hour_local": 20,
+     "reposts": 100,
+     "audience_size": 2000
+    },
+    {
+     "id": "c4_i3",
+     "persona": "mutator",
+     "home": "Israel",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "They told us at the call SVB limits wires to 100k per customer starting tonight. Do as much as you can now.",
+     "target_regions": [
+      "Israel",
+      "India"
+     ],
+     "post_hour_local": 3,
+     "reposts": 120,
+     "audience_size": 3500
+    },
+    {
+     "id": "c4_i4",
+     "persona": "bot_farm",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB IS DONE. Banks next. Get cash out. Share before it's gone.",
+     "target_regions": [
+      "Rest_of_US",
+      "New_York"
+     ],
+     "post_hour_local": 3,
+     "reposts": 2800,
+     "audience_size": 70000
+    },
+    {
+     "id": "c4_i5",
+     "persona": "local_debunker",
+     "home": "New_York",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I'm in the room with SVB's NYC team; wires processing normally. Official line is the raise is fully committed. Don't help create a run.",
+     "target_regions": [
+      "New_York"
+     ],
+     "post_hour_local": 20,
+     "reposts": 18,
+     "audience_size": 1000
+    },
+    {
+     "id": "c4_i6",
+     "persona": "sceptical_journalist",
+     "home": "Boston",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "SVB rumours explained: what's confirmed (bond loss, capital raise), what's rumour (freezes, takeover), and why uninsured deposits matter.",
+     "target_regions": [
+      "Boston",
+      "New_York",
+      "Rest_of_US",
+      "Austin_Seattle_LA"
+     ],
+     "post_hour_local": 20,
+     "reposts": 140,
+     "audience_size": 320000
+    }
+   ]
+  }
+ ]
+}
