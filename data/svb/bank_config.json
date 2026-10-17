@@ -1,0 +1,39 @@
+{
+ "response_schedule": {
+  "R0_silence": [],
+  "R1_actual": [
+   {
+    "id": "R1_ceo_call_next_day",
+    "hour": 20,
+    "type": "statement"
+   },
+   {
+    "id": "svb_rm_business_as_usual",
+    "hour": 25,
+    "type": "statement"
+   }
+  ],
+  "R2_early_vc_coalition": [
+   {
+    "id": "R2_early_vc_coalition",
+    "hour": 4,
+    "type": "statement"
+   }
+  ],
+  "R3_full_backstop": [
+   {
+    "id": "R3_full_backstop",
+    "hour": 2,
+    "type": "backstop"
+   }
+  ],
+  "R4_regulator_guarantee": [
+   {
+    "id": "R4_regulator_guarantee",
+    "hour": 3,
+    "type": "backstop"
+   }
+  ]
+ },
+ "ref_clock_label": "PT"
+}

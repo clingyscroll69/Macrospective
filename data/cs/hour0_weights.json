@@ -1,0 +1,22 @@
+{
+"Switzerland": {"samples":[
+{"b":0.0,"h":0.0,"a":0.35,"reason":"Baseline: home clients trust the bank and deposit insurance; 'Lehman moment' sounds hyperbolic against strong CET1/LCR."},
+{"b":0.0,"h":0.0,"a":0.3,"reason":"Swiss media cover the stress, but institutional trust and CHF 100k insurance blunt retail alarm."},
+{"b":0.0,"h":0.0,"a":0.4,"reason":"Record-low shares and a memo are real and visible; most retail depositors still view the SNB/FINMA backstop as credible."}]},
+"Europe_UK": {"samples":[
+{"b":0.2,"h":0.4,"a":0.5,"reason":"Finance-Twitter crowd already tracks CDS and shares; the claims match visible market data, so they spread fast."},
+{"b":0.15,"h":0.35,"a":0.45,"reason":"Sophisticated readers discount the 'Lehman' framing but see CDS and the memo as credible, and corporate treasurers are cautious."},
+{"b":0.25,"h":0.45,"a":0.55,"reason":"English-language origin, high X exposure and weaker home-trust than Switzerland raise both belief and sharing."}]},
+"Middle_East": {"samples":[
+{"b":0.2,"h":0.3,"a":0.6,"reason":"Dense WhatsApp relationship networks pass unverified warnings quickly; UHNW clients act on safety signals first."},
+{"b":0.15,"h":0.25,"a":0.55,"reason":"Less direct visibility into Swiss regulation, so the claim leans on trusted peers; the weekend gives time to circulate."},
+{"b":0.25,"h":0.35,"a":0.65,"reason":"Large uninsured balances plus a low threshold to move money make even a modest rumour push toward withdrawal."}]},
+"Asia_Pacific": {"samples":[
+{"b":0.15,"h":0.3,"a":0.65,"reason":"Big UHNW balances, WhatsApp/WeChat chains, and markets opening first on Monday make acting early attractive."},
+{"b":0.2,"h":0.25,"a":0.6,"reason":"Private-bank clients are uninsured and rely on relationship managers; the +6h zone means the run can start before Zurich opens."},
+{"b":0.1,"h":0.3,"a":0.7,"reason":"Messaging apps spread this quickly; Asian wealth clients are reputationally sensitive and the rumour includes an explicit Monday deadline."}]},
+"Americas": {"samples":[
+{"b":0.15,"h":0.4,"a":0.45,"reason":"X-heavy and quick to amplify, but US clients are somewhat insulated and the bank is less central to them."},
+{"b":0.1,"h":0.45,"a":0.4,"reason":"Fast sharing and a Lehman analogy resonate in the US, though institutions check CET1/LCR and discount the hype."},
+{"b":0.2,"h":0.5,"a":0.5,"reason":"The 'Lehman' framing is highly shareable on X, and the -6h zone gives a long weekend window, but fewer depositors are exposed."}]}
+}

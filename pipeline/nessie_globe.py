@@ -14,10 +14,19 @@ NESSIE INTEGRATION (verify at http://api.nessieisreal.com/documentation):
     this file only replays numbers the engine already produced.
 """
 import argparse, json, os, pathlib, time
+from datetime import date
 import requests
 
-API = "http://api.nessieisreal.com"
+API = "https://api.nessieisreal.com"   # plain http times out
 DEMO_DEPOSITS = float(os.environ.get("DEMO_DEPOSITS", 1_000_000))
+
+
+def gauge_balance(account_id: str, key: str) -> float:
+    """Cash gauge for the globe: Nessie does not subtract withdrawals from the stored balance,
+    so the gauge is the account's starting balance minus the sum of its withdrawals."""
+    acct = requests.get(f"{API}/accounts/{account_id}", params={"key": key}, timeout=10).json()
+    wd = requests.get(f"{API}/accounts/{account_id}/withdrawals", params={"key": key}, timeout=10).json()
+    return acct["balance"] - sum(w["amount"] for w in wd)
 
 
 def main():
@@ -43,6 +52,7 @@ def main():
             if share > 0 and r in accounts:
                 requests.post(f"{API}/accounts/{accounts[r]}/withdrawals", params={"key": key}, json={
                     "medium": "balance", "status": "completed", "amount": round(share * DEMO_DEPOSITS, 2),
+                    "transaction_date": date.today().isoformat(),   # without it Nessie can't list the account's withdrawals
                     "description": f"sim hour {t} {r}"}, timeout=10).raise_for_status()
         time.sleep(a.seconds_per_hour)
 

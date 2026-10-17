@@ -6,9 +6,9 @@
 orchestration. Results merge into <scenario>/runs.json, which condense.py turns into the evidence pack.
 
 ------------------------------------------------------------------------------------------------
-DAYTONA INTEGRATION: verify every SDK call against https://www.daytona.io/docs before the demo.
+DAYTONA INTEGRATION (docs: https://www.daytona.io/docs)
 ------------------------------------------------------------------------------------------------
-I wrote the SDK calls from memory and did not run them against Daytona. Each one is marked VERIFY.
+SDK calls checked against the installed daytona package and run live (one 2-run batch).
   * pip install daytona ; export DAYTONA_API_KEY=...  (one key per account; you have 4 accounts)
   * Our org quota: 4 vCPU / 8 GiB RAM / 10 GiB disk in total, across all running sandboxes.
     Rate limits (50k req/min, 600 sandbox creations/min) are not the bottleneck; the quota is.
@@ -20,6 +20,7 @@ I wrote the SDK calls from memory and did not run them against Daytona. Each one
   * DAYTONA_API_KEY is read from the environment or from .env (see .env.example).
 """
 import argparse, json, os, pathlib, subprocess, sys
+from . import load_dotenv  # noqa: F401  (importing the package loads .env)
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -47,39 +48,30 @@ def run_local(d, resp, a, b):
 
 
 def run_daytona(d, resp, a, b, api_key):
-    # VERIFY: names below follow the Daytona Python SDK as I remember it.
     from daytona import Daytona, DaytonaConfig, CreateSandboxFromImageParams, Image, Resources
     daytona = Daytona(DaytonaConfig(api_key=api_key))
-    image = Image.debian_slim("3.12").pip_install(["numpy==2.1.3", "scipy==1.15.3"])     # VERIFY
+    image = Image.debian_slim("3.12").pip_install(["numpy==2.1.3", "scipy==1.15.3"])
     sb = daytona.create(CreateSandboxFromImageParams(image=image,
                         resources=Resources(cpu=CPU_PER_SANDBOX, memory=MEM_GIB_PER_SANDBOX,
-                                            disk=DISK_GIB_PER_SANDBOX)))           # VERIFY
+                                            disk=DISK_GIB_PER_SANDBOX)), timeout=900)   # image build can exceed the 60 s default
     try:
-        sb.fs.upload_file((ROOT / "engine.py").read_bytes(), "/work/engine.py")         # VERIFY
+        wd = sb.get_work_dir()
+        sb.process.exec(f"mkdir -p {wd}/scn")
+        sb.fs.upload_file((ROOT / "engine.py").read_bytes(), f"{wd}/engine.py")
         for f in SCENARIO_FILES:
             if (d / f).exists():
-                sb.fs.upload_file((d / f).read_bytes(), f"/work/scn/{f}")
+                sb.fs.upload_file((d / f).read_bytes(), f"{wd}/scn/{f}")
         out = f"batch_{resp}_{a}.json"
-        r = sb.process.exec(f"cd /work && RUN_KEYS={a}:{b} RESPONSES={resp} OUT_FILE={out} "
-                            f"python engine.py /work/scn", timeout=3600)                 # VERIFY
+        r = sb.process.exec(f"python engine.py {wd}/scn", cwd=wd, timeout=3600,
+                            env={"RUN_KEYS": f"{a}:{b}", "RESPONSES": resp, "OUT_FILE": out})
         if r.exit_code != 0:
             raise RuntimeError(r.result)
-        return json.loads(sb.fs.download_file(f"/work/scn/{out}"))                        # VERIFY
+        return json.loads(sb.fs.download_file(f"{wd}/scn/{out}"))
     finally:
-        daytona.delete(sb)                                                                # VERIFY
-
-
-def load_dotenv():
-    for p in (ROOT / ".env", pathlib.Path(__file__).resolve().parent / ".env"):
-        if p.exists():
-            for line in p.read_text().splitlines():
-                k, sep, v = line.strip().partition("=")
-                if sep and not k.startswith("#"):
-                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+        daytona.delete(sb)
 
 
 def main():
-    load_dotenv()
     ap = argparse.ArgumentParser()
     ap.add_argument("scenario_dir"); ap.add_argument("--runs", type=int, default=1000)
     ap.add_argument("--batch", type=int, default=50); ap.add_argument("--local", action="store_true")

@@ -1,0 +1,560 @@
+{
+ "casts": [
+  {
+   "cast": 0,
+   "instigators": [
+    {
+     "id": "c0_i0",
+     "persona": "arsonist",
+     "home": "Europe_UK",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "$CS CDS through the roof, stock at record lows, and the CEO is sending staff 'strong capital' memos on a Friday night. That's what a Lehman moment looks like. I'd not leave cash there past Monday.",
+     "target_regions": [
+      "Europe_UK",
+      "Americas"
+     ],
+     "post_hour_local": 9,
+     "reposts": 60,
+     "audience_size": 350000
+    },
+    {
+     "id": "c0_i1",
+     "persona": "arsonist",
+     "home": "Americas",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Credit Suisse CDS blowing out while management begs staff to stay calm. Hearing from desks this is a weekend situation. Move your money before Monday open.",
+     "target_regions": [
+      "Americas",
+      "Europe_UK"
+     ],
+     "post_hour_local": 4,
+     "reposts": 45,
+     "audience_size": 280000
+    },
+    {
+     "id": "c0_i2",
+     "persona": "mutator",
+     "home": "Middle_East",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Brother at a bank in Zurich says Credit Suisse is about to limit withdrawals on Monday. Please move what you can today and tell the family.",
+     "target_regions": [
+      "Middle_East",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 11,
+     "reposts": 0,
+     "audience_size": 900
+    },
+    {
+     "id": "c0_i3",
+     "persona": "mutator",
+     "home": "Asia_Pacific",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heard from my RM that CS will only protect Swiss deposits, anything booked in Singapore or HK is not covered. Transfer out now.",
+     "target_regions": [
+      "Asia_Pacific",
+      "Middle_East"
+     ],
+     "post_hour_local": 16,
+     "reposts": 0,
+     "audience_size": 1200
+    },
+    {
+     "id": "c0_i4",
+     "persona": "bot_farm",
+     "home": "Americas",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "CS collapse CS collapse Lehman 2.0 get money OUT Monday #CreditSuisse #bankrun",
+     "target_regions": [
+      "Americas",
+      "Europe_UK"
+     ],
+     "post_hour_local": 4,
+     "reposts": 300,
+     "audience_size": 40000
+    },
+    {
+     "id": "c0_i5",
+     "persona": "local_debunker",
+     "home": "Switzerland",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Ruhig bleiben: Die CS hat eine CET1-Quote von 13.5% und eine LCR von 191%. Ein Run am Wochenende ist Unsinn, das sind Zahlen aus Q2, nicht Gerüchte. Einlagen bis 100k sind zudem geschützt.",
+     "target_regions": [
+      "Switzerland"
+     ],
+     "post_hour_local": 10,
+     "reposts": 0,
+     "audience_size": 3000
+    },
+    {
+     "id": "c0_i6",
+     "persona": "sceptical_journalist",
+     "home": "Europe_UK",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Reality check: a CEO memo reassuring staff before a strategy update on Oct 27 is routine. CDS is wide, yes, but CET1 13.5% and LCR 191% aren't Lehman numbers. Worth watching, not panicking.",
+     "target_regions": [
+      "Europe_UK",
+      "Americas",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 9,
+     "reposts": 35,
+     "audience_size": 500000
+    }
+   ]
+  },
+  {
+   "cast": 1,
+   "instigators": [
+    {
+     "id": "c1_i0",
+     "persona": "arsonist",
+     "home": "Switzerland",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Credit Suisse: Aktie auf Rekordtief, CDS explodiert, CEO schreibt Notfall-Memo. Wer jetzt noch Geld dort hat, sollte vor Montag handeln. #CS #Bankenkrise",
+     "target_regions": [
+      "Switzerland",
+      "Europe_UK"
+     ],
+     "post_hour_local": 10,
+     "reposts": 30,
+     "audience_size": 150000
+    },
+    {
+     "id": "c1_i1",
+     "persona": "arsonist",
+     "home": "Asia_Pacific",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Credit Suisse is the next Lehman. Counterparties are already pulling lines, desks in Singapore are hearing it. Do not wait for Monday.",
+     "target_regions": [
+      "Asia_Pacific",
+      "Europe_UK"
+     ],
+     "post_hour_local": 16,
+     "reposts": 80,
+     "audience_size": 420000
+    },
+    {
+     "id": "c1_i2",
+     "persona": "mutator",
+     "home": "Switzerland",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Mein Schwager arbeitet in Zürich: die CS schränkt am Montag Barbezüge ein. Bitte weitersagen.",
+     "target_regions": [
+      "Switzerland",
+      "Europe_UK"
+     ],
+     "post_hour_local": 10,
+     "reposts": 0,
+     "audience_size": 2500
+    },
+    {
+     "id": "c1_i3",
+     "persona": "mutator",
+     "home": "Middle_East",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "They are freezing accounts of non-Swiss clients at Credit Suisse starting Monday, only Swiss residents will be made whole. Call your banker now.",
+     "target_regions": [
+      "Middle_East",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 11,
+     "reposts": 0,
+     "audience_size": 1500
+    },
+    {
+     "id": "c1_i4",
+     "persona": "bot_farm",
+     "home": "Asia_Pacific",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "CREDIT SUISSE BANKRUPT?? withdraw now before too late!! share share",
+     "target_regions": [
+      "Asia_Pacific",
+      "Middle_East"
+     ],
+     "post_hour_local": 3,
+     "reposts": 500,
+     "audience_size": 60000
+    },
+    {
+     "id": "c1_i5",
+     "persona": "local_debunker",
+     "home": "Middle_East",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Salam all, I spoke to our CS relationship manager this morning. Nothing unusual, no limits on transfers, and the bank says capital is strong. Don't spread unverified voice notes.",
+     "target_regions": [
+      "Middle_East"
+     ],
+     "post_hour_local": 11,
+     "reposts": 0,
+     "audience_size": 2000
+    },
+    {
+     "id": "c1_i6",
+     "persona": "sceptical_journalist",
+     "home": "Switzerland",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Why the Credit Suisse panic is overdone: the memo is standard pre-update comms, press talks of a capital raise, not a rescue, and the Q2 liquidity ratio sits near double the minimum. Still a weak share price, but not a run.",
+     "target_regions": [
+      "Switzerland",
+      "Europe_UK",
+      "Americas"
+     ],
+     "post_hour_local": 10,
+     "reposts": 25,
+     "audience_size": 400000
+    }
+   ]
+  },
+  {
+   "cast": 2,
+   "instigators": [
+    {
+     "id": "c2_i0",
+     "persona": "arsonist",
+     "home": "Americas",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Everyone's laughing at CS until Monday. Capital raise rumours + record low shares + CDS at crisis levels = bank run. Pull your cash while you can.",
+     "target_regions": [
+      "Americas",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 4,
+     "reposts": 70,
+     "audience_size": 500000
+    },
+    {
+     "id": "c2_i1",
+     "persona": "arsonist",
+     "home": "Asia_Pacific",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Credit Suisse CDS is pricing a real chance of failure. The Friday memo is a tell: banks don't write 'critical moment' unless it's dire. Getting my clients out before the weekend ends.",
+     "target_regions": [
+      "Asia_Pacific",
+      "Middle_East"
+     ],
+     "post_hour_local": 16,
+     "reposts": 55,
+     "audience_size": 300000
+    },
+    {
+     "id": "c2_i2",
+     "persona": "mutator",
+     "home": "Europe_UK",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Friend in compliance at CS London: apparently large withdrawals are being 'reviewed' and some wire requests delayed. Might just be rumour but moving mine.",
+     "target_regions": [
+      "Europe_UK",
+      "Middle_East"
+     ],
+     "post_hour_local": 9,
+     "reposts": 0,
+     "audience_size": 3000
+    },
+    {
+     "id": "c2_i3",
+     "persona": "mutator",
+     "home": "Americas",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Just got word that FDIC-style protection doesn't apply to CS offshore accounts, only Swiss ones. If you're in the US with CS, call today.",
+     "target_regions": [
+      "Americas",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 4,
+     "reposts": 0,
+     "audience_size": 2000
+    },
+    {
+     "id": "c2_i4",
+     "persona": "bot_farm",
+     "home": "Europe_UK",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "cs is going bust. lehman. run run run get your money out #creditsuisse",
+     "target_regions": [
+      "Europe_UK",
+      "Americas"
+     ],
+     "post_hour_local": 3,
+     "reposts": 400,
+     "audience_size": 50000
+    },
+    {
+     "id": "c2_i5",
+     "persona": "local_debunker",
+     "home": "Asia_Pacific",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Quick note from someone who's seen this movie before: a strong CET1 and a liquidity ratio of 191% mean no weekend failure. Friday's memo is normal. Stay calm, clients in SG and HK.",
+     "target_regions": [
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 16,
+     "reposts": 0,
+     "audience_size": 2500
+    },
+    {
+     "id": "c2_i6",
+     "persona": "sceptical_journalist",
+     "home": "Americas",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "The CS fear is loud on X, but look at what's actually reported: a possible capital raise ahead of Oct 27, Q2 CET1 13.5%. That's a stressed bank rather than a failing one. Be careful with 'Lehman' comparisons.",
+     "target_regions": [
+      "Americas",
+      "Europe_UK",
+      "Switzerland"
+     ],
+     "post_hour_local": 4,
+     "reposts": 40,
+     "audience_size": 600000
+    }
+   ]
+  },
+  {
+   "cast": 3,
+   "instigators": [
+    {
+     "id": "c3_i0",
+     "persona": "arsonist",
+     "home": "Middle_East",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Credit Suisse is in deep trouble. Shares down 55%, CDS at 2008 levels, CEO writing to staff on a Friday. Wealthy clients are already moving funds. Do the same.",
+     "target_regions": [
+      "Middle_East",
+      "Europe_UK",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 11,
+     "reposts": 50,
+     "audience_size": 250000
+    },
+    {
+     "id": "c3_i1",
+     "persona": "arsonist",
+     "home": "Switzerland",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Als Schweizer sage ich es klar: die CS ist zu gross zum Scheitern, aber nicht zu gross zum Wackeln. Gerüchte über ein Lehman-Wochenende sind glaubwürdig. Konto leeren, solange es geht.",
+     "target_regions": [
+      "Switzerland",
+      "Europe_UK"
+     ],
+     "post_hour_local": 10,
+     "reposts": 35,
+     "audience_size": 180000
+    },
+    {
+     "id": "c3_i2",
+     "persona": "mutator",
+     "home": "Asia_Pacific",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "My uncle at a private bank says CS is going to cap withdrawals at 50k per day from Monday. HK and SG clients first. Please forward to everyone.",
+     "target_regions": [
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 16,
+     "reposts": 0,
+     "audience_size": 1800
+    },
+    {
+     "id": "c3_i3",
+     "persona": "mutator",
+     "home": "Europe_UK",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Not many realise only Swiss-booked deposits get the CHF 100k guarantee. Money in the London branch is exposed if CS goes. Move it.",
+     "target_regions": [
+      "Europe_UK",
+      "Middle_East",
+      "Americas"
+     ],
+     "post_hour_local": 9,
+     "reposts": 0,
+     "audience_size": 2200
+    },
+    {
+     "id": "c3_i4",
+     "persona": "bot_farm",
+     "home": "Americas",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "CS BANKRUPT MONDAY!!! LEHMAN!!! SELL EVERYTHING WITHDRAW!!! #CS #crash",
+     "target_regions": [
+      "Americas",
+      "Asia_Pacific"
+     ],
+     "post_hour_local": 3,
+     "reposts": 600,
+     "audience_size": 80000
+    },
+    {
+     "id": "c3_i5",
+     "persona": "local_debunker",
+     "home": "Switzerland",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Bin selber Kunde seit 20 Jahren. Heute Morgen auf der Filiale gewesen: normaler Betrieb, kein Andrang, nichts eingeschränkt. Das Gerücht stimmt nicht.",
+     "target_regions": [
+      "Switzerland"
+     ],
+     "post_hour_local": 10,
+     "reposts": 0,
+     "audience_size": 4000
+    },
+    {
+     "id": "c3_i6",
+     "persona": "sceptical_journalist",
+     "home": "Europe_UK",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Good explainer thread incoming: why 'CDS blowing out' doesn't equal 'bank about to collapse'. CS has plenty of liquidity and the swaps market is thin and jumpy. Risk is real but a weekend run isn't the base case.",
+     "target_regions": [
+      "Europe_UK",
+      "Americas",
+      "Asia_Pacific",
+      "Switzerland"
+     ],
+     "post_hour_local": 9,
+     "reposts": 30,
+     "audience_size": 700000
+    }
+   ]
+  },
+  {
+   "cast": 4,
+   "instigators": [
+    {
+     "id": "c4_i0",
+     "persona": "arsonist",
+     "home": "Americas",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "CDS is a screaming signal. Credit Suisse can't fund itself if depositors run, and a Friday memo means they're scared. Weekend risk is real. Not financial advice, but I'd be in cash elsewhere.",
+     "target_regions": [
+      "Americas",
+      "Europe_UK"
+     ],
+     "post_hour_local": 4,
+     "reposts": 65,
+     "audience_size": 420000
+    },
+    {
+     "id": "c4_i1",
+     "persona": "arsonist",
+     "home": "Europe_UK",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "I've been saying it all year: CS is the weak link in European banking. Now insiders are calling this weekend 'the one'. Get out before Monday.",
+     "target_regions": [
+      "Europe_UK",
+      "Switzerland",
+      "Middle_East"
+     ],
+     "post_hour_local": 9,
+     "reposts": 75,
+     "audience_size": 380000
+    },
+    {
+     "id": "c4_i2",
+     "persona": "mutator",
+     "home": "Middle_East",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Please share: Credit Suisse is stopping new USD transfers for Gulf clients on Monday. Got this from a friend in the Dubai office.",
+     "target_regions": [
+      "Middle_East"
+     ],
+     "post_hour_local": 11,
+     "reposts": 0,
+     "audience_size": 2800
+    },
+    {
+     "id": "c4_i3",
+     "persona": "mutator",
+     "home": "Switzerland",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Les dépôts ne sont garantis que pour les résidents suisses, les autres clients de la CS perdront tout si ça tombe. Informez vos amis.",
+     "target_regions": [
+      "Switzerland",
+      "Europe_UK"
+     ],
+     "post_hour_local": 10,
+     "reposts": 0,
+     "audience_size": 1500
+    },
+    {
+     "id": "c4_i4",
+     "persona": "bot_farm",
+     "home": "Asia_Pacific",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "cs collapse imminent!! withdraw all now!! forward to 10 people",
+     "target_regions": [
+      "Asia_Pacific",
+      "Middle_East",
+      "Americas"
+     ],
+     "post_hour_local": 3,
+     "reposts": 450,
+     "audience_size": 70000
+    },
+    {
+     "id": "c4_i5",
+     "persona": "local_debunker",
+     "home": "Americas",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Ex-CS banker here. Rumours of a weekend collapse are nonsense: liquidity is high and the board isn't scrambling. The bank is under pressure, not insolvent. No branch limits exist.",
+     "target_regions": [
+      "Americas",
+      "Europe_UK"
+     ],
+     "post_hour_local": 4,
+     "reposts": 0,
+     "audience_size": 3500
+    },
+    {
+     "id": "c4_i6",
+     "persona": "sceptical_journalist",
+     "home": "Switzerland",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Rumour check: CS's CET1 ratio of 13.5% and an LCR of 191% were reported in Q2, and nothing so far shows a deposit flight. Swiss depositors are covered to CHF 100k, and management has a strategy update on Oct 27.",
+     "target_regions": [
+      "Switzerland",
+      "Europe_UK",
+      "Middle_East",
+      "Asia_Pacific",
+      "Americas"
+     ],
+     "post_hour_local": 10,
+     "reposts": 45,
+     "audience_size": 550000
+    }
+   ]
+  }
+ ]
+}

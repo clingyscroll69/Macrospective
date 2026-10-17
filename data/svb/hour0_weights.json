@@ -1,0 +1,178 @@
+{
+ "SF_Bay_Area": {
+  "samples": [
+   {
+    "b": 0.8,
+    "h": 0.9,
+    "a": 0.95,
+    "reason": "Core VC/founder network; uninsured payroll cash at stake; VC advice is trusted and acts fast"
+   },
+   {
+    "b": 0.7,
+    "h": 1.0,
+    "a": 0.92,
+    "reason": "Group chats and X amplify instantly; founders fear payroll miss, low patience"
+   },
+   {
+    "b": 0.85,
+    "h": 0.85,
+    "a": 0.97,
+    "reason": "Peers' VC portfolio directives read as credible insider signal; withdraw now"
+   }
+  ]
+ },
+ "New_York": {
+  "samples": [
+   {
+    "b": 0.5,
+    "h": 0.6,
+    "a": 0.7,
+    "reason": "Savvy readers verify the $1.8B loss and see it as real, but moderate exposure"
+   },
+   {
+    "b": 0.4,
+    "h": 0.7,
+    "a": 0.65,
+    "reason": "Fintech/VC on X share fast; some skepticism of VC herd call"
+   },
+   {
+    "b": 0.55,
+    "h": 0.55,
+    "a": 0.72,
+    "reason": "Bloomberg confirms facts; capital raise signals distress to informed readers"
+   }
+  ]
+ },
+ "Boston": {
+  "samples": [
+   {
+    "b": 0.4,
+    "h": 0.5,
+    "a": 0.75,
+    "reason": "Biotech startups rely on SVB; runway cash uninsured, group chats forward warnings"
+   },
+   {
+    "b": 0.3,
+    "h": 0.55,
+    "a": 0.7,
+    "reason": "Slack/WhatsApp spread to founders; moderately trusted"
+   },
+   {
+    "b": 0.45,
+    "h": 0.4,
+    "a": 0.78,
+    "reason": "Cash-burning biotechs cannot risk freeze; strong push to withdraw"
+   }
+  ]
+ },
+ "Austin_Seattle_LA": {
+  "samples": [
+   {
+    "b": 0.3,
+    "h": 0.4,
+    "a": 0.55,
+    "reason": "Tech hubs hear via X/LinkedIn; moderate exposure, some wait-and-see"
+   },
+   {
+    "b": 0.25,
+    "h": 0.45,
+    "a": 0.5,
+    "reason": "Plausible but less direct VC network exposure"
+   },
+   {
+    "b": 0.35,
+    "h": 0.35,
+    "a": 0.6,
+    "reason": "Startups with SVB accounts would hedge by moving some cash"
+   }
+  ]
+ },
+ "London_UK": {
+  "samples": [
+   {
+    "b": 0.2,
+    "h": 0.5,
+    "a": 0.55,
+    "reason": "Opens as US wakes; WhatsApp forwards; UK sub depositors uncertain of protection"
+   },
+   {
+    "b": 0.15,
+    "h": 0.6,
+    "a": 0.5,
+    "reason": "Delay but strong forwarding; trust in US VC advice moderate"
+   },
+   {
+    "b": 0.25,
+    "h": 0.45,
+    "a": 0.6,
+    "reason": "Subsidiary clients nervous, but FSCS/ring-fencing might calm some"
+   }
+  ]
+ },
+ "Israel": {
+  "samples": [
+   {
+    "b": 0.3,
+    "h": 0.8,
+    "a": 0.7,
+    "reason": "Dense WhatsApp founder groups spread forwards rapidly; many exposed startups"
+   },
+   {
+    "b": 0.35,
+    "h": 0.9,
+    "a": 0.65,
+    "reason": "Tight community, rumour cascades; hours behind in reacting"
+   },
+   {
+    "b": 0.25,
+    "h": 0.85,
+    "a": 0.72,
+    "reason": "Founders trust peer warnings and act quickly on uninsured deposits"
+   }
+  ]
+ },
+ "India": {
+  "samples": [
+   {
+    "b": 0.1,
+    "h": 0.6,
+    "a": 0.45,
+    "reason": "WhatsApp forwards spread but fewer accounts and lower direct exposure"
+   },
+   {
+    "b": 0.15,
+    "h": 0.7,
+    "a": 0.4,
+    "reason": "Indian SaaS founders share widely; verification limited"
+   },
+   {
+    "b": 0.05,
+    "h": 0.55,
+    "a": 0.5,
+    "reason": "Late timezone; cautious founders move cash if balances are material"
+   }
+  ]
+ },
+ "Rest_of_US": {
+  "samples": [
+   {
+    "b": 0,
+    "h": 0,
+    "a": 0.15,
+    "reason": "Reference region; low exposure and little personal relevance"
+   },
+   {
+    "b": 0,
+    "h": 0,
+    "a": 0.2,
+    "reason": "General public sees business news, not an action trigger"
+   },
+   {
+    "b": 0,
+    "h": 0,
+    "a": 0.1,
+    "reason": "Few SVB depositors; mild unease only"
+   }
+  ]
+ }
+}
