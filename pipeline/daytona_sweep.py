@@ -25,7 +25,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FILES = ["engine.py"]
-SCENARIO_FILES = ["scenario.json", "bank_config.json", "hour0_weights.json", "instigators.json",
+SCENARIO_FILES = ["network.npz", "scenario.json", "bank_config.json", "hour0_weights.json", "instigators.json",
                   "rumour_scores.json", "large_accounts.json", "large_accounts_v2.json"]
 # Org quota: 4 vCPU, 8 GiB memory, 10 GiB storage shared by all live sandboxes.
 CPU_PER_SANDBOX = 1
@@ -50,14 +50,17 @@ def run_local(d, resp, a, b):
 def run_daytona(d, resp, a, b, api_key):
     from daytona import Daytona, DaytonaConfig, CreateSandboxFromImageParams, Image, Resources
     daytona = Daytona(DaytonaConfig(api_key=api_key))
-    image = Image.debian_slim("3.12").pip_install(["numpy==2.1.3", "scipy==1.15.3"])
+    image = Image.debian_slim("3.12").pip_install(["numpy==2.1.3", "scipy==1.15.3", "numba==0.68.0", "h3==4.5.0"])
     sb = daytona.create(CreateSandboxFromImageParams(image=image,
                         resources=Resources(cpu=CPU_PER_SANDBOX, memory=MEM_GIB_PER_SANDBOX,
                                             disk=DISK_GIB_PER_SANDBOX)), timeout=900)   # image build can exceed the 60 s default
     try:
         wd = sb.get_work_dir()
         sb.process.exec(f"mkdir -p {wd}/scn")
+        sb.process.exec(f"mkdir -p {wd}/multiplex")
         sb.fs.upload_file((ROOT / "engine.py").read_bytes(), f"{wd}/engine.py")
+        for f in (ROOT / "multiplex").glob("*.py"):      # v4 engine package
+            sb.fs.upload_file(f.read_bytes(), f"{wd}/multiplex/{f.name}")
         for f in SCENARIO_FILES:
             if (d / f).exists():
                 sb.fs.upload_file((d / f).read_bytes(), f"{wd}/scn/{f}")
