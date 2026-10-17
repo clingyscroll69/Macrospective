@@ -1,0 +1,24 @@
+{
+ "company_type": "bank",
+ "company": "PacWest Bancorp (Pacific Western Bank)",
+ "start": "2023-05-03 18:00 PT (Wednesday). Known publicly at that moment: three US bank failures since March (SVB, Signature, and First Republic, seized May 1 and sold to JPMorgan); PACW shares fell ~52% in the May 3 session, Western Alliance -23%, KRE -5%; Fed raised rates the same afternoon. After the close Bloomberg/Reuters reported PacWest, a Los Angeles-based bank with ~$44bn assets, is weighing strategic options including a sale, breakup or capital raise, with shares down ~50% after hours. Q1'23 (Apr 25): deposits $28.2bn (down from $33.9bn at YE22 but rebounding +$0.7bn to Apr 24), 71-73% insured, $8.1bn uninsured, $12.4bn immediately available liquidity (153% of uninsured), cash $6.7bn, CET1 9.22%, $1.38bn goodwill impairment, $4.9bn BTFP and $5.45bn FHLB drawn. Deposit mix: Community Banking 53%, Venture Banking 23%, Wholesale 24%.",
+ "base_rumour": "BREAKING: PacWest is the next bank to go - shares down 50% and it's shopping itself for sale after First Republic. If you have uninsured money at Pacific Western, particularly venture or business accounts, move it before the bank opens Thursday.",
+ "regions": {
+  "Los_Angeles_SoCal": "HQ and core community-banking branch base; retail, small business and HOA depositors; largest share; media-heavy local market.",
+  "SF_Bay_Area": "Venture-banking (Square 1 heritage) startups and VCs; same tight tech network that ran SVB; heavy X/Slack/group-chat exposure.",
+  "Rest_of_California": "Community-bank branches and HOA/business clients across the Central Valley, San Diego and Inland Empire.",
+  "US_Venture_Hubs": "Venture-banking clients in Boston, NYC, Austin, Seattle and other hubs, ET/CT time zones, plugged into VC and finance Twitter.",
+  "Rest_of_US": "National wholesale and HOA/commercial deposits; less direct brand awareness, driven by news and counterparties; Eastern time zone."
+ },
+ "responses": {
+  "R0_silence": "No company statement beyond what was reported; the bank says nothing.",
+  "R1_actual": "ACTUAL: PacWest issued a press release late May 3 confirming it reviews strategic options with partners/investors, saying it saw no unusual deposit outflows since First Republic's sale, ~$28bn deposits (75% insured), liquidity 188% of uninsured.",
+  "R2_early_backstop": "COUNTERFACTUAL: committed equity investment plus explicit Fed/FHLB liquidity access announced tonight.",
+  "R3_transparent_liquidity": "COUNTERFACTUAL: detailed insured/uninsured and liquidity disclosure with proactive outreach to large clients tonight."
+ },
+ "official_texts": {
+  "R1_actual_pacw_statement": "Pacific Western Bank Issues Update (press release dated May 3, 2023). In accordance with normal practices the company and its board continuously review strategic options; the company has been approached by several potential partners and investors and discussions are ongoing. The company has not experienced unusual deposit outflows since the First Republic sale was announced. Total deposits were about $28 billion as of May 2, with about 75% insured; liquidity covers uninsured deposits at 188%; $1 billion of borrowings were paid down. The $2.7 billion Lender Finance portfolio sale is on track and would lift CET1 from 9.21% to 10%+. The company is executing its plan focused on the community bank, growing HOA, exiting non-core products and improving efficiency.",
+  "R2_early_backstop": "PacWest Bancorp announces a committed capital and liquidity package: a signed commitment from investors for at least $1 billion of new common equity, confirmation that the Federal Reserve Bank of San Francisco discount window and BTFP remain available against pledged collateral, and a statement that all deposits are being fully supported by $12+ billion of immediately available liquidity, covering uninsured deposits more than 150%. Bank open normally Thursday; wires and ACH unrestricted.",
+  "R3_transparent_liquidity": "PacWest Bancorp statement: 73% of deposits are insured (as of April 24) and uninsured deposits are $8.1 billion against $12.4 billion of immediately available liquidity (153% coverage), with $6.7 billion of cash. Deposits rose after quarter-end. Strategic-options review is routine; no transaction has been agreed. CEO available for client calls; branch and relationship teams are contacting venture and large commercial clients tonight."
+ }
+}

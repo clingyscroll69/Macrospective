@@ -1,0 +1,55 @@
+{
+  "survived_window": true,
+  "survival_detail": "PacWest did not fail, was not seized and was not acquired in May 3-6 2023 or the following week. No FDIC action. It funded outflows from on-balance-sheet liquidity and pledged more collateral to the Fed discount window on May 10 (borrowing capacity, not a reported emergency bailout). Later: merger with Banc of California announced 2023-07-25 (all-stock, 0.6569 BANC share per PACW share, $400m Warburg Pincus/Centerbridge equity); closed Nov 30 2023.",
+  "outflow_figures": [
+    {
+      "window": "Week ended Fri May 5 2023 (Mon May 1 - Fri May 5)",
+      "amount_usd_bn": 2.7,
+      "share_of_deposits": 0.095,
+      "source": "PacWest SEC filing disclosed May 10-11 2023 (reported by CNBC, Reuters, Motley Fool, The Bank Slate as an 8-K/10-Q item): deposits 'declined approximately 9.5%', with a majority on May 4 and 5 after May 3 afternoon news reports. Dollar amount is my arithmetic: 9.5% x ~$28bn (8-K exhibit dated 2023-05-03: 'total deposits totaling $28 billion as of May 2, 2023'). Reuters-based secondary coverage cited ~$1.5bn, which does not reconcile with 9.5% of $28bn and is treated as unreliable. Exact filing form (8-K vs 10-Q) conflicted across sources; I could not open the filing text itself."
+    },
+    {
+      "window": "May 4-5 2023 (two days after May 3 reports) - UNVERIFIED",
+      "amount_usd_bn": 1.7,
+      "share_of_deposits": 0.061,
+      "source": "A search summary attributed a ~$1.7bn two-day decline after the May 3 board meeting to a securities filing (likely the Banc of California merger proxy 'Background of the Merger'); I could not confirm it in primary text. It is consistent with 'majority of 9.5%' (1.7/2.7 = ~64%)."
+    },
+    {
+      "window": "Q1-end to Q2-end context: Mar 31 to Jun 30 2023",
+      "amount_usd_bn": 6.0,
+      "share_of_deposits": 0.178,
+      "source": "PacWest Q2 2023 10-Q: total deposits fell $6.0bn (17.8%) to $27.9bn at Jun 30; noninterest-bearing down $5.2bn. Also base: $28.2bn deposits at Mar 31 (Bloomberg). Insured share 75% on May 2."
+    }
+  ],
+  "best_estimate_window": {
+    "share": 0.07,
+    "low": 0.055,
+    "high": 0.095,
+    "derivation": "Window is Wed May 3 18:00 PT to Sat May 6 18:00 PT, i.e. effectively Thu May 4 and Fri May 5 (Sat has no business-day flows; Wed afternoon outflows before 18:00 are excluded but the news broke after Wed's market close/afternoon). The company said the majority of the 9.5% weekly decline came on May 4 and 5, and its own May 3 statement said flows were not out-of-the-ordinary through May 2/3, so Mon-Wed were roughly flat. Hence the window captures the bulk of the 9.5% (~$2.7bn on ~$28bn). Point estimate 7% (~$1.9-2.0bn) assumes ~70-75% of the week fell on May 4-5 and about 6% (~$1.7bn, unverified proxy figure) at the low end; the upper bound is the whole weekly 9.5% (~$2.7bn) if Mon-Wed was flat/slightly positive. Low 5.5% allows a larger Mon-Wed share or an intraday May 3 share."
+  },
+  "leading_segments": "Not disclosed in available sources. No filing or news found that breaks the May 4-5 outflows down by segment or geography. Context only: uninsured deposits were ~25% of deposits ($5.2bn on May 10; insured 75% on May 2); PacWest has a large venture/technology banking and California business franchise; Q2 outflows were concentrated in noninterest-bearing (business operating) accounts ($5.2bn of the $6.0bn Q1-end to Q2-end drop) - suggests commercial/uninsured clients led, but this is inference, not reported for the May window.",
+  "peak_dates": "Thu May 4 and Fri May 5 2023 (company: majority of the week's 9.5% decline occurred on those days, following afternoon May 3 Bloomberg report that PacWest was exploring strategic options incl. sale/capital raise). Stock fell to record lows May 4; rebounded Mon May 8 after dividend cut announcement. Disclosure on Thu May 11 caused a second stock plunge (-23%/-28% intraday) but that was disclosure of the prior week's outflows, not a new run peak.",
+  "actions_in_window": [
+    {"date": "2023-05-02/03", "action": "8-K exhibit (dated May 3): said no out-of-the-ordinary deposit flows, deposits $28bn as of May 2, 75% insured, liquidity 188% of uninsured deposits, repaid $1bn borrowings, board continuously reviewing strategic options."},
+    {"date": "2023-05-03 (afternoon PT)", "action": "Bloomberg/press reported PacWest weighing strategic options incl. sale; stock sold off sharply; PacWest confirmed it reviews options and said no cause for alarm."},
+    {"date": "2023-05-05 (Fri, after close)", "action": "Cut quarterly common dividend from $0.25 to $0.01 per share to accelerate capital build toward CET1 10%+; CEO Paul Taylor quoted. Stock jumped ~39% premarket Mon May 8 (note: some outlets also cite a large Friday rebound)."},
+    {"date": "2023-05-04/05", "action": "Funded outflows from on-balance-sheet liquidity."},
+    {"date": "2023-05-10 (week after)", "action": "Pledged additional $5.1bn loans to the FRB, adding ~$3.9bn discount window capacity; immediately available liquidity $15.0bn vs uninsured deposits $5.2bn (288%)."},
+    {"date": "2023-05-11 (week after)", "action": "Disclosed 9.5% weekly deposit decline; stock fell ~20-28% intraday. Earlier (pre-window) Q1 10-Q booked $1.38bn goodwill impairment."}
+  ],
+  "caveats": [
+    "Could not open the May 11 primary filing text; 9.5% and 'majority on May 4-5' are from multiple consistent secondary reports quoting it.",
+    "Dollar amounts are derived from the ~$28bn base.",
+    "Reuters-reported $1.5bn figure and $1.7bn two-day figure conflict/unverified.",
+    "Segment/region breakdown not found."
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1102112/000110465923055748/tm2314675d1_ex99-1.htm",
+    "https://www.cnbc.com/2023/05/11/pacwest-shares-tumble-20percent-after-regional-bank-says-deposits-fell-9point5percent-last-week.html",
+    "https://www.fool.com/investing/2023/05/11/why-shares-of-pacwest-bancorp-are-plunging-today/",
+    "https://www.thebankslate.com/2023/05/pacwest-deposits-fell-9-5-last-week/",
+    "https://www.cnbc.com/2023/05/08/regional-banks-rebound-for-a-second-day-as-pacwest-cuts-dividend-says-business-fundamentally-sound.html",
+    "https://www.sec.gov/Archives/edgar/data/1102112/000162828023028538/pacw-20230630.htm",
+    "https://www.sec.gov/Archives/edgar/data/1102112/000114036123049098/ny20010147x1_defm14a.htm"
+  ]
+}

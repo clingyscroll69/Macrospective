@@ -1,0 +1,83 @@
+{
+ "registered_utc": "2026-10-17T12:58:34.722054+00:00",
+ "window": "Wed 3 May 2023 18:00 PT -> Sat 6 May 2023 18:00 PT (72h)",
+ "code_hashes": "FROZEN_HASHES.txt (engine unchanged; pipeline/llm.py JSON extraction fixed before the sweep)",
+ "predictions": {
+  "R0_silence": {
+   "n": 250,
+   "survival_share": 0.928,
+   "median_fail_hour": 38.5,
+   "withdrawn_share_72h": {
+    "p10": 0.2248,
+    "median": 0.2792,
+    "p90": 0.407
+   },
+   "large_account_withdrawn_median": 0.2227,
+   "median_withdrawn_by_region": {
+    "Los_Angeles_SoCal": 0.0387,
+    "SF_Bay_Area": 0.1112,
+    "Rest_of_California": 0.0023,
+    "US_Venture_Hubs": 0.1082,
+    "Rest_of_US": 0.0015
+   }
+  },
+  "R1_actual": {
+   "n": 250,
+   "survival_share": 0.972,
+   "median_fail_hour": 36.0,
+   "withdrawn_share_72h": {
+    "p10": 0.1858,
+    "median": 0.2205,
+    "p90": 0.3151
+   },
+   "large_account_withdrawn_median": 0.19,
+   "median_withdrawn_by_region": {
+    "Los_Angeles_SoCal": 0.0161,
+    "SF_Bay_Area": 0.099,
+    "Rest_of_California": 0.0001,
+    "US_Venture_Hubs": 0.0947,
+    "Rest_of_US": 0.0
+   }
+  },
+  "R2_early_backstop": {
+   "n": 250,
+   "survival_share": 0.988,
+   "median_fail_hour": 22.0,
+   "withdrawn_share_72h": {
+    "p10": 0.0676,
+    "median": 0.1127,
+    "p90": 0.1643
+   },
+   "large_account_withdrawn_median": 0.1041,
+   "median_withdrawn_by_region": {
+    "Los_Angeles_SoCal": 0.0028,
+    "SF_Bay_Area": 0.0577,
+    "Rest_of_California": 0.0,
+    "US_Venture_Hubs": 0.0514,
+    "Rest_of_US": 0.0
+   }
+  },
+  "R3_transparent_liquidity": {
+   "n": 250,
+   "survival_share": 0.984,
+   "median_fail_hour": 20.0,
+   "withdrawn_share_72h": {
+    "p10": 0.1478,
+    "median": 0.2074,
+    "p90": 0.2775
+   },
+   "large_account_withdrawn_median": 0.1888,
+   "median_withdrawn_by_region": {
+    "Los_Angeles_SoCal": 0.0144,
+    "SF_Bay_Area": 0.097,
+    "Rest_of_California": 0.0,
+    "US_Venture_Hubs": 0.0884,
+    "Rest_of_US": 0.0
+   }
+  }
+ },
+ "pass_criteria": {
+  "survival": "engine R1_actual survival_share >= 0.5 iff the bank was not closed/rescued in the window",
+  "magnitude": "actual deposit outflow over the window (share of deposits) inside R1_actual p10..p90; near miss if within 2x of the median"
+ }
+}

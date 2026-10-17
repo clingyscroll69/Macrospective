@@ -1,0 +1,44 @@
+{
+ "large_share": {
+  "best": 0.3,
+  "low": 0.22,
+  "high": 0.4,
+  "derivation": "Venture Banking deposits 23% of total (Q1'23, mostly uninsured startup/VC operating balances) plus an estimated ~7% of commercial/HOA-management and escrow-type institutional accounts within Community Banking. Wholesale (24%) excluded as largely brokered/insured and rate-driven. Cross-check: uninsured 27% overall, so large institution-like accounts are the bulk of uninsured plus some pass-through-insured HOA balances. Low = venture only (23%) less overlap; high adds part of wholesale.",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1102112/000110465923049638/tm2313653d1_ex99-1.htm"
+  ]
+ },
+ "archetypes": [
+  {
+   "name": "VC-backed startup treasurers",
+   "share_of_total_deposits": 0.18,
+   "region_mix": {
+    "SF_Bay_Area": 0.45,
+    "US_Venture_Hubs": 0.4,
+    "Rest_of_California": 0.05,
+    "Los_Angeles_SoCal": 0.1
+   },
+   "notes": "Venture Banking; uninsured, tight networks, fast to move after SVB experience."
+  },
+  {
+   "name": "VC funds and life-science firms",
+   "share_of_total_deposits": 0.05,
+   "region_mix": {
+    "SF_Bay_Area": 0.4,
+    "US_Venture_Hubs": 0.5,
+    "Los_Angeles_SoCal": 0.1
+   },
+   "notes": "Rest of Venture Banking, follows peer signals."
+  },
+  {
+   "name": "HOA management companies and commercial operating accounts",
+   "share_of_total_deposits": 0.07,
+   "region_mix": {
+    "Los_Angeles_SoCal": 0.5,
+    "Rest_of_California": 0.3,
+    "Rest_of_US": 0.2
+   },
+   "notes": "Estimate; partly pass-through insured, slower decisions via boards/managers."
+  }
+ ]
+}

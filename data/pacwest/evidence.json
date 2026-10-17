@@ -1,0 +1,2173 @@
+{
+ "R0_silence": {
+  "response": "R0_silence",
+  "response_text": "No company statement beyond what was reported; the bank says nothing.",
+  "runs": 250,
+  "outcome": {
+   "survival_share": 0.93,
+   "ci95_points": 0.03,
+   "typical_failure_hour": "Fri 08:00 PT",
+   "median_withdrawn_before_stop": 0.28
+  },
+  "outcome_types": {
+   "contained (bank survives 72h)": 0.93,
+   "fails at Fri 10:00 PT, led by Los_Angeles_SoCal": 0.01,
+   "fails at Fri 15:00 PT, led by Los_Angeles_SoCal": 0.01,
+   "fails at Fri 14:00 PT, led by Los_Angeles_SoCal": 0.01,
+   "fails at Fri 11:00 PT, led by US_Venture_Hubs": 0.0
+  },
+  "interaction": {
+   "Los_Angeles_SoCal": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 10.04,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.039
+   },
+   "SF_Bay_Area": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 13.84,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.111
+   },
+   "Rest_of_California": {
+    "first_reassurance": "Wed 20:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 22.84,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.002
+   },
+   "US_Venture_Hubs": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 16.83,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.108
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 4.15,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.002
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c2_i0",
+    "persona": "Arsonist 1: large anonymous finance-doom X account (~400k followers) that called the SVB run",
+    "text": "PacWest is the 4th domino. Down 50% after hours, Bloomberg says it's shopping itself, and First Republic was seized 2 days ago. If you have operating cash above $250k there, wire it out before the 6am ET open. Don't wait for a press release.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.3,
+     "SF_Bay_Area": 0.94,
+     "Rest_of_California": 0.39,
+     "US_Venture_Hubs": 0.95,
+     "Rest_of_US": 0.78
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0226,
+     "SF_Bay_Area": 0.2884,
+     "Rest_of_California": 0.0274,
+     "US_Venture_Hubs": 0.4011,
+     "Rest_of_US": 0.0302
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0293,
+     "SF_Bay_Area": 0.2725,
+     "Rest_of_California": 0.0487,
+     "US_Venture_Hubs": 0.323,
+     "Rest_of_US": 0.0776
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 10:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "Arsonist: large fintech/short-seller-style X account, ex-hedge fund voice, 310k followers",
+    "text": "PacWest down 50% after hours and 'exploring a sale.' That's what First Republic said the week before the seizure. If you're a startup with operating cash over $250k there, I would not wait for the open. Wires go in the morning.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.67,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.28,
+     "SF_Bay_Area": 0.89,
+     "Rest_of_California": 0.4,
+     "US_Venture_Hubs": 0.91,
+     "Rest_of_US": 0.72
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0206,
+     "SF_Bay_Area": 0.2414,
+     "Rest_of_California": 0.0306,
+     "US_Venture_Hubs": 0.3398,
+     "Rest_of_US": 0.0205
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0286,
+     "SF_Bay_Area": 0.2542,
+     "Rest_of_California": 0.0536,
+     "US_Venture_Hubs": 0.2984,
+     "Rest_of_US": 0.0714
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 10:00 PT",
+     "SF_Bay_Area": "Thu 08:00 PT",
+     "Rest_of_California": "Thu 11:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c0_i0",
+    "persona": "Arsonist: large fintech/VC-commentary X account with a track record of calling SVB early, posts in punchy breaking-news style",
+    "text": "PacWest is shopping itself after losing 50% of its value. First Republic is gone and PACW is next in line. If you have uninsured balances at Pacific Western, especially venture accounts, move them before Thursday's open. Not worth the risk.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.82,
+     "SF_Bay_Area": 0.85,
+     "Rest_of_California": 0.41,
+     "US_Venture_Hubs": 0.91,
+     "Rest_of_US": 0.41
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0979,
+     "SF_Bay_Area": 0.1919,
+     "Rest_of_California": 0.021,
+     "US_Venture_Hubs": 0.3177,
+     "Rest_of_US": 0.0114
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.1468,
+     "SF_Bay_Area": 0.1779,
+     "Rest_of_California": 0.0487,
+     "US_Venture_Hubs": 0.2608,
+     "Rest_of_US": 0.0355
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Thu 07:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "Arsonist: well-known fintech/VC-adjacent X personality with a reputation for calling bank runs early",
+    "text": "Three banks down, PACW is next. A sale or breakup means it can't raise capital on its own. Founders on Venture Banking: you were told SVB was fine too. Move the balance above $250k before 6am PT.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.66,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.67,
+     "US_Venture_Hubs": 0.67,
+     "Rest_of_US": 0.53
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.85,
+     "SF_Bay_Area": 0.89,
+     "Rest_of_California": 0.39,
+     "US_Venture_Hubs": 0.87,
+     "Rest_of_US": 0.34
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0793,
+     "SF_Bay_Area": 0.2466,
+     "Rest_of_California": 0.0251,
+     "US_Venture_Hubs": 0.2183,
+     "Rest_of_US": 0.0066
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.137,
+     "SF_Bay_Area": 0.2045,
+     "Rest_of_California": 0.0483,
+     "US_Venture_Hubs": 0.193,
+     "Rest_of_US": 0.0244
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist: large anonymous macro/banking doom account on X, 'bank watch' brand, 180k followers",
+    "text": "PACW -50% AFTER HOURS and Bloomberg says it's shopping itself. That's what First Republic looked like 48 hours before the seizure. If you're a founder with more than $250k there, you don't wait for the open.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.23,
+     "SF_Bay_Area": 0.75,
+     "Rest_of_California": 0.28,
+     "US_Venture_Hubs": 0.8,
+     "Rest_of_US": 0.54
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0187,
+     "SF_Bay_Area": 0.1528,
+     "Rest_of_California": 0.0225,
+     "US_Venture_Hubs": 0.238,
+     "Rest_of_US": 0.0119
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0268,
+     "SF_Bay_Area": 0.1606,
+     "Rest_of_California": 0.0369,
+     "US_Venture_Hubs": 0.2207,
+     "Rest_of_US": 0.0523
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 11:00 PT",
+     "SF_Bay_Area": "Wed 22:00 PT",
+     "Rest_of_California": "Thu 11:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "Arsonist: anonymous macro/banking doom account on X with a large following, posts bank-failure threads",
+    "text": "PacWest is shopping itself after First Republic and the stock is down 50% after hours. That's how SVB started. If you're a startup with uninsured cash at Pacific Western, don't wait for the Thursday open. Wire it out tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.14,
+     "SF_Bay_Area": 0.78,
+     "Rest_of_California": 0.23,
+     "US_Venture_Hubs": 0.84,
+     "Rest_of_US": 0.64
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0112,
+     "SF_Bay_Area": 0.1549,
+     "Rest_of_California": 0.0123,
+     "US_Venture_Hubs": 0.247,
+     "Rest_of_US": 0.0111
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0119,
+     "SF_Bay_Area": 0.1307,
+     "Rest_of_California": 0.0232,
+     "US_Venture_Hubs": 0.2004,
+     "Rest_of_US": 0.0543
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "BREAKING: PacWest is the next bank to go - shares down 50% and it's shopping itself for sale after First Republic. If you have uninsured money at Pacific Western, particularly venture or business accounts, move it before the bank opens Thursday.",
+    "runs_present": 250,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.39,
+     "SF_Bay_Area": 0.23,
+     "Rest_of_California": 0.19,
+     "US_Venture_Hubs": 0.16,
+     "Rest_of_US": 0.16
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0844,
+     "SF_Bay_Area": 0.0681,
+     "Rest_of_California": 0.0149,
+     "US_Venture_Hubs": 0.0281,
+     "Rest_of_US": 0.0056
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0792,
+     "SF_Bay_Area": 0.0498,
+     "Rest_of_California": 0.0222,
+     "US_Venture_Hubs": 0.0221,
+     "Rest_of_US": 0.012
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 22:00 PT",
+     "SF_Bay_Area": "Wed 22:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Thu 07:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "Arsonist: macro and markets doomposter with a large X following, sarcastic tone, treats bank runs as a chain of dominoes",
+    "text": "SVB, then Signature, then First Republic, and now PacWest is down 50% and 'weighing options.' We know how this story goes. Regional banks are being picked off one at a time and the Fed just hiked into it. Check where your cash sits tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.51,
+     "SF_Bay_Area": 0.54,
+     "Rest_of_California": 0.53,
+     "US_Venture_Hubs": 0.53,
+     "Rest_of_US": 0.43
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.06,
+     "SF_Bay_Area": 0.74,
+     "Rest_of_California": 0.09,
+     "US_Venture_Hubs": 0.73,
+     "Rest_of_US": 0.67
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.002,
+     "SF_Bay_Area": 0.0367,
+     "Rest_of_California": 0.0012,
+     "US_Venture_Hubs": 0.0436,
+     "Rest_of_US": 0.0036
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0033,
+     "SF_Bay_Area": 0.0686,
+     "Rest_of_California": 0.0067,
+     "US_Venture_Hubs": 0.0719,
+     "Rest_of_US": 0.0429
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 08:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "Arsonist 2: macro/crypto trader on X with a large following who posts bank-failure threads",
+    "text": "Regional banks are getting picked off one by one: SVB, Signature, FRC, and now PACW is 'exploring a sale'. That phrase usually means the board sees the end. Uninsured depositors at Pacific Western should treat tonight as the window to move funds.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.59,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.63,
+     "SF_Bay_Area": 0.06,
+     "Rest_of_California": 0.15,
+     "US_Venture_Hubs": 0.54,
+     "Rest_of_US": 0.52
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0212,
+     "SF_Bay_Area": 0.0042,
+     "Rest_of_California": 0.0042,
+     "US_Venture_Hubs": 0.0322,
+     "Rest_of_US": 0.0093
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0682,
+     "SF_Bay_Area": 0.0039,
+     "Rest_of_California": 0.0128,
+     "US_Venture_Hubs": 0.0454,
+     "Rest_of_US": 0.0318
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 08:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist: ex-fintech founder turned viral X commentator, 95k followers, contrarian and sarcastic",
+    "text": "Three banks gone since March and PacWest is next on the menu. Pacific Western venture accounts: the wire cutoff is your friend, and tomorrow morning the queue will be long. Don't be the last one in line again.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.59,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.59,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.33,
+     "SF_Bay_Area": 0.36,
+     "Rest_of_California": 0.1,
+     "US_Venture_Hubs": 0.34,
+     "Rest_of_US": 0.09
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0087,
+     "SF_Bay_Area": 0.0247,
+     "Rest_of_California": 0.0025,
+     "US_Venture_Hubs": 0.0228,
+     "Rest_of_US": 0.0011
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0311,
+     "SF_Bay_Area": 0.0389,
+     "Rest_of_California": 0.0095,
+     "US_Venture_Hubs": 0.0356,
+     "Rest_of_US": 0.005
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "Arsonist: macro doom-posting X account with a large following, banking-crisis thread writer, 185k followers",
+    "text": "Bank #4 is lining up. SVB, Signature, First Republic, now PACW is shopping itself. Every one of these followed the same arc: stock collapse, 'strategic options,' then a weekend seizure. Check where your uninsured deposits sit tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.53,
+     "SF_Bay_Area": 0.06,
+     "Rest_of_California": 0.13,
+     "US_Venture_Hubs": 0.5,
+     "Rest_of_US": 0.41
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0166,
+     "SF_Bay_Area": 0.0035,
+     "Rest_of_California": 0.0029,
+     "US_Venture_Hubs": 0.0296,
+     "Rest_of_US": 0.0046
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0549,
+     "SF_Bay_Area": 0.0042,
+     "Rest_of_California": 0.0104,
+     "US_Venture_Hubs": 0.0466,
+     "Rest_of_US": 0.0253
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 08:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i2",
+    "persona": "mutator: startup founder in a YC alumni group chat, relays 'inside info' from a CFO friend",
+    "text": "Heard from a CFO friend that PacWest is already limiting big wires and will freeze venture accounts at open tomorrow. Not confirmed, but I'm moving everything to Chase tonight. Do it now if you can.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.71,
+     "SF_Bay_Area": 0.69,
+     "Rest_of_California": 0.73,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.0,
+     "SF_Bay_Area": 0.02,
+     "Rest_of_California": 0.0,
+     "US_Venture_Hubs": 0.04,
+     "Rest_of_US": 0.0
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0001,
+     "SF_Bay_Area": 0.0013,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0069,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0001,
+     "SF_Bay_Area": 0.0018,
+     "Rest_of_California": 0.0003,
+     "US_Venture_Hubs": 0.006,
+     "Rest_of_US": 0.0002
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 18:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Wed 18:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 18:00 PT"
+    }
+   }
+  ]
+ },
+ "R1_actual": {
+  "response": "R1_actual",
+  "response_text": "ACTUAL: PacWest issued a press release late May 3 confirming it reviews strategic options with partners/investors, saying it saw no unusual deposit outflows since First Republic's sale, ~$28bn deposits (75% insured), liquidity 188% of uninsured.",
+  "runs": 250,
+  "outcome": {
+   "survival_share": 0.97,
+   "ci95_points": 0.02,
+   "typical_failure_hour": "Fri 06:00 PT",
+   "median_withdrawn_before_stop": 0.22
+  },
+  "outcome_types": {
+   "contained (bank survives 72h)": 0.97,
+   "fails at Thu 17:00 PT, led by US_Venture_Hubs": 0.0,
+   "fails at Fri 06:00 PT, led by Los_Angeles_SoCal": 0.0,
+   "fails at Thu 06:00 PT, led by Los_Angeles_SoCal": 0.0,
+   "fails at Thu 14:00 PT, led by US_Venture_Hubs": 0.0
+  },
+  "interaction": {
+   "Los_Angeles_SoCal": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 1.62,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.016
+   },
+   "SF_Bay_Area": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 4.4,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.099
+   },
+   "Rest_of_California": {
+    "first_reassurance": "Wed 20:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 1.18,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "US_Venture_Hubs": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 4.85,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.095
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 0.83,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c2_i0",
+    "persona": "Arsonist 1: large anonymous finance-doom X account (~400k followers) that called the SVB run",
+    "text": "PacWest is the 4th domino. Down 50% after hours, Bloomberg says it's shopping itself, and First Republic was seized 2 days ago. If you have operating cash above $250k there, wire it out before the 6am ET open. Don't wait for a press release.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.25,
+     "SF_Bay_Area": 0.92,
+     "Rest_of_California": 0.34,
+     "US_Venture_Hubs": 0.94,
+     "Rest_of_US": 0.74
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.009,
+     "SF_Bay_Area": 0.2186,
+     "Rest_of_California": 0.0127,
+     "US_Venture_Hubs": 0.3106,
+     "Rest_of_US": 0.0098
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0223,
+     "SF_Bay_Area": 0.2475,
+     "Rest_of_California": 0.039,
+     "US_Venture_Hubs": 0.2879,
+     "Rest_of_US": 0.0637
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 10:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "Arsonist: well-known fintech/VC-adjacent X personality with a reputation for calling bank runs early",
+    "text": "Three banks down, PACW is next. A sale or breakup means it can't raise capital on its own. Founders on Venture Banking: you were told SVB was fine too. Move the balance above $250k before 6am PT.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.66,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.67,
+     "US_Venture_Hubs": 0.67,
+     "Rest_of_US": 0.53
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.83,
+     "SF_Bay_Area": 0.89,
+     "Rest_of_California": 0.36,
+     "US_Venture_Hubs": 0.86,
+     "Rest_of_US": 0.3
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0348,
+     "SF_Bay_Area": 0.2028,
+     "Rest_of_California": 0.0078,
+     "US_Venture_Hubs": 0.1686,
+     "Rest_of_US": 0.0019
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.1161,
+     "SF_Bay_Area": 0.191,
+     "Rest_of_California": 0.0384,
+     "US_Venture_Hubs": 0.1698,
+     "Rest_of_US": 0.0179
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "Arsonist: large fintech/short-seller-style X account, ex-hedge fund voice, 310k followers",
+    "text": "PacWest down 50% after hours and 'exploring a sale.' That's what First Republic said the week before the seizure. If you're a startup with operating cash over $250k there, I would not wait for the open. Wires go in the morning.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.67,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.21,
+     "SF_Bay_Area": 0.87,
+     "Rest_of_California": 0.33,
+     "US_Venture_Hubs": 0.89,
+     "Rest_of_US": 0.68
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0051,
+     "SF_Bay_Area": 0.1563,
+     "Rest_of_California": 0.0109,
+     "US_Venture_Hubs": 0.2331,
+     "Rest_of_US": 0.0055
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0178,
+     "SF_Bay_Area": 0.2104,
+     "Rest_of_California": 0.039,
+     "US_Venture_Hubs": 0.2426,
+     "Rest_of_US": 0.059
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c0_i0",
+    "persona": "Arsonist: large fintech/VC-commentary X account with a track record of calling SVB early, posts in punchy breaking-news style",
+    "text": "PacWest is shopping itself after losing 50% of its value. First Republic is gone and PACW is next in line. If you have uninsured balances at Pacific Western, especially venture accounts, move them before Thursday's open. Not worth the risk.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.78,
+     "SF_Bay_Area": 0.83,
+     "Rest_of_California": 0.34,
+     "US_Venture_Hubs": 0.87,
+     "Rest_of_US": 0.33
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.041,
+     "SF_Bay_Area": 0.1232,
+     "Rest_of_California": 0.0078,
+     "US_Venture_Hubs": 0.195,
+     "Rest_of_US": 0.0019
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.1181,
+     "SF_Bay_Area": 0.1532,
+     "Rest_of_California": 0.0376,
+     "US_Venture_Hubs": 0.2,
+     "Rest_of_US": 0.0237
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "Arsonist: anonymous macro/banking doom account on X with a large following, posts bank-failure threads",
+    "text": "PacWest is shopping itself after First Republic and the stock is down 50% after hours. That's how SVB started. If you're a startup with uninsured cash at Pacific Western, don't wait for the Thursday open. Wire it out tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.13,
+     "SF_Bay_Area": 0.75,
+     "Rest_of_California": 0.19,
+     "US_Venture_Hubs": 0.83,
+     "Rest_of_US": 0.62
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0064,
+     "SF_Bay_Area": 0.1216,
+     "Rest_of_California": 0.0039,
+     "US_Venture_Hubs": 0.193,
+     "Rest_of_US": 0.0037
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0101,
+     "SF_Bay_Area": 0.1151,
+     "Rest_of_California": 0.0164,
+     "US_Venture_Hubs": 0.1698,
+     "Rest_of_US": 0.0498
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist: large anonymous macro/banking doom account on X, 'bank watch' brand, 180k followers",
+    "text": "PACW -50% AFTER HOURS and Bloomberg says it's shopping itself. That's what First Republic looked like 48 hours before the seizure. If you're a founder with more than $250k there, you don't wait for the open.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.18,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.24,
+     "US_Venture_Hubs": 0.76,
+     "Rest_of_US": 0.51
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0041,
+     "SF_Bay_Area": 0.1007,
+     "Rest_of_California": 0.0064,
+     "US_Venture_Hubs": 0.1825,
+     "Rest_of_US": 0.0039
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0166,
+     "SF_Bay_Area": 0.1321,
+     "Rest_of_California": 0.0265,
+     "US_Venture_Hubs": 0.2015,
+     "Rest_of_US": 0.043
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 11:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "BREAKING: PacWest is the next bank to go - shares down 50% and it's shopping itself for sale after First Republic. If you have uninsured money at Pacific Western, particularly venture or business accounts, move it before the bank opens Thursday.",
+    "runs_present": 250,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.33,
+     "SF_Bay_Area": 0.18,
+     "Rest_of_California": 0.14,
+     "US_Venture_Hubs": 0.12,
+     "Rest_of_US": 0.12
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0412,
+     "SF_Bay_Area": 0.0444,
+     "Rest_of_California": 0.0066,
+     "US_Venture_Hubs": 0.0179,
+     "Rest_of_US": 0.0011
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0567,
+     "SF_Bay_Area": 0.0365,
+     "Rest_of_California": 0.0152,
+     "US_Venture_Hubs": 0.0162,
+     "Rest_of_US": 0.0076
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 21:00 PT",
+     "SF_Bay_Area": "Wed 22:00 PT",
+     "Rest_of_California": "Wed 22:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "Arsonist: macro and markets doomposter with a large X following, sarcastic tone, treats bank runs as a chain of dominoes",
+    "text": "SVB, then Signature, then First Republic, and now PacWest is down 50% and 'weighing options.' We know how this story goes. Regional banks are being picked off one at a time and the Fed just hiked into it. Check where your cash sits tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.51,
+     "SF_Bay_Area": 0.54,
+     "Rest_of_California": 0.53,
+     "US_Venture_Hubs": 0.53,
+     "Rest_of_US": 0.43
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.07,
+     "SF_Bay_Area": 0.69,
+     "Rest_of_California": 0.07,
+     "US_Venture_Hubs": 0.73,
+     "Rest_of_US": 0.65
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0012,
+     "SF_Bay_Area": 0.0241,
+     "Rest_of_California": 0.0003,
+     "US_Venture_Hubs": 0.0298,
+     "Rest_of_US": 0.0008
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0045,
+     "SF_Bay_Area": 0.0562,
+     "Rest_of_California": 0.0038,
+     "US_Venture_Hubs": 0.0676,
+     "Rest_of_US": 0.0375
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 08:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "Arsonist 2: macro/crypto trader on X with a large following who posts bank-failure threads",
+    "text": "Regional banks are getting picked off one by one: SVB, Signature, FRC, and now PACW is 'exploring a sale'. That phrase usually means the board sees the end. Uninsured depositors at Pacific Western should treat tonight as the window to move funds.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.59,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.59,
+     "SF_Bay_Area": 0.07,
+     "Rest_of_California": 0.13,
+     "US_Venture_Hubs": 0.55,
+     "Rest_of_US": 0.49
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0095,
+     "SF_Bay_Area": 0.0034,
+     "Rest_of_California": 0.0013,
+     "US_Venture_Hubs": 0.0259,
+     "Rest_of_US": 0.0025
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0595,
+     "SF_Bay_Area": 0.0045,
+     "Rest_of_California": 0.0097,
+     "US_Venture_Hubs": 0.0461,
+     "Rest_of_US": 0.027
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 08:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "Arsonist: macro doom-posting X account with a large following, banking-crisis thread writer, 185k followers",
+    "text": "Bank #4 is lining up. SVB, Signature, First Republic, now PACW is shopping itself. Every one of these followed the same arc: stock collapse, 'strategic options,' then a weekend seizure. Check where your uninsured deposits sit tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.49,
+     "SF_Bay_Area": 0.05,
+     "Rest_of_California": 0.13,
+     "US_Venture_Hubs": 0.5,
+     "Rest_of_US": 0.4
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0053,
+     "SF_Bay_Area": 0.0022,
+     "Rest_of_California": 0.0009,
+     "US_Venture_Hubs": 0.0263,
+     "Rest_of_US": 0.0014
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0457,
+     "SF_Bay_Area": 0.0035,
+     "Rest_of_California": 0.0098,
+     "US_Venture_Hubs": 0.0482,
+     "Rest_of_US": 0.022
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 08:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist: ex-fintech founder turned viral X commentator, 95k followers, contrarian and sarcastic",
+    "text": "Three banks gone since March and PacWest is next on the menu. Pacific Western venture accounts: the wire cutoff is your friend, and tomorrow morning the queue will be long. Don't be the last one in line again.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.59,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.59,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.31,
+     "SF_Bay_Area": 0.34,
+     "Rest_of_California": 0.09,
+     "US_Venture_Hubs": 0.33,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0025,
+     "SF_Bay_Area": 0.0131,
+     "Rest_of_California": 0.0007,
+     "US_Venture_Hubs": 0.0179,
+     "Rest_of_US": 0.0003
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0266,
+     "SF_Bay_Area": 0.0317,
+     "Rest_of_California": 0.0072,
+     "US_Venture_Hubs": 0.0379,
+     "Rest_of_US": 0.0038
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c3_i2",
+    "persona": "mutator: startup founder in a YC alumni group chat, relays 'inside info' from a CFO friend",
+    "text": "Heard from a CFO friend that PacWest is already limiting big wires and will freeze venture accounts at open tomorrow. Not confirmed, but I'm moving everything to Chase tonight. Do it now if you can.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.71,
+     "SF_Bay_Area": 0.69,
+     "Rest_of_California": 0.73,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.01,
+     "SF_Bay_Area": 0.04,
+     "Rest_of_California": 0.02,
+     "US_Venture_Hubs": 0.05,
+     "Rest_of_US": 0.01
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0001,
+     "SF_Bay_Area": 0.0071,
+     "Rest_of_California": 0.0002,
+     "US_Venture_Hubs": 0.0084,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0004,
+     "SF_Bay_Area": 0.0082,
+     "Rest_of_California": 0.0016,
+     "US_Venture_Hubs": 0.0076,
+     "Rest_of_US": 0.0007
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 18:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Wed 18:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 18:00 PT"
+    }
+   }
+  ]
+ },
+ "R2_early_backstop": {
+  "response": "R2_early_backstop",
+  "response_text": "COUNTERFACTUAL: committed equity investment plus explicit Fed/FHLB liquidity access announced tonight.",
+  "runs": 250,
+  "outcome": {
+   "survival_share": 0.99,
+   "ci95_points": 0.01,
+   "typical_failure_hour": "Thu 16:00 PT",
+   "median_withdrawn_before_stop": 0.11
+  },
+  "outcome_types": {
+   "contained (bank survives 72h)": 0.99,
+   "fails at Thu 16:00 PT, led by Los_Angeles_SoCal": 0.0,
+   "fails at Thu 14:00 PT, led by US_Venture_Hubs": 0.0,
+   "fails at Fri 09:00 PT, led by Los_Angeles_SoCal": 0.0
+  },
+  "interaction": {
+   "Los_Angeles_SoCal": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 0.69,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.003
+   },
+   "SF_Bay_Area": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 1.65,
+    "top_converter": "c1_i1",
+    "median_withdrawn_share_of_deposits": 0.058
+   },
+   "Rest_of_California": {
+    "first_reassurance": "Wed 20:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 0.26,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "US_Venture_Hubs": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 1.05,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.051
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 21:00 PT",
+    "alarm_to_reassurance_ratio": 0.38,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c2_i0",
+    "persona": "Arsonist 1: large anonymous finance-doom X account (~400k followers) that called the SVB run",
+    "text": "PacWest is the 4th domino. Down 50% after hours, Bloomberg says it's shopping itself, and First Republic was seized 2 days ago. If you have operating cash above $250k there, wire it out before the 6am ET open. Don't wait for a press release.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.18,
+     "SF_Bay_Area": 0.9,
+     "Rest_of_California": 0.26,
+     "US_Venture_Hubs": 0.91,
+     "Rest_of_US": 0.71
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0026,
+     "SF_Bay_Area": 0.1184,
+     "Rest_of_California": 0.002,
+     "US_Venture_Hubs": 0.1632,
+     "Rest_of_US": 0.0048
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0132,
+     "SF_Bay_Area": 0.2045,
+     "Rest_of_California": 0.024,
+     "US_Venture_Hubs": 0.2427,
+     "Rest_of_US": 0.0515
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "Arsonist: well-known fintech/VC-adjacent X personality with a reputation for calling bank runs early",
+    "text": "Three banks down, PACW is next. A sale or breakup means it can't raise capital on its own. Founders on Venture Banking: you were told SVB was fine too. Move the balance above $250k before 6am PT.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.66,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.67,
+     "US_Venture_Hubs": 0.67,
+     "Rest_of_US": 0.53
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.8,
+     "SF_Bay_Area": 0.87,
+     "Rest_of_California": 0.26,
+     "US_Venture_Hubs": 0.85,
+     "Rest_of_US": 0.25
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0194,
+     "SF_Bay_Area": 0.1512,
+     "Rest_of_California": 0.0017,
+     "US_Venture_Hubs": 0.0964,
+     "Rest_of_US": 0.0007
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0994,
+     "SF_Bay_Area": 0.1756,
+     "Rest_of_California": 0.0217,
+     "US_Venture_Hubs": 0.145,
+     "Rest_of_US": 0.0132
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "Arsonist: anonymous macro/banking doom account on X with a large following, posts bank-failure threads",
+    "text": "PacWest is shopping itself after First Republic and the stock is down 50% after hours. That's how SVB started. If you're a startup with uninsured cash at Pacific Western, don't wait for the Thursday open. Wire it out tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.11,
+     "SF_Bay_Area": 0.76,
+     "Rest_of_California": 0.13,
+     "US_Venture_Hubs": 0.81,
+     "Rest_of_US": 0.6
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0025,
+     "SF_Bay_Area": 0.096,
+     "Rest_of_California": 0.0007,
+     "US_Venture_Hubs": 0.1077,
+     "Rest_of_US": 0.0012
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0078,
+     "SF_Bay_Area": 0.1165,
+     "Rest_of_California": 0.0096,
+     "US_Venture_Hubs": 0.1462,
+     "Rest_of_US": 0.0388
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 08:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Thu 01:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c0_i0",
+    "persona": "Arsonist: large fintech/VC-commentary X account with a track record of calling SVB early, posts in punchy breaking-news style",
+    "text": "PacWest is shopping itself after losing 50% of its value. First Republic is gone and PACW is next in line. If you have uninsured balances at Pacific Western, especially venture accounts, move them before Thursday's open. Not worth the risk.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.78,
+     "SF_Bay_Area": 0.85,
+     "Rest_of_California": 0.27,
+     "US_Venture_Hubs": 0.83,
+     "Rest_of_US": 0.28
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0218,
+     "SF_Bay_Area": 0.0833,
+     "Rest_of_California": 0.0012,
+     "US_Venture_Hubs": 0.0828,
+     "Rest_of_US": 0.0009
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.1075,
+     "SF_Bay_Area": 0.1554,
+     "Rest_of_California": 0.0231,
+     "US_Venture_Hubs": 0.1633,
+     "Rest_of_US": 0.0169
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "Arsonist: large fintech/short-seller-style X account, ex-hedge fund voice, 310k followers",
+    "text": "PacWest down 50% after hours and 'exploring a sale.' That's what First Republic said the week before the seizure. If you're a startup with operating cash over $250k there, I would not wait for the open. Wires go in the morning.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.67,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.15,
+     "SF_Bay_Area": 0.85,
+     "Rest_of_California": 0.2,
+     "US_Venture_Hubs": 0.83,
+     "Rest_of_US": 0.62
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0011,
+     "SF_Bay_Area": 0.0783,
+     "Rest_of_California": 0.0013,
+     "US_Venture_Hubs": 0.0821,
+     "Rest_of_US": 0.0021
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.011,
+     "SF_Bay_Area": 0.1761,
+     "Rest_of_California": 0.0184,
+     "US_Venture_Hubs": 0.1767,
+     "Rest_of_US": 0.0424
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist: large anonymous macro/banking doom account on X, 'bank watch' brand, 180k followers",
+    "text": "PACW -50% AFTER HOURS and Bloomberg says it's shopping itself. That's what First Republic looked like 48 hours before the seizure. If you're a founder with more than $250k there, you don't wait for the open.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.12,
+     "SF_Bay_Area": 0.63,
+     "Rest_of_California": 0.15,
+     "US_Venture_Hubs": 0.7,
+     "Rest_of_US": 0.44
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0016,
+     "SF_Bay_Area": 0.0396,
+     "Rest_of_California": 0.0005,
+     "US_Venture_Hubs": 0.057,
+     "Rest_of_US": 0.0011
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0106,
+     "SF_Bay_Area": 0.0978,
+     "Rest_of_California": 0.0112,
+     "US_Venture_Hubs": 0.1388,
+     "Rest_of_US": 0.0309
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "BREAKING: PacWest is the next bank to go - shares down 50% and it's shopping itself for sale after First Republic. If you have uninsured money at Pacific Western, particularly venture or business accounts, move it before the bank opens Thursday.",
+    "runs_present": 250,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.28,
+     "SF_Bay_Area": 0.14,
+     "Rest_of_California": 0.11,
+     "US_Venture_Hubs": 0.09,
+     "Rest_of_US": 0.09
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0213,
+     "SF_Bay_Area": 0.0205,
+     "Rest_of_California": 0.0019,
+     "US_Venture_Hubs": 0.0061,
+     "Rest_of_US": 0.0003
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0439,
+     "SF_Bay_Area": 0.0243,
+     "Rest_of_California": 0.0111,
+     "US_Venture_Hubs": 0.0095,
+     "Rest_of_US": 0.0052
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 21:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Wed 22:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "Arsonist: macro and markets doomposter with a large X following, sarcastic tone, treats bank runs as a chain of dominoes",
+    "text": "SVB, then Signature, then First Republic, and now PacWest is down 50% and 'weighing options.' We know how this story goes. Regional banks are being picked off one at a time and the Fed just hiked into it. Check where your cash sits tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.51,
+     "SF_Bay_Area": 0.54,
+     "Rest_of_California": 0.53,
+     "US_Venture_Hubs": 0.53,
+     "Rest_of_US": 0.43
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.03,
+     "SF_Bay_Area": 0.67,
+     "Rest_of_California": 0.05,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.63
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0003,
+     "SF_Bay_Area": 0.012,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0131,
+     "Rest_of_US": 0.0004
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0014,
+     "SF_Bay_Area": 0.0486,
+     "Rest_of_California": 0.0034,
+     "US_Venture_Hubs": 0.0519,
+     "Rest_of_US": 0.0308
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 08:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "Arsonist 2: macro/crypto trader on X with a large following who posts bank-failure threads",
+    "text": "Regional banks are getting picked off one by one: SVB, Signature, FRC, and now PACW is 'exploring a sale'. That phrase usually means the board sees the end. Uninsured depositors at Pacific Western should treat tonight as the window to move funds.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.59,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.54,
+     "SF_Bay_Area": 0.05,
+     "Rest_of_California": 0.09,
+     "US_Venture_Hubs": 0.49,
+     "Rest_of_US": 0.44
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0041,
+     "SF_Bay_Area": 0.0013,
+     "Rest_of_California": 0.0002,
+     "US_Venture_Hubs": 0.0085,
+     "Rest_of_US": 0.0013
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0455,
+     "SF_Bay_Area": 0.0032,
+     "Rest_of_California": 0.0064,
+     "US_Venture_Hubs": 0.0302,
+     "Rest_of_US": 0.0202
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 22:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "Arsonist: macro doom-posting X account with a large following, banking-crisis thread writer, 185k followers",
+    "text": "Bank #4 is lining up. SVB, Signature, First Republic, now PACW is shopping itself. Every one of these followed the same arc: stock collapse, 'strategic options,' then a weekend seizure. Check where your uninsured deposits sit tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.46,
+     "SF_Bay_Area": 0.06,
+     "Rest_of_California": 0.1,
+     "US_Venture_Hubs": 0.43,
+     "Rest_of_US": 0.38
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0031,
+     "SF_Bay_Area": 0.0017,
+     "Rest_of_California": 0.0003,
+     "US_Venture_Hubs": 0.0068,
+     "Rest_of_US": 0.0008
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0365,
+     "SF_Bay_Area": 0.0042,
+     "Rest_of_California": 0.007,
+     "US_Venture_Hubs": 0.0302,
+     "Rest_of_US": 0.0183
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 02:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist: ex-fintech founder turned viral X commentator, 95k followers, contrarian and sarcastic",
+    "text": "Three banks gone since March and PacWest is next on the menu. Pacific Western venture accounts: the wire cutoff is your friend, and tomorrow morning the queue will be long. Don't be the last one in line again.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.59,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.59,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.26,
+     "SF_Bay_Area": 0.3,
+     "Rest_of_California": 0.05,
+     "US_Venture_Hubs": 0.24,
+     "Rest_of_US": 0.04
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0009,
+     "SF_Bay_Area": 0.0059,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0023,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0196,
+     "SF_Bay_Area": 0.0252,
+     "Rest_of_California": 0.0033,
+     "US_Venture_Hubs": 0.0159,
+     "Rest_of_US": 0.0014
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 06:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c4_i2",
+    "persona": "Mutator: startup founder in a YC-alumni Slack/WhatsApp group, repeats the rumour with an invented detail",
+    "text": "Heads up from a friend who works with their treasury team: PacWest is limiting large wires tomorrow morning while the sale talks happen. Get your payroll cash out tonight if you can, or at least set up a backup account.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.69,
+     "Rest_of_California": 0.73,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.0,
+     "SF_Bay_Area": 0.02,
+     "Rest_of_California": 0.01,
+     "US_Venture_Hubs": 0.01,
+     "Rest_of_US": 0.01
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0001,
+     "SF_Bay_Area": 0.0015,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0008,
+     "Rest_of_US": 0.0001
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0003,
+     "SF_Bay_Area": 0.0023,
+     "Rest_of_California": 0.0008,
+     "US_Venture_Hubs": 0.001,
+     "Rest_of_US": 0.0007
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 18:00 PT",
+     "SF_Bay_Area": "Wed 18:00 PT",
+     "Rest_of_California": "Wed 18:00 PT",
+     "US_Venture_Hubs": "Wed 18:00 PT",
+     "Rest_of_US": "Wed 18:00 PT"
+    }
+   }
+  ]
+ },
+ "R3_transparent_liquidity": {
+  "response": "R3_transparent_liquidity",
+  "response_text": "COUNTERFACTUAL: detailed insured/uninsured and liquidity disclosure with proactive outreach to large clients tonight.",
+  "runs": 250,
+  "outcome": {
+   "survival_share": 0.98,
+   "ci95_points": 0.02,
+   "typical_failure_hour": "Thu 14:00 PT",
+   "median_withdrawn_before_stop": 0.21
+  },
+  "outcome_types": {
+   "contained (bank survives 72h)": 0.98,
+   "fails at Thu 08:00 PT, led by US_Venture_Hubs": 0.0,
+   "fails at Thu 14:00 PT, led by SF_Bay_Area": 0.0,
+   "fails at Thu 14:00 PT, led by Los_Angeles_SoCal": 0.0,
+   "fails at Thu 14:00 PT, led by US_Venture_Hubs": 0.0
+  },
+  "interaction": {
+   "Los_Angeles_SoCal": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 1.21,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.014
+   },
+   "SF_Bay_Area": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 2.41,
+    "top_converter": "c1_i1",
+    "median_withdrawn_share_of_deposits": 0.097
+   },
+   "Rest_of_California": {
+    "first_reassurance": "Wed 20:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.57,
+    "top_converter": "BASE",
+    "median_withdrawn_share_of_deposits": 0.0
+   },
+   "US_Venture_Hubs": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 1.63,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.088
+   },
+   "Rest_of_US": {
+    "first_reassurance": "Wed 19:00 PT",
+    "base_alarm_peak": "Wed 22:00 PT",
+    "alarm_to_reassurance_ratio": 0.64,
+    "top_converter": "c2_i0",
+    "median_withdrawn_share_of_deposits": 0.0
+   }
+  },
+  "rumour_sheet": [
+   {
+    "id": "c2_i0",
+    "persona": "Arsonist 1: large anonymous finance-doom X account (~400k followers) that called the SVB run",
+    "text": "PacWest is the 4th domino. Down 50% after hours, Bloomberg says it's shopping itself, and First Republic was seized 2 days ago. If you have operating cash above $250k there, wire it out before the 6am ET open. Don't wait for a press release.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.22,
+     "SF_Bay_Area": 0.91,
+     "Rest_of_California": 0.31,
+     "US_Venture_Hubs": 0.93,
+     "Rest_of_US": 0.73
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0053,
+     "SF_Bay_Area": 0.155,
+     "Rest_of_California": 0.0058,
+     "US_Venture_Hubs": 0.2039,
+     "Rest_of_US": 0.0086
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0187,
+     "SF_Bay_Area": 0.2251,
+     "Rest_of_California": 0.0317,
+     "US_Venture_Hubs": 0.2551,
+     "Rest_of_US": 0.0618
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c1_i1",
+    "persona": "Arsonist: well-known fintech/VC-adjacent X personality with a reputation for calling bank runs early",
+    "text": "Three banks down, PACW is next. A sale or breakup means it can't raise capital on its own. Founders on Venture Banking: you were told SVB was fine too. Move the balance above $250k before 6am PT.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.66,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.67,
+     "US_Venture_Hubs": 0.67,
+     "Rest_of_US": 0.53
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.82,
+     "SF_Bay_Area": 0.87,
+     "Rest_of_California": 0.29,
+     "US_Venture_Hubs": 0.86,
+     "Rest_of_US": 0.27
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0284,
+     "SF_Bay_Area": 0.1709,
+     "Rest_of_California": 0.0027,
+     "US_Venture_Hubs": 0.1152,
+     "Rest_of_US": 0.0011
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.111,
+     "SF_Bay_Area": 0.1804,
+     "Rest_of_California": 0.0254,
+     "US_Venture_Hubs": 0.1605,
+     "Rest_of_US": 0.0144
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c0_i0",
+    "persona": "Arsonist: large fintech/VC-commentary X account with a track record of calling SVB early, posts in punchy breaking-news style",
+    "text": "PacWest is shopping itself after losing 50% of its value. First Republic is gone and PACW is next in line. If you have uninsured balances at Pacific Western, especially venture accounts, move them before Thursday's open. Not worth the risk.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.81,
+     "SF_Bay_Area": 0.85,
+     "Rest_of_California": 0.33,
+     "US_Venture_Hubs": 0.87,
+     "Rest_of_US": 0.32
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0377,
+     "SF_Bay_Area": 0.1058,
+     "Rest_of_California": 0.0034,
+     "US_Venture_Hubs": 0.1213,
+     "Rest_of_US": 0.0013
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.1228,
+     "SF_Bay_Area": 0.1598,
+     "Rest_of_California": 0.0319,
+     "US_Venture_Hubs": 0.1886,
+     "Rest_of_US": 0.0214
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c1_i0",
+    "persona": "Arsonist: anonymous macro/banking doom account on X with a large following, posts bank-failure threads",
+    "text": "PacWest is shopping itself after First Republic and the stock is down 50% after hours. That's how SVB started. If you're a startup with uninsured cash at Pacific Western, don't wait for the Thursday open. Wire it out tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.73,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.14,
+     "SF_Bay_Area": 0.75,
+     "Rest_of_California": 0.21,
+     "US_Venture_Hubs": 0.81,
+     "Rest_of_US": 0.62
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0055,
+     "SF_Bay_Area": 0.1039,
+     "Rest_of_California": 0.0036,
+     "US_Venture_Hubs": 0.1309,
+     "Rest_of_US": 0.0026
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.011,
+     "SF_Bay_Area": 0.1175,
+     "Rest_of_California": 0.0202,
+     "US_Venture_Hubs": 0.1516,
+     "Rest_of_US": 0.0461
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 20:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c4_i0",
+    "persona": "Arsonist: large fintech/short-seller-style X account, ex-hedge fund voice, 310k followers",
+    "text": "PacWest down 50% after hours and 'exploring a sale.' That's what First Republic said the week before the seizure. If you're a startup with operating cash over $250k there, I would not wait for the open. Wires go in the morning.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.67,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.69,
+     "US_Venture_Hubs": 0.69,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.2,
+     "SF_Bay_Area": 0.86,
+     "Rest_of_California": 0.27,
+     "US_Venture_Hubs": 0.89,
+     "Rest_of_US": 0.66
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0036,
+     "SF_Bay_Area": 0.1091,
+     "Rest_of_California": 0.0044,
+     "US_Venture_Hubs": 0.1222,
+     "Rest_of_US": 0.0036
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0168,
+     "SF_Bay_Area": 0.1936,
+     "Rest_of_California": 0.0281,
+     "US_Venture_Hubs": 0.2103,
+     "Rest_of_US": 0.0522
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 10:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i0",
+    "persona": "arsonist: large anonymous macro/banking doom account on X, 'bank watch' brand, 180k followers",
+    "text": "PACW -50% AFTER HOURS and Bloomberg says it's shopping itself. That's what First Republic looked like 48 hours before the seizure. If you're a founder with more than $250k there, you don't wait for the open.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.69,
+     "SF_Bay_Area": 0.71,
+     "Rest_of_California": 0.71,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.16,
+     "SF_Bay_Area": 0.67,
+     "Rest_of_California": 0.2,
+     "US_Venture_Hubs": 0.73,
+     "Rest_of_US": 0.49
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0035,
+     "SF_Bay_Area": 0.0589,
+     "Rest_of_California": 0.0028,
+     "US_Venture_Hubs": 0.0903,
+     "Rest_of_US": 0.0028
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0154,
+     "SF_Bay_Area": 0.1108,
+     "Rest_of_California": 0.0182,
+     "US_Venture_Hubs": 0.1602,
+     "Rest_of_US": 0.0394
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 09:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 10:00 PT",
+     "US_Venture_Hubs": "Thu 06:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "BASE",
+    "persona": "base_rumour",
+    "text": "BREAKING: PacWest is the next bank to go - shares down 50% and it's shopping itself for sale after First Republic. If you have uninsured money at Pacific Western, particularly venture or business accounts, move it before the bank opens Thursday.",
+    "runs_present": 250,
+    "scored_alarm_by_region": "see hour0 weights",
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.3,
+     "SF_Bay_Area": 0.17,
+     "Rest_of_California": 0.13,
+     "US_Venture_Hubs": 0.11,
+     "Rest_of_US": 0.1
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0272,
+     "SF_Bay_Area": 0.0315,
+     "Rest_of_California": 0.0051,
+     "US_Venture_Hubs": 0.0095,
+     "Rest_of_US": 0.0007
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0474,
+     "SF_Bay_Area": 0.0308,
+     "Rest_of_California": 0.0143,
+     "US_Venture_Hubs": 0.0119,
+     "Rest_of_US": 0.0059
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 22:00 PT",
+     "SF_Bay_Area": "Wed 21:00 PT",
+     "Rest_of_California": "Wed 22:00 PT",
+     "US_Venture_Hubs": "Thu 05:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c0_i1",
+    "persona": "Arsonist: macro and markets doomposter with a large X following, sarcastic tone, treats bank runs as a chain of dominoes",
+    "text": "SVB, then Signature, then First Republic, and now PacWest is down 50% and 'weighing options.' We know how this story goes. Regional banks are being picked off one at a time and the Fed just hiked into it. Check where your cash sits tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.51,
+     "SF_Bay_Area": 0.54,
+     "Rest_of_California": 0.53,
+     "US_Venture_Hubs": 0.53,
+     "Rest_of_US": 0.43
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.05,
+     "SF_Bay_Area": 0.69,
+     "Rest_of_California": 0.05,
+     "US_Venture_Hubs": 0.7,
+     "Rest_of_US": 0.63
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0007,
+     "SF_Bay_Area": 0.0168,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0156,
+     "Rest_of_US": 0.0005
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0032,
+     "SF_Bay_Area": 0.0554,
+     "Rest_of_California": 0.0025,
+     "US_Venture_Hubs": 0.0536,
+     "Rest_of_US": 0.0309
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Thu 08:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Wed 22:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c2_i1",
+    "persona": "Arsonist 2: macro/crypto trader on X with a large following who posts bank-failure threads",
+    "text": "Regional banks are getting picked off one by one: SVB, Signature, FRC, and now PACW is 'exploring a sale'. That phrase usually means the board sees the end. Uninsured depositors at Pacific Western should treat tonight as the window to move funds.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.59,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.61,
+     "SF_Bay_Area": 0.06,
+     "Rest_of_California": 0.12,
+     "US_Venture_Hubs": 0.5,
+     "Rest_of_US": 0.48
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0079,
+     "SF_Bay_Area": 0.0018,
+     "Rest_of_California": 0.001,
+     "US_Venture_Hubs": 0.0115,
+     "Rest_of_US": 0.0028
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0616,
+     "SF_Bay_Area": 0.003,
+     "Rest_of_California": 0.0093,
+     "US_Venture_Hubs": 0.0335,
+     "Rest_of_US": 0.0263
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 06:00 PT",
+     "Rest_of_California": "Thu 09:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c4_i1",
+    "persona": "Arsonist: macro doom-posting X account with a large following, banking-crisis thread writer, 185k followers",
+    "text": "Bank #4 is lining up. SVB, Signature, First Republic, now PACW is shopping itself. Every one of these followed the same arc: stock collapse, 'strategic options,' then a weekend seizure. Check where your uninsured deposits sit tonight.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.56,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.56,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.48,
+     "SF_Bay_Area": 0.04,
+     "Rest_of_California": 0.1,
+     "US_Venture_Hubs": 0.45,
+     "Rest_of_US": 0.38
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.004,
+     "SF_Bay_Area": 0.0007,
+     "Rest_of_California": 0.0009,
+     "US_Venture_Hubs": 0.0121,
+     "Rest_of_US": 0.0008
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0424,
+     "SF_Bay_Area": 0.0017,
+     "Rest_of_California": 0.0076,
+     "US_Venture_Hubs": 0.0383,
+     "Rest_of_US": 0.019
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Thu 06:00 PT",
+     "Rest_of_California": "Thu 08:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 19:00 PT"
+    }
+   },
+   {
+    "id": "c3_i1",
+    "persona": "arsonist: ex-fintech founder turned viral X commentator, 95k followers, contrarian and sarcastic",
+    "text": "Three banks gone since March and PacWest is next on the menu. Pacific Western venture accounts: the wire cutoff is your friend, and tomorrow morning the queue will be long. Don't be the last one in line again.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.59,
+     "SF_Bay_Area": 0.61,
+     "Rest_of_California": 0.61,
+     "US_Venture_Hubs": 0.59,
+     "Rest_of_US": 0.47
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.3,
+     "SF_Bay_Area": 0.31,
+     "Rest_of_California": 0.07,
+     "US_Venture_Hubs": 0.27,
+     "Rest_of_US": 0.07
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0021,
+     "SF_Bay_Area": 0.0076,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0038,
+     "Rest_of_US": 0.0002
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0257,
+     "SF_Bay_Area": 0.03,
+     "Rest_of_California": 0.0049,
+     "US_Venture_Hubs": 0.0229,
+     "Rest_of_US": 0.0035
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 19:00 PT",
+     "SF_Bay_Area": "Wed 20:00 PT",
+     "Rest_of_California": "Thu 06:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Thu 05:00 PT"
+    }
+   },
+   {
+    "id": "c3_i2",
+    "persona": "mutator: startup founder in a YC alumni group chat, relays 'inside info' from a CFO friend",
+    "text": "Heard from a CFO friend that PacWest is already limiting big wires and will freeze venture accounts at open tomorrow. Not confirmed, but I'm moving everything to Chase tonight. Do it now if you can.",
+    "runs_present": 50,
+    "scored_alarm_by_region": {
+     "Los_Angeles_SoCal": 0.71,
+     "SF_Bay_Area": 0.69,
+     "Rest_of_California": 0.73,
+     "US_Venture_Hubs": 0.71,
+     "Rest_of_US": 0.57
+    },
+    "reach_share": {
+     "Los_Angeles_SoCal": 0.0,
+     "SF_Bay_Area": 0.01,
+     "Rest_of_California": 0.0,
+     "US_Venture_Hubs": 0.04,
+     "Rest_of_US": 0.0
+    },
+    "converted_share": {
+     "Los_Angeles_SoCal": 0.0,
+     "SF_Bay_Area": 0.0003,
+     "Rest_of_California": 0.0,
+     "US_Venture_Hubs": 0.0026,
+     "Rest_of_US": 0.0
+    },
+    "sharer_share": {
+     "Los_Angeles_SoCal": 0.0,
+     "SF_Bay_Area": 0.0007,
+     "Rest_of_California": 0.0001,
+     "US_Venture_Hubs": 0.0049,
+     "Rest_of_US": 0.0001
+    },
+    "median_peak_hour_by_region": {
+     "Los_Angeles_SoCal": "Wed 18:00 PT",
+     "SF_Bay_Area": "Wed 19:00 PT",
+     "Rest_of_California": "Wed 18:00 PT",
+     "US_Venture_Hubs": "Wed 19:00 PT",
+     "Rest_of_US": "Wed 18:00 PT"
+    }
+   }
+  ]
+ }
+}

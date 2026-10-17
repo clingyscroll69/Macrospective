@@ -1,0 +1,86 @@
+{
+ "_rules": "Facts from PacWest Q1'23 earnings release/10-Q (pre-event). Reference clock = PT. Region shares are ESTIMATES (deposits not disclosed by region): Community Banking 53% (SoCal heavy ~ LA 40%, rest of CA), Venture Banking 23% (Bay Area/other hubs), Wholesale 24% (national). Uninsured share best 27% (73% insured at Apr 24 incl pass-through). big_account_frac calibrated by ratio: SVB 0.30/0.92 uninsured=0.33, CS 0.25/0.85=0.29; applying ~0.30 x 0.27 gives 0.08. cash_share = $6.68bn cash / $28.19bn deposits = 0.237. liquidity_schedule: unused borrowing capacity $5.8bn=0.206 of deposits, accessible after wires open (sim hour 12 = 06:00 PT Thu: 0.12) and rest by Friday morning (hour 36: 0.086). Seed shares, network, thresholds, sharing, withdrawal fractions frozen from SVB/CS runs. Response hours: actual PacWest statement was late May 3 PT (exact time unverified), set at sim hour 2.",
+ "ins_limit": 250000,
+ "regions": [
+  "Los_Angeles_SoCal",
+  "SF_Bay_Area",
+  "Rest_of_California",
+  "US_Venture_Hubs",
+  "Rest_of_US"
+ ],
+ "region_share": [
+  0.4,
+  0.12,
+  0.18,
+  0.12,
+  0.18
+ ],
+ "tz_offset": [
+  0,
+  0,
+  0,
+  2,
+  3
+ ],
+ "homophily": [
+  0.8,
+  0.85,
+  0.7,
+  0.85,
+  0.6
+ ],
+ "start_hour_ref": 18,
+ "start_weekday": 2,
+ "closed_weekdays": [
+  5,
+  6
+ ],
+ "wire_hours_ref": [
+  6,
+  18
+ ],
+ "big_account_frac": 0.08,
+ "small_balance_median": 20000,
+ "cash_share": 0.237,
+ "liquidity_schedule": {
+  "12": 0.12,
+  "36": 0.086
+ },
+ "core_region_index": 0,
+ "seed_share": [
+  0.04,
+  0.008
+ ],
+ "large_account_share": 0.3,
+ "response_hour": {
+  "R0_silence": null,
+  "R1_actual": 2,
+  "R2_early_backstop": 2,
+  "R3_transparent_liquidity": 2
+ },
+ "response_schedule": {
+  "R0_silence": [],
+  "R1_actual": [
+   {
+    "id": "R1_actual_pacw_statement",
+    "hour": 2,
+    "type": "statement"
+   }
+  ],
+  "R2_early_backstop": [
+   {
+    "id": "R2_early_backstop",
+    "hour": 2,
+    "type": "backstop"
+   }
+  ],
+  "R3_transparent_liquidity": [
+   {
+    "id": "R3_transparent_liquidity",
+    "hour": 2,
+    "type": "statement"
+   }
+  ]
+ },
+ "ref_clock_label": "PT"
+}

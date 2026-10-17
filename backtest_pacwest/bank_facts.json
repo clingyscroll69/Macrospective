@@ -1,0 +1,85 @@
+{
+ "as_of_cutoff": "Public before 2023-05-03 18:00 PT only. Outcome information deliberately excluded.",
+ "primary_sources": [
+  "https://www.sec.gov/Archives/edgar/data/1102112/000110465923049638/tm2313653d1_ex99-1.htm (Q1'23 earnings release 8-K, Apr 25 2023)",
+  "https://www.sec.gov/Archives/edgar/data/1102112/000162828023017382/pacw-20230331.htm (Q1'23 10-Q)"
+ ],
+ "deposits": {
+  "total_2023-03-31_usd_m": 28187.6,
+  "total_2022-12-31_usd_m": 33936.3,
+  "total_2023-03-20_usd_bn": 27.1,
+  "increase_by_2023-04-24_usd_m": 700,
+  "insured_share_incl_pass_through": {
+   "2023-03-31": 0.71,
+   "2023-04-24": 0.73,
+   "2022-12-31": 0.48
+  },
+  "uninsured_2023-03-31_usd_bn": 8.1,
+  "uninsured_share_best": 0.27,
+  "uninsured_share_range": [
+   0.25,
+   0.29
+  ],
+  "noninterest_bearing_demand_usd_m": 7030.8,
+  "noninterest_bearing_share": 0.25,
+  "source": "https://www.sec.gov/Archives/edgar/data/1102112/000110465923049638/tm2313653d1_ex99-1.htm (Q1'23 earnings release 8-K, Apr 25 2023)",
+  "note": "Insured includes pass-through-eligible accounts (HOA/escrow style); disclosed share is by balance."
+ },
+ "segments_deposits_2023-03-31": {
+  "Community_Banking": {
+   "usd_m": 14917.0,
+   "share": 0.53
+  },
+  "Venture_Banking_Square1": {
+   "usd_m": 6584.6,
+   "share": 0.23
+  },
+  "Wholesale_Deposits": {
+   "usd_m": 6686.0,
+   "share": 0.24
+  },
+  "source": "https://www.sec.gov/Archives/edgar/data/1102112/000110465923049638/tm2313653d1_ex99-1.htm (Q1'23 earnings release 8-K, Apr 25 2023)",
+  "HOA": "HOA banking is a growth focus within Community Banking (strategic plan announced start of 2023); separate balance not disclosed in sources read."
+ },
+ "liquidity_2023-03-31": {
+  "immediately_available_liquidity_usd_bn": 12.4,
+  "coverage_of_uninsured": 1.53,
+  "cash_and_equivalents_usd_m": 6680.1,
+  "cash_share_of_deposits": 0.237,
+  "available_borrowing_capacity_usd_bn": 5.8,
+  "FHLB_secured_capacity_usd_bn": 5.7,
+  "FHLB_advances_outstanding_usd_m": 5450,
+  "BTFP_borrowed_usd_m": 4910,
+  "repo_usd_m": 1393.3,
+  "total_borrowings_usd_m": 11881.7,
+  "FHLB_collateral": "blanket lien on $9.7bn qualifying loans + $133.4m securities",
+  "other": "$1.4bn Atlas SP senior ABS facility (March); substantially all securities pledged to FRBSF/FHLB (10-Q). Discount-window capacity not separately quantified in sources read.",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1102112/000110465923049638/tm2313653d1_ex99-1.htm (Q1'23 earnings release 8-K, Apr 25 2023)",
+   "https://www.sec.gov/Archives/edgar/data/1102112/000162828023017382/pacw-20230331.htm (Q1'23 10-Q)"
+  ]
+ },
+ "balance_sheet_and_capital": {
+  "loans_HFI_usd_m": 25672.4,
+  "loans_HFS_usd_m": 2796.2,
+  "lender_finance_sale_usd_bn": 2.7,
+  "CET1_pct": 9.22,
+  "tier1_pct": 11.16,
+  "total_capital_pct": 14.22,
+  "loan_mix": "real estate 78%, commercial 20%, consumer 2%",
+  "goodwill_impairment_usd_bn": 1.38,
+  "Q1_net_loss_to_common_usd_bn": 1.21,
+  "source": "https://www.sec.gov/Archives/edgar/data/1102112/000110465923049638/tm2313653d1_ex99-1.htm (Q1'23 earnings release 8-K, Apr 25 2023)"
+ },
+ "geography": "California-headquartered (Los Angeles/Beverly Hills area) with Community Banking branch network concentrated in California (SoCal heavy); Venture Banking (Square 1 heritage) serves tech/life-science startups and VC-backed firms in CA and hubs (Bay Area, Boston, NY, Austin, etc.); wholesale deposits are national. Region shares in bank_config are estimates, not disclosed.",
+ "context_before_window": [
+  "Mar 2023: SVB/Signature failures; PacWest disclosed deposit outflows, raised liquidity (Mar 20: deposits $27.1bn, Atlas facility); said not pursuing capital raise (Mar 22).",
+  "Apr 25: Q1 results, deposits stabilised and rebounded in April.",
+  "May 1: First Republic seized by regulators and sold to JPMorgan.",
+  "May 3: PACW shares fell ~52% in regular session; Western Alliance -23%, KRE -5%; after hours Bloomberg/Reuters reported PacWest weighing options incl. sale."
+ ],
+ "context_sources": [
+  "https://www.kitco.com/news/off-the-wire/2023-05-04/pacwest-confirms-strategic-options-talks-after-us-bank-shares-plunge",
+  "https://www.fool.com/investing/2023/05/03/bank-pacwest-reportedly-weighing-sale-what-to-do"
+ ]
+}

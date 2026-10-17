@@ -1,0 +1,3772 @@
+{
+ "agents": [
+  {
+   "id": "ssf0",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "cautious",
+   "region": "SF_Bay_Area",
+   "deposit_share": 0.0246,
+   "reason": "Bay Area startup CFO who lived through the SVB run. Money is uninsured and runway-critical. Treats a sale report and a 50% share drop as enough to start moving, and has a 24h desk and fast sign-off.",
+   "review_every_hours": 1,
+   "works_after_hours": true,
+   "approval_lag_hours": 2,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|low|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|med|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|med|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "ssf1",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "typical",
+   "region": "SF_Bay_Area",
+   "deposit_share": 0.0328,
+   "reason": "Typical Bay Area startup finance lead. Alarmed by the news but needs founder or board sign-off and a destination account, so scales out in steps when peers leave.",
+   "review_every_hours": 2,
+   "works_after_hours": false,
+   "approval_lag_hours": 6,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "ssf2",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "sticky",
+   "region": "SF_Bay_Area",
+   "deposit_share": 0.0246,
+   "reason": "Bay Area startup with a part-time finance lead and a bank-tied credit line. Slow to act, needs an approval chain, and only moves when the visible peer run is big.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 12,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    }
+   }
+  },
+  {
+   "id": "shub0",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "cautious",
+   "region": "US_Venture_Hubs",
+   "deposit_share": 0.0216,
+   "reason": "NYC/Boston/Austin startup treasurer who follows VC Twitter and reads the news before the Thursday open. Uninsured, already burned by SVB, so moves early. Needs time to set up another bank.",
+   "review_every_hours": 1,
+   "works_after_hours": true,
+   "approval_lag_hours": 4,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|low|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|med|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|med|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "shub1",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "typical",
+   "region": "US_Venture_Hubs",
+   "deposit_share": 0.0288,
+   "reason": "Typical hub-city startup finance lead. Hears about the bank through VC networks, and moves in steps once it has board or investor approval and a second bank ready.",
+   "review_every_hours": 2,
+   "works_after_hours": false,
+   "approval_lag_hours": 8,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "shub2",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "sticky",
+   "region": "US_Venture_Hubs",
+   "deposit_share": 0.0216,
+   "reason": "Hub-city startup with a small finance team, an operating account tied to payroll and a credit line. Switching banks is painful, so it waits for clear evidence of a run before moving.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 16,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    }
+   }
+  },
+  {
+   "id": "sla0",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "cautious",
+   "region": "Los_Angeles_SoCal",
+   "deposit_share": 0.0081,
+   "reason": "SoCal startup (including some Central Valley, San Diego and Inland Empire) with a venture-banking account. Less embedded in the Bay Area chat network but uninsured and aware of SVB. Reacts to the news and to peer behaviour, with a business-hours finance team.",
+   "review_every_hours": 2,
+   "works_after_hours": false,
+   "approval_lag_hours": 6,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "sla1",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "typical",
+   "region": "Los_Angeles_SoCal",
+   "deposit_share": 0.0108,
+   "reason": "SoCal startup CFO who also works with the bank for lending. Wants to see local branches or peers move first, and decides slowly with the founder.",
+   "review_every_hours": 3,
+   "works_after_hours": false,
+   "approval_lag_hours": 10,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    }
+   }
+  },
+  {
+   "id": "sla2",
+   "archetype": "VC-backed startup treasurers",
+   "instance": "sticky",
+   "region": "Los_Angeles_SoCal",
+   "deposit_share": 0.0081,
+   "reason": "SoCal startup or small operating company with a loyal local relationship manager. Needs hard evidence before acting, and the approval process is slow.",
+   "review_every_hours": 6,
+   "works_after_hours": false,
+   "approval_lag_hours": 20,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    }
+   }
+  },
+  {
+   "id": "vsf0",
+   "archetype": "VC funds and life-science firms",
+   "instance": "cautious",
+   "region": "SF_Bay_Area",
+   "deposit_share": 0.0066,
+   "reason": "Bay Area fund or life-science firm with a bank balance sized for fund operations. It sits inside the VC network, hears the portfolio-company warnings, and moves when peers do. Needs partner or CFO sign-off.",
+   "review_every_hours": 2,
+   "works_after_hours": false,
+   "approval_lag_hours": 8,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "vsf1",
+   "archetype": "VC funds and life-science firms",
+   "instance": "typical",
+   "region": "SF_Bay_Area",
+   "deposit_share": 0.0088,
+   "reason": "Typical Bay Area fund or biotech finance office. It treats this as a peer-driven situation, acts through committee, and wants to see others leaving before it moves.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 16,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    }
+   }
+  },
+  {
+   "id": "vsf2",
+   "archetype": "VC funds and life-science firms",
+   "instance": "sticky",
+   "region": "SF_Bay_Area",
+   "deposit_share": 0.0066,
+   "reason": "Bay Area fund or life-science firm with a small operating balance and slow governance. Lots of its cash is already elsewhere, and it only moves when a run is visible and the bank looks stressed.",
+   "review_every_hours": 8,
+   "works_after_hours": false,
+   "approval_lag_hours": 30,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    }
+   }
+  },
+  {
+   "id": "vhub0",
+   "archetype": "VC funds and life-science firms",
+   "instance": "cautious",
+   "region": "US_Venture_Hubs",
+   "deposit_share": 0.0081,
+   "reason": "Boston/NYC fund or life-science firm plugged into finance Twitter and counterparty chatter. Compliance-minded, so it cuts uninsured exposure quickly once peers are visibly leaving, though its committee adds delay.",
+   "review_every_hours": 2,
+   "works_after_hours": false,
+   "approval_lag_hours": 10,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|med|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    }
+   }
+  },
+  {
+   "id": "vhub1",
+   "archetype": "VC funds and life-science firms",
+   "instance": "typical",
+   "region": "US_Venture_Hubs",
+   "deposit_share": 0.0108,
+   "reason": "Typical hub-city fund or biotech finance office. It follows what portfolio companies and peers do, reassesses a few times a day, and moves through an internal committee.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 18,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|high|stressed|calm": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    }
+   }
+  },
+  {
+   "id": "vhub2",
+   "archetype": "VC funds and life-science firms",
+   "instance": "sticky",
+   "region": "US_Venture_Hubs",
+   "deposit_share": 0.0081,
+   "reason": "Hub-city fund or lab operator (including some in LA) with a small PacWest operating balance and a slow board or partner process. It tolerates the headline risk and acts only after a clear run.",
+   "review_every_hours": 8,
+   "works_after_hours": false,
+   "approval_lag_hours": 36,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    }
+   }
+  },
+  {
+   "id": "hla0",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "cautious",
+   "region": "Los_Angeles_SoCal",
+   "deposit_share": 0.0105,
+   "reason": "LA HOA management firm holding association reserves. It is local-media exposed and fiduciarily careful, but part of its balances are insured through pass-through and boards must approve any move.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 24,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.9
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    }
+   }
+  },
+  {
+   "id": "hla1",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "typical",
+   "region": "Los_Angeles_SoCal",
+   "deposit_share": 0.014,
+   "reason": "Typical LA HOA manager or commercial operator. It needs its own board's approval, relies on its local branch, and prefers to wait unless the bank looks truly weak.",
+   "review_every_hours": 6,
+   "works_after_hours": false,
+   "approval_lag_hours": 36,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    }
+   }
+  },
+  {
+   "id": "hla2",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "sticky",
+   "region": "Los_Angeles_SoCal",
+   "deposit_share": 0.0105,
+   "reason": "LA HOA or small commercial operator with a long-standing relationship manager, payment systems tied to the bank, and a board that meets rarely. Very slow, and acts only in a visible local run.",
+   "review_every_hours": 12,
+   "works_after_hours": false,
+   "approval_lag_hours": 48,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    }
+   }
+  },
+  {
+   "id": "hca0",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "cautious",
+   "region": "Rest_of_California",
+   "deposit_share": 0.0063,
+   "reason": "Central Valley, San Diego or Inland Empire HOA/commercial account manager. Less exposed to LA media but watches the news, and its risk-conscious board will cut balances if local peers do.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 24,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.9
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    }
+   }
+  },
+  {
+   "id": "hca1",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "typical",
+   "region": "Rest_of_California",
+   "deposit_share": 0.0084,
+   "reason": "Typical regional HOA or business account with its community-bank relationship manager. Prefers to wait for official clarity and acts through the board.",
+   "review_every_hours": 8,
+   "works_after_hours": false,
+   "approval_lag_hours": 36,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    }
+   }
+  },
+  {
+   "id": "hca2",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "sticky",
+   "region": "Rest_of_California",
+   "deposit_share": 0.0063,
+   "reason": "Small regional HOA or commercial account with limited staff and strong local-branch loyalty. Mostly insured through pass-through and rarely reassesses, so it acts only in a severe visible run.",
+   "review_every_hours": 12,
+   "works_after_hours": false,
+   "approval_lag_hours": 48,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    }
+   }
+  },
+  {
+   "id": "hus0",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "cautious",
+   "region": "Rest_of_US",
+   "deposit_share": 0.0042,
+   "reason": "National HOA or commercial treasury (Eastern time) with low brand attachment. Hears of the bank only via news and counterparties, but is risk-averse about uninsured balances and moves once peers or its bank partners do.",
+   "review_every_hours": 4,
+   "works_after_hours": false,
+   "approval_lag_hours": 24,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "none|high|stressed|alarmed": {
+     "action": "pull",
+     "fraction": 1
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.9
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.5
+    }
+   }
+  },
+  {
+   "id": "hus1",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "typical",
+   "region": "Rest_of_US",
+   "deposit_share": 0.0056,
+   "reason": "Typical national commercial or HOA account that only learns of trouble through news or its counterparties. Its decisions go through a manager and committee, and it responds mostly to official clarity.",
+   "review_every_hours": 8,
+   "works_after_hours": false,
+   "approval_lag_hours": 40,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "none|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.8
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.5
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.7
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.3
+    }
+   }
+  },
+  {
+   "id": "hus2",
+   "archetype": "HOA management companies and commercial operating accounts",
+   "instance": "sticky",
+   "region": "Rest_of_US",
+   "deposit_share": 0.0042,
+   "reason": "National HOA or commercial account that is partly insured and run by a small back office. It pays little attention to a distant bank's headlines and moves only after a severe, visible run.",
+   "review_every_hours": 12,
+   "works_after_hours": false,
+   "approval_lag_hours": 48,
+   "playbook": {
+    "none|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "none|med|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|safe|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "none|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "none|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "none|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.6
+    },
+    "statement|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|med|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "statement|high|safe|alarmed": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "statement|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.2
+    },
+    "statement|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.4
+    },
+    "backstop|low|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|low|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|med|stressed|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|calm": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|safe|alarmed": {
+     "action": "stay",
+     "fraction": 0
+    },
+    "backstop|high|stressed|calm": {
+     "action": "reduce",
+     "fraction": 0.1
+    },
+    "backstop|high|stressed|alarmed": {
+     "action": "reduce",
+     "fraction": 0.2
+    }
+   }
+  }
+ ]
+}

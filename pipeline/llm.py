@@ -62,8 +62,8 @@ def _chalk_complete(template_name: str, system: str, user: str, inputs: dict, ma
 
 
 def _extract_json(text: str):
-    start, end = text.find("{"), text.rfind("}")
-    return json.loads(text[start:end + 1])
+    # first complete JSON object; tolerates prose or a second object after it
+    return json.JSONDecoder().raw_decode(text[text.find("{"):])[0]
 
 
 def complete_json(template_name: str, system: str, user: str, inputs: dict,

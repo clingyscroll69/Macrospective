@@ -1,0 +1,112 @@
+{
+ "Los_Angeles_SoCal": {
+  "samples": [
+   {
+    "b": 0.25,
+    "h": 0.3,
+    "a": 0.8,
+    "reason": "In LA/SoCal, PacWest's HQ and core branch base, local media and word of mouth make the rumour more believable and more shareable than in the rest of the US. The core claims are factual: a ~50% share drop, a strategic review reported by Bloomberg/Reuters, and First Republic's failure. Alarm is high because the message urges moving money before Thursday's open. Mitigants are 71-73% of deposits insured, liquidity at 153% of uninsured deposits, and recent deposit stabilization. Retail, HOA and small-business depositors are largely insured, which tempers the push to act, and the call to move money is aimed mainly at uninsured venture and business accounts."
+   },
+   {
+    "b": 0.15,
+    "h": 0.2,
+    "a": 0.72,
+    "reason": "In LA, PacWest's HQ and core branch base, local media and customers who know the bank make the rumour more believable and shareable than in the rest of the US. The facts support it: shares are down ~50% after hours, a sale is reported, and it follows three failures. Alarm is high because the call to act is concrete and time-bound (move money before Thursday's open). Mitigating facts are that the retail base is mostly insured (~72%) and liquidity covers uninsured deposits 153%. That tempers the push for retail and HOA depositors, though not for business and venture accounts."
+   },
+   {
+    "b": 0.25,
+    "h": 0.3,
+    "a": 0.8,
+    "reason": "In LA/SoCal, PacWest is the local HQ bank with a heavy branch base, so the rumour's core facts (shares down ~50%, strategic review reported by Bloomberg/Reuters) are verifiable and the local media will amplify them, which lifts believability and shareability above the rest of the US. The context adds to this: three bank failures since March, First Republic seized two days earlier, and the Fed hiking the same day. Mitigating facts are that deposits are 71-73% insured, retail, small business and HOA customers skew toward insured balances, and liquidity is 153% of uninsured. Even so, the explicit 'move it before Thursday' call to action is strong, especially for venture and business accounts, so alarm stays high but not maximal."
+   }
+  ]
+ },
+ "SF_Bay_Area": {
+  "samples": [
+   {
+    "b": 0.35,
+    "h": 0.5,
+    "a": 0.8,
+    "reason": "SF Bay Area's venture-banking depositors share SVB's tight tech network and have fresh memory of its run, so they will find the rumour more credible and pass it on faster than the rest of the US. The rumour is largely grounded in facts: shares are down about 50%, a sale is being weighed, and First Republic has just failed. Strong liquidity (153% of uninsured deposits) and 71-73% insured deposits are mitigating, but these are not widely known. Uninsured venture accounts have a clear incentive to move funds before Thursday's open, so alarm is high."
+   },
+   {
+    "b": 0.3,
+    "h": 0.4,
+    "a": 0.8,
+    "reason": "SF Bay Area's venture-banking depositors are the same tight tech network that ran SVB, so they are more likely to believe and forward this than the national reference. The rumour is anchored in real facts: three failures since March, PACW down ~50%, and a reported sale/breakup review. Moving uninsured money before Thursday's open is a clear, low-cost action. Mitigants are the 71-73% insured share, liquidity of 153% of uninsured deposits, and deposits that were rebounding, which limit credibility for the claim 'next to go'. Only 23% of deposits are venture, so the region's exposure is concentrated rather than broad."
+   },
+   {
+    "b": 0.35,
+    "h": 0.5,
+    "a": 0.8,
+    "reason": "The core facts are accurate and verifiable (PACW down ~50%, Bloomberg/Reuters report of a sale review, First Republic just seized), and the SF Bay Area venture-banking network that ran SVB is primed to believe and forward it quickly. Mitigants such as 153% liquidity coverage of uninsured deposits, 71-73% insured deposits and recent deposit stabilization are not widely known, so alarm is high, especially for uninsured venture accounts."
+   }
+  ]
+ },
+ "Rest_of_California": {
+  "samples": [
+   {
+    "b": 0.15,
+    "h": 0.1,
+    "a": 0.6,
+    "reason": "Rest_of_California depositors are more likely than the national reference to know PacWest, a California bank with local branches and business clients, so the rumour reads as more credible. The core facts are verifiable: shares are down about 50% and the bank is reportedly weighing a sale, after First Republic's seizure. Fundamentals soften the push to act: 71-73% of deposits are insured, liquidity is 153% of uninsured deposits, and deposits had begun to rebound. Even so, the explicit instruction to move uninsured money before Thursday's open adds urgency, particularly for the business and HOA accounts in the region. Community-bank retail depositors are mostly insured and less likely to react, which holds shareability and alarm at moderate levels."
+   },
+   {
+    "b": 0.2,
+    "h": 0.1,
+    "a": 0.72,
+    "reason": "For Rest_of_California the rumour is more believable than for the national reference, because PacWest is a local bank and its community-banking branches, HOA clients and small businesses are nearby, and the Bloomberg/Reuters report and the ~50% after-hours drop back up the sale claim. Shareability is only slightly higher, since the Community Banking base (53% of deposits, mostly insured) is less online and less panic-prone than the venture-tech crowd. Alarm is high given three bank failures in two months, the explicit instruction to move money before Thursday's open, and the pressure on uninsured business and HOA balances. It is tempered by the 71-73% insured share, liquidity at 153% of uninsured deposits, and deposits that had stabilized."
+   },
+   {
+    "b": 0.15,
+    "h": 0.1,
+    "a": 0.6,
+    "reason": "Rest_of_California is closer to PacWest's branch and business footprint and the local press covers it more, so the rumour is somewhat more believable and shareable than in the Rest_of_US reference. Community-bank and HOA/business clients are partly insured and less tied to venture networks than Venture Banking clients, which limits the push to withdraw. The facts are real: shares are down 50% and the bank is exploring a sale. The rumour's urgency is partly offset by PacWest's 153% liquidity coverage of uninsured deposits and its recent deposit rebound."
+   }
+  ]
+ },
+ "US_Venture_Hubs": {
+  "samples": [
+   {
+    "b": 0.25,
+    "h": 0.4,
+    "a": 0.72,
+    "reason": "Venture-hub depositors are plugged into VC/finance Twitter, remember the SVB run, and are ET/CT, so they can act before Thursday's open. The core facts are true (PACW down about 50%, bank reportedly weighing a sale), and Venture Banking is 23% of deposits, so the rumour hits their cohort directly. Some mitigation: PacWest's 153% liquidity coverage, rebounding deposits, and the 71-73% insured share. Even so, uninsured business depositors have strong incentive to move money."
+   },
+   {
+    "b": 0.3,
+    "h": 0.45,
+    "a": 0.8,
+    "reason": "Venture hub clients are the most exposed group, since uninsured business and venture accounts are the rumour's explicit target. They follow VC and finance Twitter, are still processing the SVB episode, and sit in ET/CT time zones where the bank opens earlier on Thursday. All of this makes the rumour more believable, more shareable and more likely to prompt action than for the Rest_of_US reference. The share drop and the reported sale exploration are real, which adds credibility. Liquidity at 153% of uninsured deposits and the deposit rebound are only partial mitigants and are unlikely to reach this audience quickly."
+   },
+   {
+    "b": 0.25,
+    "h": 0.35,
+    "a": 0.72,
+    "reason": "Venture-hub clients sit in PacWest's most flight-prone segment (Venture Banking is 23% of deposits). They are on VC/finance Twitter, remember SVB's run, and sit in ET/CT time zones, so they can move money before the Thursday open. The rumour's core facts are verifiable: shares are down about 50% and a sale is reported. That makes it more believable and more shareable than in the rest of the US. The bank's liquidity is strong at 153% of uninsured deposits, and deposits have stabilised, which tempers the push to act. It is not near-certain, because 71-73% of deposits are insured and the 'next to go' claim is overstated."
+   }
+  ]
+ },
+ "Rest_of_US": {
+  "samples": [
+   {
+    "b": 0,
+    "h": 0,
+    "a": 0.55,
+    "reason": "Rest_of_US is the reference region, so b and h are 0 by definition. The rumour is credible: after the close, Bloomberg/Reuters reported PacWest weighing a sale, and the shares were down ~50% after the First Republic seizure. The call to act is strong for uninsured business and venture depositors, since Eastern-time depositors can move money before Thursday's open. Alarm is held back by PacWest's solid liquidity (153% of uninsured deposits), roughly 72% of deposits insured, deposits rebounding in Q1, and little direct brand awareness outside the West Coast. Most nationwide depositors are not PacWest customers, so the rumour pushes few of them to act."
+   },
+   {
+    "b": 0,
+    "h": 0,
+    "a": 0.55,
+    "reason": "Rest_of_US is the reference region, so b and h are 0 by definition. The rumour is partly verified: the Bloomberg/Reuters report on strategic options and the ~50% share drop are real, and it follows three failures since March, so it is credible. Fundamentals are mixed. Liquidity is 153% of uninsured deposits, deposits rebounded after Q1, and 71-73% are insured. Those cut against a run. The rumour's call to move uninsured money before Thursday is aggressive, and it matters mainly to the small share of uninsured venture and business depositors with direct exposure. Rest_of_US depositors have little brand awareness of PacWest, so few are directly affected. That limits alarm to moderate-high."
+   },
+   {
+    "b": 0,
+    "h": 0,
+    "a": 0.55,
+    "reason": "Region is the reference (b=h=0). The rumour is credible: Bloomberg/Reuters reported PacWest exploring a sale, shares fell about 50%, and First Republic had just failed. Weak points: 71-73% of deposits are insured, liquidity covers 153% of uninsured deposits, deposits rebounded in April, and CET1 is 9.22%. Rest_of_US depositors have little direct exposure and little brand awareness, so they react mainly to headlines and counterparties. Alarm is moderate: the action call is explicit and urgent, but few people in this region hold uninsured PacWest money."
+   }
+  ]
+ }
+}

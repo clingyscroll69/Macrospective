@@ -1,0 +1,594 @@
+{
+ "casts": [
+  {
+   "cast": 0,
+   "instigators": [
+    {
+     "id": "c0_i0",
+     "persona": "Arsonist: large fintech/VC-commentary X account with a track record of calling SVB early, posts in punchy breaking-news style",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "PacWest is shopping itself after losing 50% of its value. First Republic is gone and PACW is next in line. If you have uninsured balances at Pacific Western, especially venture accounts, move them before Thursday's open. Not worth the risk.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 18,
+     "reposts": 2400,
+     "audience_size": 310000
+    },
+    {
+     "id": "c0_i1",
+     "persona": "Arsonist: macro and markets doomposter with a large X following, sarcastic tone, treats bank runs as a chain of dominoes",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "SVB, then Signature, then First Republic, and now PacWest is down 50% and 'weighing options.' We know how this story goes. Regional banks are being picked off one at a time and the Fed just hiked into it. Check where your cash sits tonight.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "SF_Bay_Area"
+     ],
+     "post_hour_local": 21,
+     "reposts": 1800,
+     "audience_size": 450000
+    },
+    {
+     "id": "c0_i2",
+     "persona": "Mutator: startup CFO in a founders' WhatsApp group, anxious, passes on half-understood info as insider advice",
+     "home": "US_Venture_Hubs",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heads up from a friend who knows a banker: PacWest is being sold, and wires might get delayed tomorrow. I'm moving our payroll account to Chase tonight. Anyone at Pacific Western Venture Banking should do the same.",
+     "target_regions": [
+      "US_Venture_Hubs",
+      "SF_Bay_Area"
+     ],
+     "post_hour_local": 21,
+     "reposts": 140,
+     "audience_size": 900
+    },
+    {
+     "id": "c0_i3",
+     "persona": "Mutator: HOA board member in a neighbourhood Facebook/WhatsApp group, worried about reserves, twists the rumour toward all deposits",
+     "home": "Rest_of_California",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Neighbors, I heard PacWest is about to be seized like First Republic and even insured accounts could be frozen for a while. Our HOA reserve fund is with them. We should pull it out first thing at opening, before there's a line.",
+     "target_regions": [
+      "Rest_of_California",
+      "Los_Angeles_SoCal",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 20,
+     "reposts": 60,
+     "audience_size": 600
+    },
+    {
+     "id": "c0_i4",
+     "persona": "Bot farm: network of low-credibility accounts posting copy-paste doom, high volume, burst at 3am local",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "#PacWest COLLAPSE IMMINENT!!! Banks closing, withdraw EVERYTHING now before it's too late! #BankRun #PACW",
+     "target_regions": [
+      "Rest_of_US",
+      "Los_Angeles_SoCal",
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 3,
+     "reposts": 900,
+     "audience_size": 40000
+    },
+    {
+     "id": "c0_i5",
+     "persona": "Local debunker: longtime LA community-bank branch manager turned neighbourhood business-association organiser, trusted in local group chats",
+     "home": "Los_Angeles_SoCal",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Please don't panic. A bank exploring a sale isn't the same as a bank failing, and most PacWest deposits are FDIC-insured up to $250k. If you're above that, spread it across banks calmly, but there's no need to rush tonight.",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 19,
+     "reposts": 85,
+     "audience_size": 1200
+    },
+    {
+     "id": "c0_i6",
+     "persona": "Sceptical journalist: banking reporter at a national outlet, careful and measured, links to filings",
+     "home": "Rest_of_US",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Worth noting: PacWest's Q1 filing shows about 72% of deposits insured, and liquidity of $12.4B against $8.1B uninsured. The stock drop is real and the strategic review is real, but the numbers show no sign of an outflow as of April 24. Stay measured.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 22,
+     "reposts": 700,
+     "audience_size": 280000
+    }
+   ]
+  },
+  {
+   "cast": 1,
+   "instigators": [
+    {
+     "id": "c1_i0",
+     "persona": "Arsonist: anonymous macro/banking doom account on X with a large following, posts bank-failure threads",
+     "home": "US_Venture_Hubs",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "PacWest is shopping itself after First Republic and the stock is down 50% after hours. That's how SVB started. If you're a startup with uninsured cash at Pacific Western, don't wait for the Thursday open. Wire it out tonight.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 21,
+     "reposts": 2400,
+     "audience_size": 310000
+    },
+    {
+     "id": "c1_i1",
+     "persona": "Arsonist: well-known fintech/VC-adjacent X personality with a reputation for calling bank runs early",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Three banks down, PACW is next. A sale or breakup means it can't raise capital on its own. Founders on Venture Banking: you were told SVB was fine too. Move the balance above $250k before 6am PT.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 19,
+     "reposts": 3100,
+     "audience_size": 420000
+    },
+    {
+     "id": "c1_i2",
+     "persona": "Mutator: startup CFO in a founders' Slack/WhatsApp group, forwards bank news with an embellished twist",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heads up from a friend at a VC: PacWest is going to freeze outgoing wires tomorrow morning while they negotiate the sale. Get payroll money out tonight if you can. Not sure it's confirmed.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs"
+     ],
+     "post_hour_local": 20,
+     "reposts": 180,
+     "audience_size": 2600
+    },
+    {
+     "id": "c1_i3",
+     "persona": "Mutator: LA small-business owner in a neighbourhood and HOA board group chat, mixes up insured limits",
+     "home": "Los_Angeles_SoCal",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Our HOA's reserve account is at Pacific Western, and the news says the bank is being sold off and might be seized like First Republic. I heard anything over $250k gets wiped out. Can the board meet tonight and pull it?",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 21,
+     "reposts": 90,
+     "audience_size": 1800
+    },
+    {
+     "id": "c1_i4",
+     "persona": "Bot farm: coordinated network of low-credibility accounts posting copy-paste bank-run spam",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "\ud83d\udea8PACWEST COLLAPSING\ud83d\udea8 bank run underway, withdraw NOW before they lock the doors!!! #PACW #bankrun #SVB2",
+     "target_regions": [
+      "Rest_of_US",
+      "Los_Angeles_SoCal",
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 3,
+     "reposts": 600,
+     "audience_size": 45000
+    },
+    {
+     "id": "c1_i5",
+     "persona": "Local debunker: LA community-bank branch manager turned neighbourhood finance volunteer, trusted in local business and HOA chats",
+     "home": "Los_Angeles_SoCal",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I know people panic after a night like this. But PacWest is not First Republic. Its filings show about 73% of deposits insured and cash plus available lines well above its uninsured balances. A sale review isn't a closure. Check your own coverage, but don't move money in a panic overnight.",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 22,
+     "reposts": 70,
+     "audience_size": 3200
+    },
+    {
+     "id": "c1_i6",
+     "persona": "Sceptical journalist: veteran banking reporter at a national outlet who gets the sourcing and the numbers right",
+     "home": "Rest_of_US",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Before the PacWest panic spreads, here are the facts. Q1 filings show $12.4bn of liquidity against $8.1bn uninsured deposits, and deposits were up slightly in April. A strategic review is not a failure notice, and the bank is not frozen. Stock moves of -50% reflect equity risk, not necessarily a deposit run.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 22,
+     "reposts": 900,
+     "audience_size": 260000
+    }
+   ]
+  },
+  {
+   "cast": 2,
+   "instigators": [
+    {
+     "id": "c2_i0",
+     "persona": "Arsonist 1: large anonymous finance-doom X account (~400k followers) that called the SVB run",
+     "home": "US_Venture_Hubs",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "PacWest is the 4th domino. Down 50% after hours, Bloomberg says it's shopping itself, and First Republic was seized 2 days ago. If you have operating cash above $250k there, wire it out before the 6am ET open. Don't wait for a press release.",
+     "target_regions": [
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 21,
+     "reposts": 2600,
+     "audience_size": 400000
+    },
+    {
+     "id": "c2_i1",
+     "persona": "Arsonist 2: macro/crypto trader on X with a large following who posts bank-failure threads",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Regional banks are getting picked off one by one: SVB, Signature, FRC, and now PACW is 'exploring a sale'. That phrase usually means the board sees the end. Uninsured depositors at Pacific Western should treat tonight as the window to move funds.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 21,
+     "reposts": 1500,
+     "audience_size": 250000
+    },
+    {
+     "id": "c2_i2",
+     "persona": "Mutator 1: startup founder in a Bay Area founders' Slack/WhatsApp group, relays a garbled version",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heads up: heard PacWest is being seized tomorrow, FDIC is basically already there. Venture banking accounts will probably be frozen at open. Get payroll money into Chase or Mercury tonight if you can.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs"
+     ],
+     "post_hour_local": 19,
+     "reposts": 120,
+     "audience_size": 1800
+    },
+    {
+     "id": "c2_i3",
+     "persona": "Mutator 2: LA HOA board member in a neighborhood and property-manager group chat who twists the story toward HOA funds",
+     "home": "Los_Angeles_SoCal",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Our management company says PacWest might not honor HOA reserve accounts over the insurance limit if it gets sold off. Treasurer should call the bank first thing, and maybe pull the reserves into treasuries. Better safe than sorry after First Republic.",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 20,
+     "reposts": 60,
+     "audience_size": 900
+    },
+    {
+     "id": "c2_i4",
+     "persona": "Bot farm: network of low-credibility accounts spamming copy-paste bank-run posts",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "\ud83d\udea8PACWEST COLLAPSING\ud83d\udea8 BANK RUN STARTED. WITHDRAW NOW BEFORE ITS TOO LATE #PACW #BankRun #bankfailure",
+     "target_regions": [
+      "Rest_of_US",
+      "Los_Angeles_SoCal",
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 3,
+     "reposts": 900,
+     "audience_size": 60000
+    },
+    {
+     "id": "c2_i5",
+     "persona": "Local debunker: longtime LA community banker and neighborhood business association organizer, trusted in local group chats",
+     "home": "Los_Angeles_SoCal",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "Before anyone panics: PacWest's stock is getting hammered, but their Q1 numbers show most deposits insured and cash plus available liquidity well above uninsured balances. Reviewing options is not a seizure. I'm keeping my accounts there and will call my branch manager tomorrow, and you can ask yours the same.",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 20,
+     "reposts": 40,
+     "audience_size": 1200
+    },
+    {
+     "id": "c2_i6",
+     "persona": "Sceptical journalist: banking reporter at a national outlet, widely followed, checks filings before posting",
+     "home": "Rest_of_US",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Worth separating the stock from the balance sheet on PacWest. The Q1 filing shows about 73% of deposits insured and $12.4bn of available liquidity against $8.1bn uninsured, and deposits ticked up in April. Equity risk is real, but nothing in the filings shows a deposit run so far. Watch Thursday's flows.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 22,
+     "reposts": 700,
+     "audience_size": 180000
+    }
+   ]
+  },
+  {
+   "cast": 3,
+   "instigators": [
+    {
+     "id": "c3_i0",
+     "persona": "arsonist: large anonymous macro/banking doom account on X, 'bank watch' brand, 180k followers",
+     "home": "US_Venture_Hubs",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "PACW -50% AFTER HOURS and Bloomberg says it's shopping itself. That's what First Republic looked like 48 hours before the seizure. If you're a founder with more than $250k there, you don't wait for the open.",
+     "target_regions": [
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 21,
+     "reposts": 2400,
+     "audience_size": 180000
+    },
+    {
+     "id": "c3_i1",
+     "persona": "arsonist: ex-fintech founder turned viral X commentator, 95k followers, contrarian and sarcastic",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Three banks gone since March and PacWest is next on the menu. Pacific Western venture accounts: the wire cutoff is your friend, and tomorrow morning the queue will be long. Don't be the last one in line again.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 18,
+     "reposts": 1300,
+     "audience_size": 95000
+    },
+    {
+     "id": "c3_i2",
+     "persona": "mutator: startup founder in a YC alumni group chat, relays 'inside info' from a CFO friend",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heard from a CFO friend that PacWest is already limiting big wires and will freeze venture accounts at open tomorrow. Not confirmed, but I'm moving everything to Chase tonight. Do it now if you can.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs"
+     ],
+     "post_hour_local": 19,
+     "reposts": 210,
+     "audience_size": 3500
+    },
+    {
+     "id": "c3_i3",
+     "persona": "mutator: HOA board treasurer in a Southern California property-manager group chat, anxious and well-meaning",
+     "home": "Los_Angeles_SoCal",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Says on the news PacWest is being sold and the FDIC might step in like with First Republic. Our HOA reserves are well over $250k there, so I think we should pull the money out tomorrow and move it to a big bank. Can the board do an emergency vote tonight?",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 20,
+     "reposts": 90,
+     "audience_size": 1800
+    },
+    {
+     "id": "c3_i4",
+     "persona": "bot_farm: network of low-quality accounts pushing copy-paste bank-run posts, high volume",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "#PacWest COLLAPSING. Bank run starting NOW. Withdraw your money before it's too late!!! #BankRun #PACW",
+     "target_regions": [
+      "Rest_of_US",
+      "Los_Angeles_SoCal",
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 3,
+     "reposts": 60,
+     "audience_size": 40000
+    },
+    {
+     "id": "c3_i5",
+     "persona": "local_debunker: longtime Pasadena community-bank branch manager turned small-business adviser, trusted in local merchants' group chat",
+     "home": "Los_Angeles_SoCal",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I've read their Q1 numbers: about 72% of deposits are insured, and they have roughly $12bn of liquidity against $8bn uninsured. A share price drop and a 'strategic review' isn't a freeze. Don't panic-move payroll accounts tonight, and if you have more than $250k, split it sensibly.",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 20,
+     "reposts": 140,
+     "audience_size": 2500
+    },
+    {
+     "id": "c3_i6",
+     "persona": "sceptical_journalist: banking reporter at a national outlet, 120k followers, measured tone",
+     "home": "Rest_of_US",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Worth separating stock moves from deposit moves. PacWest's last filing showed deposits up slightly since quarter-end, $12.4bn in available liquidity and uninsured deposits of $8.1bn. The risk is real, but 'next SVB' claims aren't backed by those numbers yet. Watch tomorrow's outflow reports.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 22,
+     "reposts": 650,
+     "audience_size": 120000
+    }
+   ]
+  },
+  {
+   "cast": 4,
+   "instigators": [
+    {
+     "id": "c4_i0",
+     "persona": "Arsonist: large fintech/short-seller-style X account, ex-hedge fund voice, 310k followers",
+     "home": "US_Venture_Hubs",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "PacWest down 50% after hours and 'exploring a sale.' That's what First Republic said the week before the seizure. If you're a startup with operating cash over $250k there, I would not wait for the open. Wires go in the morning.",
+     "target_regions": [
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 21,
+     "reposts": 2400,
+     "audience_size": 310000
+    },
+    {
+     "id": "c4_i1",
+     "persona": "Arsonist: macro doom-posting X account with a large following, banking-crisis thread writer, 185k followers",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "Bank #4 is lining up. SVB, Signature, First Republic, now PACW is shopping itself. Every one of these followed the same arc: stock collapse, 'strategic options,' then a weekend seizure. Check where your uninsured deposits sit tonight.",
+     "target_regions": [
+      "Rest_of_US",
+      "Los_Angeles_SoCal",
+      "US_Venture_Hubs"
+     ],
+     "post_hour_local": 22,
+     "reposts": 1700,
+     "audience_size": 185000
+    },
+    {
+     "id": "c4_i2",
+     "persona": "Mutator: startup founder in a YC-alumni Slack/WhatsApp group, repeats the rumour with an invented detail",
+     "home": "SF_Bay_Area",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Heads up from a friend who works with their treasury team: PacWest is limiting large wires tomorrow morning while the sale talks happen. Get your payroll cash out tonight if you can, or at least set up a backup account.",
+     "target_regions": [
+      "SF_Bay_Area",
+      "US_Venture_Hubs"
+     ],
+     "post_hour_local": 20,
+     "reposts": 140,
+     "audience_size": 900
+    },
+    {
+     "id": "c4_i3",
+     "persona": "Mutator: HOA board treasurer in a neighborhood-association group chat, anxious and fuzzy on details",
+     "home": "Rest_of_California",
+     "intended": "alarm",
+     "channel": "group_chat",
+     "text": "Our HOA reserves are at Pacific Western and I just read they're being sold, and that the FDIC only covers $250k. Does anyone know whether the reserve account will be frozen if it fails? I think we need an emergency board vote to move it first thing tomorrow.",
+     "target_regions": [
+      "Rest_of_California",
+      "Los_Angeles_SoCal",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 19,
+     "reposts": 60,
+     "audience_size": 450
+    },
+    {
+     "id": "c4_i4",
+     "persona": "Bot farm: network of low-credibility accounts posting copy-paste panic at volume",
+     "home": "Rest_of_US",
+     "intended": "alarm",
+     "channel": "x",
+     "text": "\ud83d\udea8 PACWEST BANK RUN STARTED \ud83d\udea8 ATMs EMPTY?? withdraw ur money NOW before its too late #PACW #BankRun #FDIC",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "SF_Bay_Area",
+      "Rest_of_California",
+      "US_Venture_Hubs",
+      "Rest_of_US"
+     ],
+     "post_hour_local": 3,
+     "reposts": 900,
+     "audience_size": 60000
+    },
+    {
+     "id": "c4_i5",
+     "persona": "Local debunker: longtime LA community-bank customer and small-business owner, trusted in a local merchants' group chat",
+     "home": "Los_Angeles_SoCal",
+     "intended": "calm",
+     "channel": "group_chat",
+     "text": "I banked there for 15 years and went through the Q1 numbers. Deposits stabilized after the March scare, and they report about $12bn in available liquidity against roughly $8bn uninsured. A sale review is not a closure. I'm keeping my accounts where they are, but I'll check the branch in the morning.",
+     "target_regions": [
+      "Los_Angeles_SoCal",
+      "Rest_of_California"
+     ],
+     "post_hour_local": 21,
+     "reposts": 80,
+     "audience_size": 700
+    },
+    {
+     "id": "c4_i6",
+     "persona": "Sceptical journalist: financial reporter with a wide following who reads filings and avoids hype",
+     "home": "Rest_of_US",
+     "intended": "calm",
+     "channel": "feed",
+     "text": "Before the PacWest panic spreads: the bank's own Q1 filing shows $12.4bn of available liquidity vs $8.1bn uninsured, and about 73% of deposits insured. Weighing a sale isn't a failure, and the stock drop reflects equity fears more than a verified deposit run. Still worth watching Thursday's flows, but none of this is confirmed.",
+     "target_regions": [
+      "Rest_of_US",
+      "US_Venture_Hubs",
+      "SF_Bay_Area",
+      "Los_Angeles_SoCal"
+     ],
+     "post_hour_local": 23,
+     "reposts": 900,
+     "audience_size": 240000
+    }
+   ]
+  }
+ ]
+}
